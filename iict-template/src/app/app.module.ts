@@ -6,10 +6,28 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
+import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { FaqComponent } from './faq/faq.component';
+import { LegalComponent } from './legal/legal.component';
+import { HomeComponent } from './home/home.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { TeamsComponent } from './teams/teams.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainMenuComponent,
+    FooterComponent,
+    LoginComponent,
+    FaqComponent,
+    LegalComponent,
+    HomeComponent,
+    ContactsComponent,
+    TeamsComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
