@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 //import { initializeApp } from '@angular/fire/app'
 //import { environment } from 'src/environments/environment';
 import { FirebaseApp } from '@angular/fire/app/app';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import firebase from 'firebase/compat/app';
@@ -12,9 +12,12 @@ import Swal from 'sweetalert2';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthenticateService {
+export class AuthenticationService {
+	signedIn : Observable<boolean> = new Observable<boolean>();
 
-  constructor(public auth: AngularFireAuth, private route: Router) { }
+  constructor(public auth: AngularFireAuth, private route: Router) {
+  	this.signedIn = of(false);
+}
 
   create(email: string, password: string) {
       this.auth.createUserWithEmailAndPassword(email, password)

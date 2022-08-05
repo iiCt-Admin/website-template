@@ -17,7 +17,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { AdminComponent } from './admin/admin.component';
 
 // Services
-import { AuthenticateService } from './services/authenticate.service';
+import { AuthenticationService } from './services/authentication.service';
 import { NavbarComponent } from './navbar/navbar.component'
 
 @NgModule({
@@ -41,7 +41,7 @@ import { NavbarComponent } from './navbar/navbar.component'
     AngularFireDatabaseModule,
     AngularFirestoreModule,
   ],
-  providers: [AuthenticateService],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
