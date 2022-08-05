@@ -16,6 +16,10 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { TeamsComponent } from './teams/teams.component';
 import { AdminComponent } from './admin/admin.component';
 
+// Services
+import { AuthenticateService } from './services/authenticate.service';
+import { NavbarComponent } from './navbar/navbar.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +32,7 @@ import { AdminComponent } from './admin/admin.component';
     ContactsComponent,
     TeamsComponent,
     AdminComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,7 @@ import { AdminComponent } from './admin/admin.component';
     AngularFireDatabaseModule,
     AngularFirestoreModule,
   ],
-  providers: [],
+  providers: [AuthenticateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

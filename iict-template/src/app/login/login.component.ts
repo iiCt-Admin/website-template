@@ -12,4 +12,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  async handleLogin(): Promise<void> {
+    var email = (<HTMLInputElement>document.getElementById('inputEmail')).value;
+    var password = (<HTMLInputElement>document.getElementById('inputPassword')).value;
+    //var good: boolean = await this.authService.login(email, password);
+
+  }
+
 }
