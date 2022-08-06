@@ -13,10 +13,10 @@ import Swal from 'sweetalert2';
   providedIn: 'root'
 })
 export class AuthenticationService {
-	signedIn : Observable<boolean> = new Observable<boolean>();
+	signedIn : boolean = false;
 
   constructor(public auth: AngularFireAuth, private route: Router) {
-  	this.signedIn = of(false);
+  	this.signedIn = false;
 }
 
   create(email: string, password: string) {

@@ -16,22 +16,24 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
 
-	  this.auth.signedIn.subscribe(pp =>{
-      return pp;
-    })
+	//   this.auth.signedIn.subscribe(pp =>{
+    //   return pp;
+    // })
 
   }
 
 	login(){
-		this.auth.signedIn = of(true);
+		alert("login");
+		this.auth.signedIn = true;
 	}
 
 	logout(){
-		this.auth.signedIn = of(false);
+		alert("logout");
+		this.auth.signedIn = false;
 	}
 
 	checkLogin():boolean{
-		if (this.auth.signedIn === of(true))
+		if (this.auth.signedIn == true)
 			return false;
 		else
 		return true;
