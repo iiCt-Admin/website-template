@@ -18,6 +18,8 @@ import { AdminComponent } from './admin/admin.component';
 
 // Services
 import { AuthenticationService } from './services/authentication.service';
+import { AppService } from './services/app.service';
+import { FirebaseService } from './services/firebase.service';
 import { NavbarComponent } from './navbar/navbar.component'
 
 @NgModule({
@@ -41,7 +43,7 @@ import { NavbarComponent } from './navbar/navbar.component'
     AngularFireDatabaseModule,
     AngularFirestoreModule,
   ],
-  providers: [AuthenticationService],
+  providers: [AuthenticationService, AppService, FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

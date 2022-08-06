@@ -20,14 +20,14 @@
       </svg>
     </a>
 
-	<button (click)="switch('home')">Home</button>
+	<button (click)="this.appService.switch('home')">Home</button>
 
-	<button (click)="switch('contacts')">Contacts</button>
-	<button (click)="switch('legal')">Legal</button>
+	<button (click)="this.appService.switch('contacts')">Contacts</button>
+	<button (click)="this.appService.switch('legal')">Legal</button>
 
 
 	<!-- <button (click)="switch('login')">Login</button> -->
-	<div *ngIf="checkLogin() == true; else otherBlock">
+	<div *ngIf="this.authService.signedIn == false; else otherBlock">
 	<button (click)="login()">Login</button>
 	</div>
 	<ng-template #otherBlock>

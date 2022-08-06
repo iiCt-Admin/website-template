@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 
 import { AuthenticationService } from '../services/authentication.service'
+import { AppService } from '../services/app.service'
 
 @Component({
   selector: 'app-navbar',
@@ -12,10 +13,10 @@ import { AuthenticationService } from '../services/authentication.service'
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public auth : AuthenticationService,private router : Router) { }
+  constructor(public authService : AuthenticationService,public appService : AppService) { }
 
   ngOnInit(): void {
-
+	  this.authService.signedIn = false;
 	//   this.auth.signedIn.subscribe(pp =>{
     //   return pp;
     // })
@@ -23,23 +24,21 @@ export class NavbarComponent implements OnInit {
   }
 
 	login(){
-		alert("login");
-		this.auth.signedIn = true;
+		//alert("login");
+		this.appService.switch('login');
+		//this.auth.signedIn = true;
 	}
 
 	logout(){
-		alert("logout");
-		this.auth.signedIn = false;
+		//alert("logout");
+		this.authService.signedIn = false;
 	}
 
-	checkLogin():boolean{
-		if (this.auth.signedIn == true)
-			return false;
-		else
-		return true;
-	}
+	// checkLogin():boolean{
+	// 	if (this.auth.signedIn == true)
+	// 		return true;
+	// 	else
+	// 	return true;
+	// }
 
-	switch(page : string): void {
-		 this.router.navigate([page]);
-	}
 }
