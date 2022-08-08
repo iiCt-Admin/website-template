@@ -1,0 +1,18 @@
+{
+  "HOME": {
+    "TITLE": "Bonjour Angular avec ngx-translate !",
+    "SELECT": "Changer la langue"
+  },
+  	"NAVBAR":{
+  		"Title":"Bienvenue sur",
+  		"Home":"Accueil",
+  		"Contacts":"Contacts",
+  		"Legal":"Mentions légales",
+  		"Login":"Connexion",
+  		"Logout":"Déconnexion"
+  	},
+	"LOGIN" : {
+		"Title":"Page de connexion",
+		"SignIn":"S'inscrire"
+	}
+}
