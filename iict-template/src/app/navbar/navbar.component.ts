@@ -41,6 +41,7 @@ export class NavbarComponent implements OnInit {
 	logout(){
 		//alert("logout");
 		this.authService.signedIn = false;
+		this.appService.switch('home');
 	}
 
 	// checkLogin():boolean{
