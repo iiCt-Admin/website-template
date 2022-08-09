@@ -14,5 +14,8 @@
 	"LOGIN" : {
 		"Title":"Login Page",
 		"SignIn":"Sign In"
+	},
+	"FOOTER":{
+		"TITLE":"(c) 2022 Some Company"
 	}
 }
