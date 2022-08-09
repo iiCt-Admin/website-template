@@ -15,6 +15,7 @@ import { AppService } from '../services/app.service'
 })
 export class NavbarComponent implements OnInit {
 
+	collapsed = false;
   constructor(public translate: TranslateService, public authService : AuthenticationService,public appService : AppService) {
 	  this.translate.addLangs(['en', 'fr']);
 	     this.translate.setDefaultLang('en');
