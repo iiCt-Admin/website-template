@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {TranslateService} from '@ngx-translate/core';
+
 @Component({
   selector: 'app-teams',
   templateUrl: './teams.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public translate : TranslateService) { }
 
   ngOnInit(): void {
   }

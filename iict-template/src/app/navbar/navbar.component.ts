@@ -15,6 +15,7 @@ import { AppService } from '../services/app.service'
 })
 export class NavbarComponent implements OnInit {
 
+	collapsed = false;
   constructor(public translate: TranslateService, public authService : AuthenticationService,public appService : AppService) {
 	  this.translate.addLangs(['en', 'fr']);
 	     this.translate.setDefaultLang('en');
@@ -40,6 +41,7 @@ export class NavbarComponent implements OnInit {
 	logout(){
 		//alert("logout");
 		this.authService.signedIn = false;
+		this.appService.switch('home');
 	}
 
 	// checkLogin():boolean{
