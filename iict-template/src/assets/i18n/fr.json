@@ -8,8 +8,8 @@
   		"Home":"Accueil",
   		"Contacts":"Contacts",
   		"Legal":"Mentions légales",
-  		"Login":"Connexion",
-  		"Logout":"Déconnexion"
+  		"SignIn":"S'inscrire",
+  		"SignOut":"Se déconnecter"
   	},
 	"LOGIN" : {
 		"Title":"Page de connexion",

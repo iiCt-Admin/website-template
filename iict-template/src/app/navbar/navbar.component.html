@@ -33,18 +33,18 @@
       </svg>
     </a>
 
-	<button (click)="this.appService.switch('home')">{{ 'NAVBAR.Home' | translate }}</button>
+	<button class="btn btn-secondary" (click)="this.appService.switch('home')">{{ 'NAVBAR.Home' | translate }}</button>
 
-	<button (click)="this.appService.switch('contacts')">{{ 'NAVBAR.Contacts' | translate }}</button>
-	<button (click)="this.appService.switch('legal')">{{ 'NAVBAR.Legal' | translate }}</button>
+	<button class="btn btn-secondary" (click)="this.appService.switch('contacts')">{{ 'NAVBAR.Contacts' | translate }}</button>
+	<button class="btn btn-secondary" (click)="this.appService.switch('legal')">{{ 'NAVBAR.Legal' | translate }}</button>
 
 
 	<!-- <button (click)="switch('login')">Login</button> -->
 	<div *ngIf="this.authService.signedIn == false; else otherBlock">
-	<button (click)="login()">{{ 'NAVBAR.Login' | translate }}</button>
+	<button class="btn btn-secondary" (click)="login()">{{ 'NAVBAR.SignIn' | translate }}</button>
 	</div>
 	<ng-template #otherBlock>
-		<button (click)="logout()">{{ 'NAVBAR.Logout' | translate }}</button>
+		<button class="btn btn-secondary" (click)="logout()">{{ 'NAVBAR.SignOut' | translate }}</button>
 		</ng-template>
 </div>
 </nav>

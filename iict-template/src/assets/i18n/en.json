@@ -8,11 +8,11 @@
 		"Home":"Home",
 		"Contacts":"Contacts",
 		"Legal":"Legal",
-		"Login":"Login",
-		"Logout":"Logout"
+		"SignIn":"Sign In",
+		"SignOut":"Sign Out"
 	},
 	"LOGIN" : {
-		"Title":"Login Page",
+		"Title":"Sign In Page",
 		"SignIn":"Sign In"
 	},
 	"FOOTER":{
