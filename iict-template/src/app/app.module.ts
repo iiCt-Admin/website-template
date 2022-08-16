@@ -26,6 +26,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { SignupComponent } from './signup/signup.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -45,6 +46,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TeamsComponent,
     AdminComponent,
     NavbarComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
