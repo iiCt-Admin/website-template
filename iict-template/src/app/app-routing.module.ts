@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TeamsComponent } from './teams/teams.component';
 import { AdminComponent } from './admin/admin.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'legal', component: LegalComponent },
   { path: 'login', component: LoginComponent },
   { path: 'faq', component: FaqComponent },
+  { path: 'signup', component: SignupComponent },
   // { path: 'account', component: AccountComponent },
   // { path: 'self-manager-dashboard', component: SelfmanagerPageComponent },
   // { path: 'employee-dashboard', component: EmployeePageComponent },

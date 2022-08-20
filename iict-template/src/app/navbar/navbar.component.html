@@ -35,9 +35,10 @@
 
 	<button class="btn btn-secondary" (click)="this.appService.switch('home')">{{ 'NAVBAR.Home' | translate }}</button>
 
+
+	<button class="btn btn-secondary" (click)="this.appService.switch('team')">{{ 'NAVBAR.Team' | translate }}</button>
 	<button class="btn btn-secondary" (click)="this.appService.switch('contacts')">{{ 'NAVBAR.Contacts' | translate }}</button>
 	<button class="btn btn-secondary" (click)="this.appService.switch('legal')">{{ 'NAVBAR.Legal' | translate }}</button>
-
 
 	<!-- <button (click)="switch('login')">Login</button> -->
 	<div *ngIf="this.authService.signedIn == false; else otherBlock">
@@ -46,5 +47,6 @@
 	<ng-template #otherBlock>
 		<button class="btn btn-secondary" (click)="logout()">{{ 'NAVBAR.SignOut' | translate }}</button>
 		</ng-template>
+		<button class="btn btn-secondary" (click)="this.appService.switch('signup')">{{ 'NAVBAR.SignUp' | translate }}</button>
 </div>
 </nav>
