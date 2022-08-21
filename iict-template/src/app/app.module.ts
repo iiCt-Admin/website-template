@@ -28,6 +28,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SignupComponent } from './signup/signup.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -64,6 +65,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AngularFireModule.initializeApp(environment.firebase, 'mytestapp'),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
+    NgbModule,
   ],
   providers: [AuthenticationService, AppService, FirebaseService],
   bootstrap: [AppComponent]

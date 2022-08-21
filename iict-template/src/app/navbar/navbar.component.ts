@@ -16,6 +16,12 @@ import { AppService } from '../services/app.service'
 export class NavbarComponent implements OnInit {
 
 	collapsed = false;
+	languages = [
+		{name:'English',
+		language: 'en'},
+		{name:'French',
+			language: 'fr'},
+]
   constructor(public translate: TranslateService, public authService : AuthenticationService,public appService : AppService) {
 	  this.translate.addLangs(['en', 'fr']);
 	     this.translate.setDefaultLang('en');
@@ -30,6 +36,29 @@ export class NavbarComponent implements OnInit {
     //   return pp;
     // })
 
+  }
+
+  async selectLanguage(lang : string){
+
+	  // this.translate.setDefaultLang(lang);
+	  this.translate.use(lang);
+	  //await alert(this.translate.currentLang);
+  }
+
+  returnLanguageString(lang : string) : string{
+
+	  for(let index = 0; index < this.languages.length; index++){
+		  if (lang == this.languages[index].language) return this.languages[index].name;
+	  }
+	  return 'English';
+  }
+
+  returnLanguageImage(lang : string) : string{
+
+	  for(let index = 0; index < this.languages.length; index++){
+		  if (lang == this.languages[index].language) return './assets/img/lang_' + lang + '.png';
+	  }
+	  return '';
   }
 
 	login(){
