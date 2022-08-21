@@ -1,5 +1,5 @@
 <!-- Toolbar -->
-<nav class="navbar navbar-expand-md">
+<nav class="navbar navbar-expand-md no-padding">
 	<button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed"
 	      aria-label="Toggle navigation" (click)="collapsed = !collapsed">
 	      <span class="navbar-toggler-icon"></span>
@@ -32,15 +32,13 @@
 	   <div ngbDropdown class="d-inline-block">
 	 	<button type="button" class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>{{ this.returnLanguageString(this.translate.currentLang) }}</button>
 	 	<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-<div *ngFor="let lang of this.languages">
+			<div *ngFor="let lang of this.languages">
 		  <button (click)="this.selectLanguage(lang.language)" ngbDropdownItem>
 
 				 <img class="languageImg" src="{{ returnLanguageImage(lang.language) }}">
 				 {{ lang.name }}
 			  </button>
 			  </div>
-	 	  <!-- <button ngbDropdownItem>Another Action</button>
-	 	  <button ngbDropdownItem>Something else is here</button> -->
 	 	</div>
 	 </div>
 

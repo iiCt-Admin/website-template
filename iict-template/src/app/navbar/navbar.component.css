@@ -2,3 +2,9 @@
 	width:46px;
 	height:46px;
 }
+
+.no-padding {
+	padding-top: 0;
+	padding-bottom: 0;
+	--bs-bg-opacity: 0;
+}
