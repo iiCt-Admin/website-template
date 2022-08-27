@@ -30,6 +30,9 @@ export class NavbarComponent implements OnInit {
 	     //this.translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
   }
 
+returnText(key : string, value : string){
+	return this.appService.returnText(key, value);
+}
   ngOnInit(): void {
 	  this.authService.signedIn = false;
 	//   this.auth.signedIn.subscribe(pp =>{
@@ -41,6 +44,7 @@ export class NavbarComponent implements OnInit {
   async selectLanguage(lang : string){
 
 	  // this.translate.setDefaultLang(lang);
+	  this.appService.currentTranslation = await this.appService.fetchJSON(lang);
 	  this.translate.use(lang);
 	  //await alert(this.translate.currentLang);
   }
