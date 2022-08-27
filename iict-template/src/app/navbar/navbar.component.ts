@@ -17,10 +17,13 @@ export class NavbarComponent implements OnInit {
 
 	collapsed = false;
 	languages = [
-		{name:'English',
+		{
+		name:'English',
 		language: 'en'},
-		{name:'French',
-			language: 'fr'},
+		{
+		name:'French',
+		language: 'fr'
+	},
 ]
   constructor(public translate: TranslateService, public authService : AuthenticationService,public appService : AppService) {
 	  this.translate.addLangs(['en', 'fr']);
@@ -49,7 +52,7 @@ returnText(key : string, value : string){
 	  //await alert(this.translate.currentLang);
   }
 
-  returnLanguageString(lang : string) : string{
+ returnLanguageString(lang : string) : string{
 
 	  for(let index = 0; index < this.languages.length; index++){
 		  if (lang == this.languages[index].language) return this.languages[index].name;
@@ -57,7 +60,7 @@ returnText(key : string, value : string){
 	  return 'English';
   }
 
-  returnLanguageImage(lang : string) : string{
+ returnLanguageImage(lang : string) : string{
 
 	  for(let index = 0; index < this.languages.length; index++){
 		  if (lang == this.languages[index].language) return './assets/img/lang_' + lang + '.png';
@@ -65,23 +68,14 @@ returnText(key : string, value : string){
 	  return '';
   }
 
-	login(){
-		//alert("login");
+login(){
 		this.appService.switch('login');
 		//this.auth.signedIn = true;
 	}
 
-	logout(){
-		//alert("logout");
+logout(){
 		this.authService.signedIn = false;
 		this.appService.switch('home');
 	}
-
-	// checkLogin():boolean{
-	// 	if (this.auth.signedIn == true)
-	// 		return true;
-	// 	else
-	// 	return true;
-	// }
 
 }
