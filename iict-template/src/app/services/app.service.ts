@@ -27,7 +27,7 @@ async defaultBrowserLanguage() : Promise<string>{
     lang = lang || window.navigator.language;// || window.navigator.browserLanguage;// || window.navigator.userLanguage;
 
 	let shortLang = lang;
-	
+
 	if (shortLang.indexOf('-') !== -1)
     	shortLang = shortLang.split('-')[0];
 
@@ -50,14 +50,6 @@ async fetchJSON(lang : string) : Promise<string> {
 async loadDefaultTranslations(){
 	this.currentTranslation = await this.fetchJSON('en');
 }
-
-// async getJSON() {
-//   	let data  = ''
-// 	this.languages = new Array<string>();
-// 	this.languages.push('en');
-// 	this.languages.push('fr');
-// 	this.currentTranslation = await this.fetchJSON('en')
-// 	}
 
 returnText(key : string, value : string) : string {
 		return this.parseObject(this.currentTranslation, key, value);
