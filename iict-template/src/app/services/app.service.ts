@@ -16,12 +16,7 @@ export class AppService {
 	  this.currentTranslation = await this.fetchJSON(await this.defaultBrowserLanguage());
   }
 
-	languages = new Array<string>();
 	currentTranslation = new Object();
-	themeFile : string = "";
-	language : string = "en";
-	data = new Object;
-	myMap : any;
 
   switch(page : string): void {
 	   this.router.navigate([page]);
@@ -32,6 +27,7 @@ async defaultBrowserLanguage() : Promise<string>{
     lang = lang || window.navigator.language;// || window.navigator.browserLanguage;// || window.navigator.userLanguage;
 
 	let shortLang = lang;
+	
 	if (shortLang.indexOf('-') !== -1)
     	shortLang = shortLang.split('-')[0];
 
@@ -55,13 +51,13 @@ async loadDefaultTranslations(){
 	this.currentTranslation = await this.fetchJSON('en');
 }
 
-async getJSON() {
-  	let data  = ''
-	this.languages = new Array<string>();
-	this.languages.push('en');
-	this.languages.push('fr');
-		 this.currentTranslation = await this.fetchJSON('en')
-	}
+// async getJSON() {
+//   	let data  = ''
+// 	this.languages = new Array<string>();
+// 	this.languages.push('en');
+// 	this.languages.push('fr');
+// 	this.currentTranslation = await this.fetchJSON('en')
+// 	}
 
 returnText(key : string, value : string) : string {
 		return this.parseObject(this.currentTranslation, key, value);
