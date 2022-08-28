@@ -1,16 +1,16 @@
 <div class="sidebar" [ngClass]="{ 'expanded': isExpanded }">
-  <div class="header">
-    <h1 class="title">
+  <div class="sidebar-header">
+    <h1 class="sidebar-title">
       deskbird
     </h1>
     <div class="toggle" (click)="handleSidebarToggle()">
       <span class="chevron"></span>
     </div>
   </div>
-  <div class="content">
-    <div class="link">
-      <div class="content" [routerLink]="['/home']" [routerLinkActive]="'active'">
-        <div class="icon">
+  <div class="sidebar-content">
+    <div class="sidebar-link">
+      <div class="sidebar-content" [routerLink]="['/home']" [routerLinkActive]="'active'">
+        <div class="sidebar-icon">
           <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
@@ -27,12 +27,12 @@
             </g>
           </svg>
         </div>
-        <div class="title">Home</div>
+        <div class="sidebar-title">Home</div>
       </div>
     </div>
-    <div class="link with-children">
-      <div class="content" [routerLink]="['/configuration']" [routerLinkActive]="'active'">
-        <div class="icon">
+    <div class="sidebar-link with-children">
+      <div class="sidebar-content" [routerLink]="['/configuration']" [routerLinkActive]="'active'">
+        <div class="sidebar-icon">
           <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
@@ -49,13 +49,13 @@
             </g>
           </svg>
         </div>
-        <div class="title">Configuration</div>
+        <div class="sidebar-title">Configuration</div>
       </div>
-      <div class="children">
-        <div class="link">
-          <div class="content" [routerLink]="['/configuration']" [queryParams]="{ 'child': '1' }"
+      <div class="sidebar-children">
+        <div class="sidebar-link">
+          <div class="sidebar-content" [routerLink]="['/configuration']" [queryParams]="{ 'child': '1' }"
             [routerLinkActive]="'active'">
-            <div class="icon">
+            <div class="sidebar-icon">
               <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
@@ -72,13 +72,13 @@
                 </g>
               </svg>
             </div>
-            <div class="title">child 1</div>
+            <div class="sidebar-title">child 1</div>
           </div>
         </div>
-        <div class="link">
-          <div class="content" [routerLink]="['/configuration']" [queryParams]="{ 'child': '2' }"
+        <div class="sidebar-link">
+          <div class="sidebar-content" [routerLink]="['/configuration']" [queryParams]="{ 'child': '2' }"
             [routerLinkActive]="'active'">
-            <div class="icon">
+            <div class="sidebar-icon">
               <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
@@ -95,13 +95,13 @@
                 </g>
               </svg>
             </div>
-            <div class="title">child 2</div>
+            <div class="sidebar-title">child 2</div>
           </div>
         </div>
-        <div class="link">
-          <div class="content" [routerLink]="['/configuration']" [queryParams]="{ 'child': '3' }"
+        <div class="sidebar-link">
+          <div class="sidebar-content" [routerLink]="['/configuration']" [queryParams]="{ 'child': '3' }"
             [routerLinkActive]="'active'">
-            <div class="icon">
+            <div class="sidebar-icon">
               <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
@@ -118,14 +118,14 @@
                 </g>
               </svg>
             </div>
-            <div class="title">child 3</div>
+            <div class="sidebar-title">child 3</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="link">
-      <div class="content" [routerLink]="['/bookings']" [routerLinkActive]="'active'">
-        <div class="icon">
+    <div class="sidebar-link">
+      <div class="sidebar-content" [routerLink]="['/bookings']" [routerLinkActive]="'active'">
+        <div class="sidebar-icon">
           <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
@@ -142,7 +142,7 @@
             </g>
           </svg>
         </div>
-        <div class="title">Bookings</div>
+        <div class="sidebar-title">Bookings</div>
       </div>
     </div>
   </div>
