@@ -41,7 +41,7 @@ returnText(key : string, value : string){
 	//   this.auth.signedIn.subscribe(pp =>{
     //   return pp;
     // })
-
+	this.load();
   }
 
   async selectLanguage(lang : string){
@@ -50,6 +50,10 @@ returnText(key : string, value : string){
 	  this.appService.currentTranslation = await this.appService.fetchJSON(lang);
 	  this.translate.use(lang);
 	  //await alert(this.translate.currentLang);
+  }
+
+  async load(){
+	  await this.appService.defaultBrowserLanguage();
   }
 
  returnLanguageString(lang : string) : string{

@@ -8,7 +8,13 @@ import { Router } from '@angular/router';
 
 export class AppService {
 
-  constructor(private router : Router) { }
+  constructor(private router : Router) {
+	  this.init();
+  }
+
+  async init(){
+	  this.currentTranslation = await this.fetchJSON(await this.defaultBrowserLanguage());
+  }
 
 	languages = new Array<string>();
 	currentTranslation = new Object();
@@ -21,8 +27,24 @@ export class AppService {
 	   this.router.navigate([page]);
   }
 
- async fetchJSON(lang : string) : Promise<string> {
-	const res = await fetch('http://127.0.0.1:4201/assets/i18n/' + lang + '.json')
+async defaultBrowserLanguage() : Promise<string>{
+	let lang = await window.navigator.languages ? window.navigator.languages[0] : 'en';
+    lang = lang || window.navigator.language;// || window.navigator.browserLanguage;// || window.navigator.userLanguage;
+
+	let shortLang = lang;
+	if (shortLang.indexOf('-') !== -1)
+    	shortLang = shortLang.split('-')[0];
+
+		if (shortLang.indexOf('_') !== -1)
+    	shortLang = shortLang.split('_')[0];
+
+		console.log(lang, shortLang);
+
+		return await shortLang.match(/en|fr/) ? shortLang : 'en'
+}
+
+async fetchJSON(lang : string) : Promise<string> {
+	const res = await fetch('/assets/i18n/' + lang + '.json')
 	.then((response) => {
 		return response.json()
 	});
