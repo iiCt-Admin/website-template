@@ -9,7 +9,7 @@ import { AppService } from './services/app.service';
 })
 export class AppComponent {
   title = 'iict-template';
-  sidebarExpanded = true;
+  sidebarExpanded = false;
 
   constructor(public appService : AppService){
 	  this.appService.loadDefaultTranslations();
