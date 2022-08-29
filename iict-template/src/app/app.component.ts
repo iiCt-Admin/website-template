@@ -12,7 +12,7 @@ export class AppComponent {
   sidebarExpanded = false;
 
   constructor(public appService : AppService){
-	  this.appService.loadDefaultTranslations();
+	  this.appService.init();
   }
 
 }
