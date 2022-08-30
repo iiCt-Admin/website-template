@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { MainMenuComponent } from './main-menu/main-menu.component';
-import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { FaqComponent } from './faq/faq.component';
 import { LegalComponent } from './legal/legal.component';
