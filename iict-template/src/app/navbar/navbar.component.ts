@@ -73,13 +73,13 @@ returnText(key : string, value : string){
   }
 
 login(){
-		this.appService.switch('login');
+		this.appService.switchPage('login');
 		//this.auth.signedIn = true;
 	}
 
 logout(){
 		this.authService.signedIn = false;
-		this.appService.switch('home');
+		this.appService.switchPage('home');
 	}
 
 }

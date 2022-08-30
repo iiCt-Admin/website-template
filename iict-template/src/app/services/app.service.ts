@@ -18,7 +18,7 @@ export class AppService {
 
 	currentTranslation = new Object();
 
-  switch(page : string): void {
+  switchPage(page : string): void {
 	   this.router.navigate([page]);
   }
 

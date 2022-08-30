@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     var password = (<HTMLInputElement>document.getElementById('inputPassword')).value;
 
 	this.authService.signedIn = true;
-	this.appService.switch('home');
+	this.appService.switchPage('home');
     //var good: boolean = await this.authService.login(email, password);
 
   }
