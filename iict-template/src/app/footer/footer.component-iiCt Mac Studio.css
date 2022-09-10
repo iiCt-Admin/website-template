@@ -1,0 +1,11 @@
+.footer {
+	height:30px;
+	color:white;
+	background-color: #1976d2;
+}
+
+.no-padding {
+	padding-top: 0;
+	padding-bottom: 0;
+	--bs-bg-opacity: 0;
+}

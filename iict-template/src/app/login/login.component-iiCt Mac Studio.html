@@ -1,0 +1,37 @@
+<div class="container-fluid">
+<p class="d-flex justify-content-center page-center">{{ 'LOGIN.Title' | translate }}</p>
+
+<div class="container-fluid center d-flex signin-width">
+
+
+  <form class="form-control center login-email">
+
+    <div class="form-group m-2">
+      <label class="sr-only d-flex justify-content-center" for="inputEmail">Email address</label>
+     <input type="email" class="form-control" id="inputEmail" placeholder="Email"/>
+    </div>
+
+
+    <div class="form-group">
+
+      <label class="sr-only d-flex justify-content-center" for="inputPassword">Password</label>
+
+
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+    </div>
+<!-- Left here incase you want to include this feature for a client -->
+    <!-- <div class="checkbox">
+      <label>
+        <input type="checkbox"> Remember me
+      </label>
+    </div> -->
+    <p class="d-flex justify-content-center">
+    <button class="btn btn-primary nav-bar-button-color" type="submit" (click)="handleLogin()">{{ 'LOGIN.SignIn' | translate }}</button>
+    </p>
+
+
+  </form>
+
+</div>
+</div>
