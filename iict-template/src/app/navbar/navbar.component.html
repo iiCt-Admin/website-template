@@ -1,23 +1,33 @@
 <!-- Toolbar -->
-<nav class="navbar navbar-expand-md">
+<nav class="navbar navbar-expand-md no-padding">
 	<button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed"
 	      aria-label="Toggle navigation" (click)="collapsed = !collapsed">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-<div class="navbar-nav container-fluid toolbar d-flex sticky-top" [class.collapse]="collapsed" role="banner">
+<div class="navbar-nav container-fluid toolbar d-flex fixed-top" [class.collapse]="collapsed" role="banner">
   <img
     width="40"
     alt="Angular Logo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
   />
-  <span> {{ 'NAVBAR.Title' | translate }}</span>
+  <span> {{ returnText("NAVBAR", "Title") }}</span>
 	<div class="spacer"></div>
   	<label>
-         {{ 'HOME.SELECT' | translate }}
-         <select #langSelect (change)="translate.use(langSelect.value)">
-           <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
-         </select>
+		 {{ returnText('HOME', 'SELECT') }}
        </label>
+
+	   <div ngbDropdown class="d-inline-block">
+	 	<button type="button" class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>{{ this.returnLanguageString(this.translate.currentLang) }}</button>
+	 	<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+			<div *ngFor="let lang of this.languages">
+		  <button (click)="this.selectLanguage(lang.language)" ngbDropdownItem>
+
+				 <img class="languageImg" src="{{ returnLanguageImage(lang.language) }}">
+				 {{ lang.name }}
+			  </button>
+			  </div>
+	 	</div>
+	 </div>
 
     <div class="spacer"></div>
     <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
@@ -33,18 +43,18 @@
       </svg>
     </a>
 
-	<button class="btn btn-secondary" (click)="this.appService.switch('home')">{{ 'NAVBAR.Home' | translate }}</button>
+	<button class="btn btn-secondary" (click)="this.appService.switchPage('home')">{{ returnText('NAVBAR', 'Home') }}</button>
 
-	<button class="btn btn-secondary" (click)="this.appService.switch('contacts')">{{ 'NAVBAR.Contacts' | translate }}</button>
-	<button class="btn btn-secondary" (click)="this.appService.switch('legal')">{{ 'NAVBAR.Legal' | translate }}</button>
+	<button class="btn btn-secondary" (click)="this.appService.switchPage('team')">{{ returnText('NAVBAR', 'Team') }}</button>
+	<button class="btn btn-secondary" (click)="this.appService.switchPage('contacts')">{{ returnText('NAVBAR', 'Contacts') }}</button>
+	<button class="btn btn-secondary" (click)="this.appService.switchPage('legal')">{{ returnText('NAVBAR', 'Legal') }}</button>
 
-
-	<!-- <button (click)="switch('login')">Login</button> -->
 	<div *ngIf="this.authService.signedIn == false; else otherBlock">
-	<button class="btn btn-secondary" (click)="login()">{{ 'NAVBAR.SignIn' | translate }}</button>
+	<button class="btn btn-secondary" (click)="login()">{{ returnText('NAVBAR', 'SignIn') }}</button>
 	</div>
 	<ng-template #otherBlock>
-		<button class="btn btn-secondary" (click)="logout()">{{ 'NAVBAR.SignOut' | translate }}</button>
+		<button class="btn btn-secondary" (click)="logout()">{{ returnText('NAVBAR', 'SignOut') }}</button>
 		</ng-template>
+		<button class="btn btn-secondary" (click)="this.appService.switchPage('signup')">{{ returnText('NAVBAR', 'SignUp') }}</button>
 </div>
 </nav>

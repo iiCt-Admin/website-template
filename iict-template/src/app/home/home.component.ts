@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   login(){
-	this.appService.switch('login');
+	this.appService.switchPage('login');
   }
 
 }

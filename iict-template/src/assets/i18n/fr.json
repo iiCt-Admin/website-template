@@ -6,8 +6,10 @@
   	"NAVBAR":{
   		"Title":"Bienvenue sur",
   		"Home":"Accueil",
+		"Team":"Team",
   		"Contacts":"Contacts",
   		"Legal":"Mentions légales",
+		"SignUp":"S'enregistrer",
   		"SignIn":"S'inscrire",
   		"SignOut":"Se déconnecter"
   	},
