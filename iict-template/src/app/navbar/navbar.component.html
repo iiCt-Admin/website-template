@@ -1,5 +1,5 @@
 <!-- Toolbar -->
-<nav class="navbar navbar-expand-md no-padding">
+<nav class="navbar navbar-expand-md">
 	<button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed"
 	      aria-label="Toggle navigation" (click)="collapsed = !collapsed">
 	      <span class="navbar-toggler-icon"></span>
@@ -8,13 +8,13 @@
   <img
     width="40"
     alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    src="/assets/img/iiCt_Round_Plain.png"
   />
-  <span> {{ returnText("NAVBAR", "Title") }}</span>
+  <H2> {{ returnText("NAVBAR", "Nav_Company") }}</H2>
 	<div class="spacer"></div>
-  	<label>
-		 {{ returnText('HOME', 'SELECT') }}
-       </label>
+  	<label class="one_space_r">
+		 {{ returnText('HOME', 'Home_Select') }}
+    </label>
 
 	   <div ngbDropdown class="d-inline-block">
 	 	<button type="button" class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>{{ this.returnLanguageString(this.translate.currentLang) }}</button>
@@ -22,7 +22,7 @@
 			<div *ngFor="let lang of this.languages">
 		  <button (click)="this.selectLanguage(lang.language)" ngbDropdownItem>
 
-				 <img class="languageImg" src="{{ returnLanguageImage(lang.language) }}">
+				 <img class="languageImg languageText" src="{{ returnLanguageImage(lang.language) }}">
 				 {{ lang.name }}
 			  </button>
 			  </div>
@@ -43,18 +43,18 @@
       </svg>
     </a>
 
-	<button class="btn btn-secondary" (click)="this.appService.switchPage('home')">{{ returnText('NAVBAR', 'Home') }}</button>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('home')">{{ returnText('NAVBAR', 'Home') }}</button>
 
-	<button class="btn btn-secondary" (click)="this.appService.switchPage('team')">{{ returnText('NAVBAR', 'Team') }}</button>
-	<button class="btn btn-secondary" (click)="this.appService.switchPage('contacts')">{{ returnText('NAVBAR', 'Contacts') }}</button>
-	<button class="btn btn-secondary" (click)="this.appService.switchPage('legal')">{{ returnText('NAVBAR', 'Legal') }}</button>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('team')">{{ returnText('NAVBAR', 'Team') }}</button>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('contacts')">{{ returnText('NAVBAR', 'Contacts') }}</button>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('legal')">{{ returnText('NAVBAR', 'Legal') }}</button>
 
 	<div *ngIf="this.authService.signedIn == false; else otherBlock">
-	<button class="btn btn-secondary" (click)="login()">{{ returnText('NAVBAR', 'SignIn') }}</button>
+	<button class="one_space_r btn btn-primary" (click)="login()">{{ returnText('NAVBAR', 'SignIn') }}</button>
 	</div>
 	<ng-template #otherBlock>
-		<button class="btn btn-secondary" (click)="logout()">{{ returnText('NAVBAR', 'SignOut') }}</button>
+		<button class="one_space_r btn btn-primary" (click)="logout()">{{ returnText('NAVBAR', 'SignOut') }}</button>
 		</ng-template>
-		<button class="btn btn-secondary" (click)="this.appService.switchPage('signup')">{{ returnText('NAVBAR', 'SignUp') }}</button>
+		<button class="btn btn-warning" (click)="this.appService.switchPage('signup')">{{ returnText('NAVBAR', 'SignUp') }}</button>
 </div>
 </nav>

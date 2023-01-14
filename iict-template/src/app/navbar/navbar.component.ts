@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
 		name:'English',
 		language: 'en'},
 		{
-		name:'French',
+		name:'francais',
 		language: 'fr'
 	},
 ]

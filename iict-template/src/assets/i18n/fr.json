@@ -1,10 +1,10 @@
 {
   "HOME": {
-    "TITLE": "Bonjour Angular avec ngx-translate !",
-    "SELECT": "Changer la langue"
+    "Home_Title": "Bonjour Angular avec ngx-translate !",
+    "Home_Select": "langue"
   },
   	"NAVBAR":{
-  		"Title":"Bienvenue sur",
+  		"Nav_Company":"Company Name",
   		"Home":"Accueil",
 		"Team":"Team",
   		"Contacts":"Contacts",
