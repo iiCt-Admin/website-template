@@ -18,6 +18,9 @@
 		"SignIn":"Sign In"
 	},
 	"FOOTER":{
-		"TITLE":"(c) 2022 Some Company"
+    "Footer":"Footer",
+		"Footer_Title":"(c) 2022 Some Company",
+    "Title_1":"this is the 1st title",
+    "Title_2":"this is the 2nd title"
 	}
 }
