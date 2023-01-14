@@ -1,10 +1,10 @@
 {
   "HOME": {
-    "TITLE": "Bonjour Angular avec ngx-translate !",
-    "SELECT": "Changer la langue"
+    "Home_Title": "Bonjour Angular avec ngx-translate !",
+    "Home_Select": "langue"
   },
   	"NAVBAR":{
-  		"Title":"Bienvenue sur",
+  		"Nav_Company":"Company Name",
   		"Home":"Accueil",
 		"Team":"Team",
   		"Contacts":"Contacts",
@@ -18,6 +18,9 @@
 		"SignIn":"S'inscrire"
 	},
 	"FOOTER":{
-		"TITLE":"(c) 2022 Some Company"
+		"Footer":"Footer-fr",
+		"Footer_Title":"(c) 2022 Some Company",
+    "Title_1":"this is the 1st title - fr",
+    "Title_2":"this is the 2nd title-fr"
 	}
 }

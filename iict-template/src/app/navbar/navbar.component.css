@@ -1,10 +1,28 @@
+
+/* Modifies the language dropdown elements */
 .languageImg {
-	width:46px;
-	height:46px;
+	width:24px;
+	height:24px;
+  margin-left: -10px;
+  margin-right: 1px;
 }
 
-.no-padding {
-	padding-top: 0;
-	padding-bottom: 0;
-	--bs-bg-opacity: 0;
+.languageText {
+  font-weight: 600;
+  font-size: smaller;
 }
+
+/* common spacer function to add space to the right of an object */
+.one_space_r {
+  margin-right: .5rem;
+}
+
+/* modifies the secondary button function's look and feel */
+.btn-secondary {
+  background-color: rgb(247, 143, 23);
+  border-radius: 25px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+

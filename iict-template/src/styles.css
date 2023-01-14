@@ -1,26 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-:host {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  color: #333;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 8px 0;
-}
-
-p {
-  margin: 0;
-}
 
 .spacer {
   flex: 1;
@@ -34,18 +14,18 @@ p {
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #1976d2;
+  background-color: #f99600;
   color: white;
   font-weight: 600;
 }
 
-.toolbar img {
+.toolbar img {    /* left side logo control  */
   margin: 0 16px;
 }
 
 .toolbar #twitter-logo {
   height: 40px;
-  margin: 0 8px;
+  margin: 0 0px;
 }
 
 .toolbar #youtube-logo {
@@ -67,18 +47,9 @@ p {
   align-items: center;
 }
 
-svg.material-icons {
-  height: 24px;
-  width: auto;
-}
 
-svg.material-icons:not(:last-child) {
-  margin-right: 8px;
-}
 
-.card svg.material-icons path {
-  fill: #888;
-}
+
 
 .card-container {
   display: flex;
@@ -127,7 +98,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card.highlight-card {
-  background-color: #1976d2;
+  background-color: #f99600;
   color: white;
   font-weight: 600;
   border: none;
@@ -140,20 +111,7 @@ svg.material-icons:not(:last-child) {
   margin-left: 60px;
 }
 
-svg#rocket {
-  width: 80px;
-  position: absolute;
-  left: -10px;
-  top: -24px;
-}
 
-svg#rocket-smoke {
-  height: calc(100vh - 95px);
-  position: absolute;
-  top: 10px;
-  right: 180px;
-  z-index: -10;
-}
 
 a,
 a:visited,
@@ -221,6 +179,7 @@ a:hover {
 
 footer {
   margin-top: 8px;
+  background-color: #f99600;
   display: flex;
   align-items: center;
   line-height: 20px;
@@ -231,38 +190,8 @@ footer a {
   align-items: center;
 }
 
-.github-star-badge {
-  color: #24292e;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  padding: 3px 10px;
-  border: 1px solid rgba(27,31,35,.2);
-  border-radius: 3px;
-  background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-  margin-left: 4px;
-  font-weight: 600;
-}
 
-.github-star-badge:hover {
-  background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-  border-color: rgba(27,31,35,.35);
-  background-position: -.5em;
-}
 
-.github-star-badge .material-icons {
-  height: 16px;
-  width: 16px;
-  margin-right: 4px;
-}
-
-svg#clouds {
-  position: fixed;
-  bottom: -160px;
-  left: -230px;
-  z-index: -10;
-  width: 1920px;
-}
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
@@ -280,15 +209,9 @@ svg#clouds {
 	margin-left: 72px;
   }
 
-  svg#rocket-smoke {
-	right: 120px;
-	transform: rotate(-5deg);
-  }
+
 }
 
 @media screen and (max-width: 575px) {
-  svg#rocket-smoke {
-	display: none;
-	visibility: hidden;
-  }
+
 }
