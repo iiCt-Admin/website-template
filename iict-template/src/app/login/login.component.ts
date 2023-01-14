@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { AuthenticationService } from '../services/authentication.service';
 import { AppService } from '../services/app.service';
 
-import {TranslateService} from '@ngx-translate/core';
+// import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +13,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public translate: TranslateService, public authService: AuthenticationService, private appService : AppService, private router : Router) { }
+  constructor(public authService: AuthenticationService, public appService : AppService, private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     var password = (<HTMLInputElement>document.getElementById('inputPassword')).value;
 
 	this.authService.signedIn = true;
-	this.appService.switch('home');
+	this.appService.switchPage('home');
     //var good: boolean = await this.authService.login(email, password);
 
   }

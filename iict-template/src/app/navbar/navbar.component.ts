@@ -16,6 +16,15 @@ import { AppService } from '../services/app.service'
 export class NavbarComponent implements OnInit {
 
 	collapsed = false;
+	languages = [
+		{
+		name:'English',
+		language: 'en'},
+		{
+		name:'French',
+		language: 'fr'
+	},
+]
   constructor(public translate: TranslateService, public authService : AuthenticationService,public appService : AppService) {
 	  this.translate.addLangs(['en', 'fr']);
 	     this.translate.setDefaultLang('en');
@@ -24,31 +33,53 @@ export class NavbarComponent implements OnInit {
 	     //this.translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
   }
 
+returnText(key : string, value : string){
+	return this.appService.returnText(key, value);
+}
   ngOnInit(): void {
 	  this.authService.signedIn = false;
 	//   this.auth.signedIn.subscribe(pp =>{
     //   return pp;
     // })
-
+	this.load();
   }
 
-	login(){
-		//alert("login");
-		this.appService.switch('login');
+  async selectLanguage(lang : string){
+
+	  // this.translate.setDefaultLang(lang);
+	  this.appService.currentTranslation = await this.appService.fetchJSON(lang);
+	  this.translate.use(lang);
+	  //await alert(this.translate.currentLang);
+  }
+
+  async load(){
+	  await this.appService.defaultBrowserLanguage();
+  }
+
+ returnLanguageString(lang : string) : string{
+
+	  for(let index = 0; index < this.languages.length; index++){
+		  if (lang == this.languages[index].language) return this.languages[index].name;
+	  }
+	  return 'English';
+  }
+
+ returnLanguageImage(lang : string) : string{
+
+	  for(let index = 0; index < this.languages.length; index++){
+		  if (lang == this.languages[index].language) return './assets/img/lang_' + lang + '.png';
+	  }
+	  return '';
+  }
+
+login(){
+		this.appService.switchPage('login');
 		//this.auth.signedIn = true;
 	}
 
-	logout(){
-		//alert("logout");
+logout(){
 		this.authService.signedIn = false;
-		this.appService.switch('home');
+		this.appService.switchPage('home');
 	}
-
-	// checkLogin():boolean{
-	// 	if (this.auth.signedIn == true)
-	// 		return true;
-	// 	else
-	// 	return true;
-	// }
 
 }

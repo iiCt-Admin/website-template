@@ -13,16 +13,16 @@
 .sidebar {
   position: fixed;
   left: 0;
-  top: 0;
+  top: 3.75rem;
 
   height: 100vh;
   transition: 0.3s;
 
-  width: 60px;
+  width: 50px;
   &.expanded {
     width: 150px;
 
-    .header {
+    .sidebar-header {
       h1 {
         margin-left: 0px;
       }
@@ -33,18 +33,18 @@
         }
       }
     }
-    .content {
-      .link {
-        .content {
-          .title {
+    .sidebar-content {
+      .sidebar-link {
+        .sidebar-content {
+          .sidebar-title {
             max-width: 100px;
           }
-          .icon {
+          .sidebar-icon {
             margin-right: 3px;
           }
         }
-        .children {
-          .content {
+        .sidebar-children {
+          .sidebar-content {
             padding-left: 30px;
           }
         }
@@ -55,7 +55,7 @@
   background: #1d1e2c;
   color: #6d6e7e;
 
-  .header {
+  .sidebar-header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,10 +96,10 @@
     }
   }
 
-  .content {
-    .link {
-      .children {
-        .content {
+  .sidebar-content {
+    .sidebar-link {
+      .sidebar-children {
+        .sidebar-content {
           background: #27283a;
           // padding-left: 30px;
           padding-left: 10px;
@@ -109,7 +109,7 @@
           }
         }
       }
-      .content {
+      .sidebar-content {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -121,7 +121,7 @@
 
         &:hover {
           background: #0f1017;
-          .title {
+          .sidebar-title {
             color: white;
           }
           svg {
@@ -131,19 +131,19 @@
 
         &.active {
           background: #0f1017;
-          .title {
+          .sidebar-title {
             color: white;
           }
         }
 
-        .icon {
+        .sidebar-icon {
           flex: 0 0 30px;
           display: flex;
           align-items: center;
           justify-content: center;
           margin-right: 0px;
         }
-        .title {
+        .sidebar-title {
           flex: 1;
           // display: none;
           color: #6d6e7e;

@@ -6,7 +6,6 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainMenuComponent } from './main-menu/main-menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { FaqComponent } from './faq/faq.component';
@@ -26,6 +25,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { SignupComponent } from './signup/signup.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -35,7 +37,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    MainMenuComponent,
     FooterComponent,
     LoginComponent,
     FaqComponent,
@@ -45,6 +46,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TeamsComponent,
     AdminComponent,
     NavbarComponent,
+    SignupComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AngularFireModule.initializeApp(environment.firebase, 'mytestapp'),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
+    NgbModule,
   ],
   providers: [AuthenticationService, AppService, FirebaseService],
   bootstrap: [AppComponent]
