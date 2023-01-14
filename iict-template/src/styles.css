@@ -34,18 +34,18 @@ p {
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #1976d2;
+  background-color: #f99600;
   color: white;
   font-weight: 600;
 }
 
-.toolbar img {
+.toolbar img {    /* left side logo control  */
   margin: 0 16px;
 }
 
 .toolbar #twitter-logo {
   height: 40px;
-  margin: 0 8px;
+  margin: 0 0px;
 }
 
 .toolbar #youtube-logo {
@@ -127,7 +127,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card.highlight-card {
-  background-color: #1976d2;
+  background-color: #f99600;
   color: white;
   font-weight: 600;
   border: none;
@@ -221,6 +221,7 @@ a:hover {
 
 footer {
   margin-top: 8px;
+  background-color: #f99600;
   display: flex;
   align-items: center;
   line-height: 20px;
