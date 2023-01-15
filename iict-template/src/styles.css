@@ -1,6 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* common spacer functions to add space to the right or left of an object */
+.one_space_r {
+  margin-right: .5rem;
+}
 
-
+.one_space_l {
+  margin-right: .5rem;
+}
 
 .spacer {
   flex: 1;
