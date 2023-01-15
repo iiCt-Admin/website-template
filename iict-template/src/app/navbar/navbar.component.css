@@ -12,8 +12,12 @@
   font-size: smaller;
 }
 
-/* common spacer function to add space to the right of an object */
+/* common spacer functions to add space to the right or left of an object */
 .one_space_r {
+  margin-right: .5rem;
+}
+
+.one_space_l {
   margin-right: .5rem;
 }
 
