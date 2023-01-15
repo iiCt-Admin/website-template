@@ -12,7 +12,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public translate : TranslateService, public authService : AuthenticationService, private appService : AppService, private router : Router) { }
+  constructor(public translate : TranslateService, public authService : AuthenticationService, public appService : AppService, private router : Router) { }
 
   ngOnInit(): void {
   }

@@ -11,7 +11,10 @@
   		"Legal":"Mentions légales",
 		"SignUp":"enregistrer",
   		"SignIn":"inscrire",
-  		"SignOut":"déconnecter"
+  		"SignOut":"déconnecter",
+		"About":"About",
+		"News": "News",
+		"Gallery":"Gallery"
   	},
 	"LOGIN" : {
 		"Title":"Page de connexion",

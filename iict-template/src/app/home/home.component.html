@@ -4,5 +4,8 @@
 <div *ngIf="this.authService.signedIn == true">
 	<p>Signed in</p>
 </div>
+<div>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('about')">about</button>
+</div>
 
 </div>

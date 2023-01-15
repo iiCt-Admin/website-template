@@ -8,6 +8,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { TeamsComponent } from './teams/teams.component';
 import { AdminComponent } from './admin/admin.component';
 import { SignupComponent } from './signup/signup.component';
+import { AboutComponent } from './about/about.component';
+import { NewsComponent } from './news/news.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 const routes: Routes = [
@@ -21,6 +24,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'about', component: AboutComponent},
+  { path: 'news', component: NewsComponent},
+  { path: 'gallery', component: GalleryComponent},
   // { path: 'account', component: AccountComponent },
   // { path: 'self-manager-dashboard', component: SelfmanagerPageComponent },
   // { path: 'employee-dashboard', component: EmployeePageComponent },

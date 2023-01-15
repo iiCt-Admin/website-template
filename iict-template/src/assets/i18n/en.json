@@ -11,7 +11,10 @@
 		"Legal":"Legal",
 		"SignUp":"Sign Up",
 		"SignIn":"Sign In",
-		"SignOut":"Sign Out"
+		"SignOut":"Sign Out",
+		"About":"About",
+		"News": "News",
+		"Gallery":"Gallery"
 	},
 	"LOGIN" : {
 		"Title":"Sign In Page",
