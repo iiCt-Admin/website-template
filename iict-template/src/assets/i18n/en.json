@@ -5,18 +5,26 @@
 },
 	"NAVBAR":{
 		"Nav_Company":"Company Name",
-		"Home":"Home",
-		"Team":"Team",
-		"Contacts":"Contacts",
-		"Legal":"Legal",
-		"SignUp":"Sign Up",
-		"SignIn":"Sign In",
-		"SignOut":"Sign Out",
-		"About":"About",
-		"News": "News",
-		"Gallery":"Gallery"
+		"SignOut":"Sign Out"
 	},
-	"LOGIN" : {
+  "COMPONENT":{
+    "About":"About",
+    "Admin":"Admin",
+    "Contacts":"Contacts",
+    "Faq":"FAQ",
+    "Footer":"Footer",
+    "Gallery":"Gallery",
+		"Home":"Home",
+    "Legal":"Legal",
+    "Login":"Log In",
+    "News": "News",
+		"Navbar":"Navbar",
+		"Sidenav":"Left Menu",
+    "SignIn":"Sign In",
+		"SignUp":"Sign Up",
+		"Teams":"Team"
+	},
+	"SIGNIN" : {
 		"Title":"Sign In Page",
 		"SignIn":"Sign In"
 	},
