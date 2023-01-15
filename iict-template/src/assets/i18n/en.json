@@ -1,0 +1,49 @@
+{
+  "HOME": {
+    "Home_Title": "Hello Angular with ngx-translate!",
+    "Home_Select": "Language"
+},
+	"NAVBAR":{
+		"Nav_Company":"Company Name",
+		"Nav_SignOut":"Sign Out"
+	},
+  "COMPONENT":{
+    "About":"About",
+    "Admin":"Admin",
+    "Contacts":"Contacts",
+    "Faq":"FAQ",
+    "Footer":"Footer",
+    "Gallery":"Gallery",
+		"Home":"Home",
+    "Legal":"Legal",
+    "Login":"Log In",
+    "News": "News",
+		"Navbar":"Navbar",
+		"Sidenav":"Left Menu",
+    "SignIn":"Sign In",
+		"SignUp":"Sign Up",
+		"Teams":"Team"
+	},
+	"SIGNIN" : {
+		"Signin_Title":"Sign In Page",
+		"Signin_btn_Signin":"Sign In"
+	},
+	"CONTACTS" : {
+		"Contacts_section_title": "Contact Us",
+    "Contacts_section_subtitle": "Contact Information",
+    "Contacts_location": "Location:",
+    "Contacts_email_short": "Email:",
+    "Contacts_call": "Call:",
+    "Contacts_name": "Your Name",
+    "Contacts_email_long": "Your email",
+    "Contacts_message": "Your message",
+    "Contacts_subject": "Subject"
+	},
+
+	"FOOTER":{
+    "Footer":"Footer",
+		"Footer_Title":"(c) 2022 Some Company",
+    "Title_1":"this is the 1st title",
+    "Title_2":"this is the 2nd title"
+	}
+}

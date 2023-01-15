@@ -1,0 +1,23 @@
+
+/* Modifies the language dropdown elements */
+.languageImg {
+	width:24px;
+	height:24px;
+  margin-left: -10px;
+  margin-right: 2px;
+}
+
+.languageText {
+  font-weight: 600;
+  font-size: smaller;
+}
+
+/* customizes the secondary button function's look and feel */
+.btn-secondary {
+  background-color: rgb(247, 143, 23);
+  border-radius: 25px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+
