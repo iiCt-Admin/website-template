@@ -4,7 +4,7 @@
 	width:24px;
 	height:24px;
   margin-left: -10px;
-  margin-right: 1px;
+  margin-right: 2px;
 }
 
 .languageText {
@@ -12,16 +12,7 @@
   font-size: smaller;
 }
 
-/* common spacer functions to add space to the right or left of an object */
-.one_space_r {
-  margin-right: .5rem;
-}
-
-.one_space_l {
-  margin-right: .5rem;
-}
-
-/* modifies the secondary button function's look and feel */
+/* customizes the secondary button function's look and feel */
 .btn-secondary {
   background-color: rgb(247, 143, 23);
   border-radius: 25px;

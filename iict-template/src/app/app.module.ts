@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';import { environment } from '../environments/environment';
-
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
@@ -19,9 +18,7 @@ import { AdminComponent } from './admin/admin.component';
 import { AuthenticationService } from './services/authentication.service';
 import { AppService } from './services/app.service';
 import { FirebaseService } from './services/firebase.service';
-
 import { NavbarComponent } from './navbar/navbar.component';
-
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';

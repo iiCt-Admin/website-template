@@ -9,13 +9,13 @@
 		"Team":"Team",
   		"Contacts":"Contacts",
   		"Legal":"Mentions légales",
-		"SignUp":"S'enregistrer",
-  		"SignIn":"S'inscrire",
-  		"SignOut":"Se déconnecter"
+		"SignUp":"enregistrer",
+  		"SignIn":"inscrire",
+  		"SignOut":"déconnecter"
   	},
 	"LOGIN" : {
 		"Title":"Page de connexion",
-		"SignIn":"S'inscrire"
+		"SignIn":"inscrire"
 	},
 	"FOOTER":{
 		"Footer":"Footer-fr",
