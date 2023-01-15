@@ -3,22 +3,42 @@
     "Home_Title": "Bonjour Angular avec ngx-translate !",
     "Home_Select": "langue"
   },
-  	"NAVBAR":{
-  		"Nav_Company":"Company Name",
-  		"Home":"Accueil",
-		"Team":"Team",
-  		"Contacts":"Contacts",
-  		"Legal":"Mentions légales",
+  "NAVBAR":{
+		"Nav_Company":"Company Name",
+		"SignOut":"déconnecter"
+	},
+  "COMPONENT":{
+    "About":"About",
+    "Admin":"Admin",
+    "Contacts":"Contacts",
+    "Faq":"FAQ",
+    "Footer":"Footer",
+    "Gallery":"Gallery",
+		"Home":"Accueil",
+    "Legal":"Mentions légales",
+    "Login":"inscrire",
+    "News": "Nouvelles",
+		"Navbar":"Navbar",
+		"Sidenav":"Left Menu",
+    "SignIn":"inscrire",
 		"SignUp":"enregistrer",
-  		"SignIn":"inscrire",
-  		"SignOut":"déconnecter",
-		"About":"About",
-		"News": "News",
-		"Gallery":"Gallery"
-  	},
-	"LOGIN" : {
+		"Teams":"equipe"
+	},
+	"SIGNIN" : {
 		"Title":"Page de connexion",
 		"SignIn":"inscrire"
+	},
+  	"CONTACTS" : {
+		"contact_section_title": "contactez-nous",
+    "contact_section_subtitle": "informations de contact",
+    "contact_location": "location:",
+    "contact_email_short": "email:",
+    "contact_call": "appeler:",
+    "contact_name": "votre nom",
+    "contact_email_long": "votre email",
+    "contact_message": "votre message",
+    "contact_subject": "sujet"
+
 	},
 	"FOOTER":{
 		"Footer":"Footer-fr",

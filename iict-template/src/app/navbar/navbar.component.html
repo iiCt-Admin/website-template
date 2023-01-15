@@ -43,18 +43,18 @@
       </svg>
     </a>
 
-	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('home')">{{ returnText('NAVBAR', 'Home') }}</button>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('home')">{{ returnText('COMPONENT', 'Home') }}</button>
 
-	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('team')">{{ returnText('NAVBAR', 'Team') }}</button>
-	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('contacts')">{{ returnText('NAVBAR', 'Contacts') }}</button>
-	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('legal')">{{ returnText('NAVBAR', 'Legal') }}</button>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('team')">{{ returnText('COMPONENT', 'Teams') }}</button>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('contacts')">{{ returnText('COMPONENT', 'Contacts') }}</button>
+	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('legal')">{{ returnText('COMPONENT', 'Legal') }}</button>
 
 	<div *ngIf="this.authService.signedIn == false; else otherBlock">
-	<button class="one_space_r btn btn-primary" (click)="login()">{{ returnText('NAVBAR', 'SignIn') }}</button>
+	<button class="one_space_r btn btn-primary" (click)="login()">{{ returnText('COMPONENT', 'SignIn') }}</button>
 	</div>
 	<ng-template #otherBlock>
-		<button class="one_space_r btn btn-primary" (click)="logout()">{{ returnText('NAVBAR', 'SignOut') }}</button>
+		<button class="one_space_r btn btn-primary" (click)="logout()">{{ returnText('COMPONENT', 'SignOut') }}</button>
 		</ng-template>
-		<button class="btn btn-warning" (click)="this.appService.switchPage('signup')">{{ returnText('NAVBAR', 'SignUp') }}</button>
+		<button class="btn btn-warning" (click)="this.appService.switchPage('signup')">{{ returnText('COMPONENT', 'SignUp') }}</button>
 </div>
 </nav>

@@ -50,7 +50,7 @@ async fetchJSON(lang : string) : Promise<string> {
 async loadDefaultTranslations(){
 	this.currentTranslation = await this.fetchJSON('en');
 }
-
+/* returns the text from the json file based on language - key: Json Title & value: display text */
 returnText(key : string, value : string) : string {
 		return this.parseObject(this.currentTranslation, key, value);
 	}
