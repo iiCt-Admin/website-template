@@ -25,6 +25,9 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SignupComponent } from './signup/signup.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from './about/about.component';
+import { NewsComponent } from './news/news.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -45,6 +48,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     NavbarComponent,
     SignupComponent,
     SidenavComponent,
+    AboutComponent,
+    NewsComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
