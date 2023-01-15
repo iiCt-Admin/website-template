@@ -20,6 +20,18 @@
 		"Title":"Sign In Page",
 		"SignIn":"Sign In"
 	},
+	"CONTACTS" : {
+		"contact_section_title": "Contact Us",
+    "contact_section_subtitle": "Contact Information",
+    "contact_location": "Location:",
+    "contact_email_short": "Email:",
+    "contact_call": "Call:",
+    "contact_name": "Your Name",
+    "contact_email_long": "Your email",
+    "contact_message": "Your message",
+    "contact_subject": "Subject"
+	},
+
 	"FOOTER":{
     "Footer":"Footer",
 		"Footer_Title":"(c) 2022 Some Company",

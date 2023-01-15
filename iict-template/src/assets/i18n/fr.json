@@ -20,6 +20,18 @@
 		"Title":"Page de connexion",
 		"SignIn":"inscrire"
 	},
+  	"CONTACTS" : {
+		"contact_section_title": "contactez-nous",
+    "contact_section_subtitle": "informations de contact",
+    "contact_location": "location:",
+    "contact_email_short": "email:",
+    "contact_call": "appeler:",
+    "contact_name": "votre nom",
+    "contact_email_long": "votre email",
+    "contact_message": "votre message",
+    "contact_subject": "sujet"
+
+	},
 	"FOOTER":{
 		"Footer":"Footer-fr",
 		"Footer_Title":"(c) 2022 Some Company",
