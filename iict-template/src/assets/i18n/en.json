@@ -5,7 +5,7 @@
 },
 	"NAVBAR":{
 		"Nav_Company":"Company Name",
-		"SignOut":"Sign Out"
+		"Nav_SignOut":"Sign Out"
 	},
   "COMPONENT":{
     "About":"About",
@@ -25,19 +25,19 @@
 		"Teams":"Team"
 	},
 	"SIGNIN" : {
-		"Title":"Sign In Page",
-		"SignIn":"Sign In"
+		"Signin_Title":"Sign In Page",
+		"Signin_btn_Signin":"Sign In"
 	},
 	"CONTACTS" : {
-		"contact_section_title": "Contact Us",
-    "contact_section_subtitle": "Contact Information",
-    "contact_location": "Location:",
-    "contact_email_short": "Email:",
-    "contact_call": "Call:",
-    "contact_name": "Your Name",
-    "contact_email_long": "Your email",
-    "contact_message": "Your message",
-    "contact_subject": "Subject"
+		"Contacts_section_title": "Contact Us",
+    "Contacts_section_subtitle": "Contact Information",
+    "Contacts_location": "Location:",
+    "Contacts_email_short": "Email:",
+    "Contacts_call": "Call:",
+    "Contacts_name": "Your Name",
+    "Contacts_email_long": "Your email",
+    "Contacts_message": "Your message",
+    "Contacts_subject": "Subject"
 	},
 
 	"FOOTER":{
