@@ -1,3 +1,27 @@
-<div class="container-fluid">
-<p>contacts works!</p>
+<div class="container">
+    <h2 class="text-center mb-5">{{ returnText('CONTACTS', 'Contacts_section_title') }}</h2>
+    <div class="row">
+        <div class="col-md-5">
+            <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+                <div class="form-group ">
+                    <label for="Email">{{ returnText('CONTACTS', 'Contacts_email_short') }}</label>
+                    <input type="email" class="form-control" name="Email" aria-describedby="emailHelp"
+                        placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" formControlName="Email">
+                </div>
+                <div class="form-group">
+                    <label for="fullname">{{ returnText('CONTACTS', 'Contacts_name') }}</label>
+                    <input type="text" class="form-control" name="Fullname" placeholder="{{ returnText('CONTACTS', 'Contacts_name') }}"
+                        formControlName="Fullname">
+                </div>
+                <div class="form-group">
+                    <label for="comment">{{ returnText('CONTACTS', 'Contacts_message') }}</label>
+                    <textarea class="form-control" formControlName="Comment" name="Comment" placeholder="{{ returnText('CONTACTS', 'Contacts_message') }}">
+                    </textarea>
+                </div>
+                <div>
+                    <button type="submit" class="one_space_r btn btn-custom" [disabled]="!FormData.valid">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>

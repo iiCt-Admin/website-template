@@ -28,6 +28,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './services/contact.service';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -54,6 +56,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
 	HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -68,7 +71,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AngularFirestoreModule,
     NgbModule,
   ],
-  providers: [AuthenticationService, AppService, FirebaseService],
+  providers: [AuthenticationService, AppService, FirebaseService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
