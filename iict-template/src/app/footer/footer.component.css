@@ -3,8 +3,9 @@
 --------------------------------------------------------------*/
 
 #footer .footer-top {
-  padding: 15px 0 10px 0;
+  padding: 20px 180px 20px 150px;
   background: rgba(1, 1, 1, 0.7);
+  margin: -15px;
 }
 
 #footer .footer-top .footer-contact h3 { /* column 1 Top Row Company Name */
@@ -152,32 +153,3 @@
   text-decoration: none;
 }
 
-/* .language-btn {
-  background: #ef6603;
-  border: 0;
-  padding: 3px 10px 3px 15px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.option .dropdown {
-  display: block;
-  position: absolute;
-  width: 11rem;
-  height: fit-content;
-  top: 70px;
-  color: #111;
-  right: 15px;
-  bottom: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255, 0.7);
-  overflow-y: auto;
-  transition: 0.3s;
-}
-
-.option .hover {
-  background: red;
-  color: #fff;
-} */

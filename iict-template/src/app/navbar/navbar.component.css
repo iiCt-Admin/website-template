@@ -20,4 +20,31 @@
   font-weight: 600;
 }
 
+.toolbar {
+  height: 60px;
+  align-items: center;
+  background-color: #f99600;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  /* left side logo control  */
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 0px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.7;
+}
 

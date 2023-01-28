@@ -1,59 +1,55 @@
 <section id="contact" class="contact">
-  <div class="container">
-    <div class="section-title center-text" data-aos="zoom-out">
-      <h2 >{{ returnText('CONTACTS', 'Contacts_section_title') }}</h2>
-      <p >{{ returnText('CONTACTS', 'Contacts_section_subtitle') }}</p>
-    </div>
-    <div class="row mt-5">
-
-      <div class="col-lg-4" data-aos="fade-right">
-        <div class="info">
-          <div class="address">
-            <div class="inline">
-              <i class="bx bx-pin icon-settings"></i>
-              <h4>{{ returnText('CONTACTS', 'Contacts_location') }}</h4>
-            </div>
-            <p>{{ returnText('COMPANY', 'Company_address_short') }}</p>
+  <div class="section-title center-text" data-aos="zoom-out">
+    <h2 >{{ returnText('CONTACTS', 'Contacts_section_title') }}</h2>
+    <p >{{ returnText('CONTACTS', 'Contacts_section_subtitle') }}</p>
+  </div>
+  <div class="row mt-5">
+    <div class="col-lg-4" data-aos="fade-right">
+      <div class="info">
+        <div class="address">
+          <div class="inline">
+            <i class="bx bx-pin icon-settings"></i>
+            <h4>{{ returnText('CONTACTS', 'Contacts_location') }}</h4>
           </div>
-          <div class="email">
-            <div class="inline">
-              <i class="bx bx-envelope icon-settings"></i>
-              <h4>{{ returnText('CONTACTS', 'Contacts_email_short') }}</h4>
-            </div>
-            <p>{{ returnText('COMPANY', 'Company_email_support') }}</p>
+          <p>{{ returnText('COMPANY', 'Company_address_short') }}</p>
+        </div>
+        <div class="email">
+          <div class="inline">
+            <i class="bx bx-envelope icon-settings"></i>
+            <h4>{{ returnText('CONTACTS', 'Contacts_email_short') }}</h4>
           </div>
-          <div class="phone">
-            <div class="inline">
-              <i class="bx bx-phone icon-settings"></i>
-              <h4>{{ returnText('CONTACTS', 'Contacts_call') }}</h4>
-            </div>
-            <p>{{ returnText('COMPANY', 'Company_phone_main') }}</p>
+          <p>{{ returnText('COMPANY', 'Company_email_support') }}</p>
+        </div>
+        <div class="phone">
+          <div class="inline">
+            <i class="bx bx-phone icon-settings"></i>
+            <h4>{{ returnText('CONTACTS', 'Contacts_call') }}</h4>
           </div>
+          <p>{{ returnText('COMPANY', 'Company_phone_main') }}</p>
         </div>
       </div>
-
-      <div class="col-md-5">
-            <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-                <div class="form-group py-2">
-                    <label class="labels" for="Email">{{ returnText('CONTACTS', 'Contacts_email_short') }}</label>
-                    <input type="email" class="form-control placeholders" name="Email" aria-describedby="emailHelp"
-                        placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" formControlName="Email">
-                </div>
-                <div class="form-group py-2">
-                    <label class="labels" for="fullname">{{ returnText('CONTACTS', 'Contacts_name') }}</label>
-                    <input type="text" class="form-control placeholders" name="Fullname" placeholder="{{ returnText('CONTACTS', 'Contacts_name') }}"
-                        formControlName="Fullname">
-                </div>
-                <div class="form-group py-2">
-                    <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_message') }}</label>
-                    <textarea class="form-control placeholders" formControlName="Comment" name="Comment" placeholder="{{ returnText('CONTACTS', 'Contacts_message') }}">
-                    </textarea>
-                </div>
-                <div class="inline-centered py-2">
-                    <button type="submit" class="one_space_r btn btn-custom" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_send_message') }} </button>
-                </div>
-            </form>
-        </div>
     </div>
+    <div class="col-md-5">
+          <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+              <div class="form-group py-2">
+                  <label class="labels" for="Email">{{ returnText('CONTACTS', 'Contacts_email_short') }}</label>
+                  <input type="email" class="form-control placeholders" name="Email" aria-describedby="emailHelp"
+                      placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" formControlName="Email">
+              </div>
+              <div class="form-group py-2">
+                  <label class="labels" for="fullname">{{ returnText('CONTACTS', 'Contacts_name') }}</label>
+                  <input type="text" class="form-control placeholders" name="Fullname" placeholder="{{ returnText('CONTACTS', 'Contacts_name') }}"
+                      formControlName="Fullname">
+              </div>
+              <div class="form-group py-2">
+                  <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_message') }}</label>
+                  <textarea class="form-control placeholders" formControlName="Comment" name="Comment" placeholder="{{ returnText('CONTACTS', 'Contacts_message') }}">
+                  </textarea>
+              </div>
+              <div class="inline-centered py-2">
+                  <button type="submit" class="one_space_r btn btn-custom" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_send_message') }} </button>
+              </div>
+          </form>
+      </div>
   </div>
 </section><!-- End Contact Section -->
