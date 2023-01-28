@@ -10,7 +10,7 @@
     alt="Angular Logo"
     src="/assets/img/iiCt_Round_Plain.png"
   />
-  <H2> {{ returnText("NAVBAR", "Nav_Company") }}</H2>
+  <H2> {{ this.appService.returnText('COMPANY', 'Company_name_long') }} </H2>
 	<div class="spacer"></div>
   	<label class="one_space_r">
 		 {{ returnText('HOME', 'Home_Select') }}

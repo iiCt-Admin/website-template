@@ -1,13 +1,77 @@
-<div class="container-fluid footer fixed-bottom">
-  <div class="d-flex align-items-center justify-content-center">
-    <H1>{{ this.appService.returnText('FOOTER', 'Footer') }}</H1>
-  </div>
-  <div class="d-flex align-items-center justify-content-center ">
-    <p > {{ this.appService.returnText('FOOTER', 'Footer_Title') }}</p>
-  </div>
-  <div>
-    <p class="d-flex align-items-center justify-content-center "> {{ this.appService.returnText('FOOTER', 'Title_1') }}</p>
-    <p class="d-flex align-items-center justify-content-center "> {{ this.appService.returnText('FOOTER', 'Title_2') }}</p>
-  </div>
+<!-- ======= Footer code from Flattern Index ======= -->
+<footer id="footer">
+<div class="container-fluid footer fixed-bottom py-3">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3> {{ this.appService.returnText('COMPANY', 'Company_name_long') }} </h3>
+            <p> {{ this.appService.returnText('COMPANY', 'Company_address_1') }} </p>
+            <p> {{ this.appService.returnText('COMPANY', 'Company_address_2') }} </p>
+            <p> {{ this.appService.returnText('COMPANY', 'Company_address_3') }} </p>
+            <br>
+            <div class="inline">
+              <p><strong>{{ this.appService.returnText('FOOTER', 'Footer_label_phone') }}</strong> </p>
+              <p>&nbsp;&nbsp;</p>
+              <p> {{ this.appService.returnText('COMPANY', 'Company_phone_main') }} </p>
+            </div>
+            <div class="inline">
+              <p><strong>{{ this.appService.returnText('FOOTER', 'Footer_label_email') }}</strong></p>
+              <p>&nbsp;&nbsp;&nbsp;</p>
+              <p> {{ this.appService.returnText('COMPANY', 'Company_email_contact') }} </p>
+            </div>
+          </div>
 
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>{{ this.appService.returnText('FOOTER', 'Footer_label_links') }}</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_home') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_about') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_services') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_terms') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_privacy') }}</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>{{ this.appService.returnText('FOOTER', 'Footer_services_title') }}</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_consult') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_packages') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_develop') }}</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>{{ this.appService.returnText('FOOTER', 'Footer_mailing_title') }}</h4>
+            <p>{{ this.appService.returnText('FOOTER', 'Footer_mailing_body') }}</p>
+            <form action="forms/subscribe.php" method="post" role="form" class="php-email-form" >
+              <input type="email" name="email" placeholder="Email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex inline-centered">
+      <div class=" " >
+        <div class="copyright inline">
+          {{ this.appService.returnText('FOOTER', 'Footer_cp1') }}
+          <p>&nbsp;&nbsp;</p>
+          <p><strong><span class="name-highlight"> {{ this.appService.returnText('COMPANY', 'Company_name_long') }}</span></strong></p>
+          <p>&nbsp;&nbsp;</p>
+          {{ this.appService.returnText('FOOTER', 'Footer_cp2') }}
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://www.linkedin.com/company/iiconsult-tech-inc" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/iiconsulttech?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/iiConsult.tech" target="_blank" rel="noopener noreferrer" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/iiconsult.tech" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+      </div>
+    </div>
 </div>
+</footer><!-- End Footer -->
