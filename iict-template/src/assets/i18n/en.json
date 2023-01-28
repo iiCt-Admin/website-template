@@ -1,16 +1,16 @@
 {
   "COMPANY": {
-    "Company_title": "iiConsult tech Inc.",
+    "Company_title": "Company Name",
     "Company_content": "",
-    "Company_name_long": "iiConsult tech Inc.",
-    "Company_name_short": "iiCt",
-    "Company_address_1": "1401 - 203 Catherine Street",
-    "Company_address_2": "Ottawa, ON K2P 1J5",
-    "Company_address_3": "Canada",
-    "Company_address_short": "203 Catherine Street, Ottawa, ON K2P 1J5",
-    "Company_email_support": "support@iiconsult.tech",
-    "Company_email_contact": "contact_us@iiconsult.tech",
-    "Company_phone_main": "+1 (613) 241-4700"
+    "Company_name_long": "Company Name L",
+    "Company_name_short": "Company",
+    "Company_address_1": "Address Line 1",
+    "Company_address_2": "Address Line 1",
+    "Company_address_3": "Address Line 1",
+    "Company_address_short": "Short Address Line",
+    "Company_email_support": "support@email",
+    "Company_email_contact": "contact_us@email",
+    "Company_phone_main": "+1 (613) phone #"
 },
   "HOME": {
     "Home_Title": "Hello Angular with ngx-translate!",
@@ -80,7 +80,7 @@
     "Footer_nav_terms": "Terms of Service",
     "Footer_nav_privacy" : "Privacy Policy",
     "Footer_back_home": "Back to Home Page",
-    "Footer_services_title": "Our Services",
+    "Footer_services_title": "Services",
     "Footer_nav_consult":"Project Consulting Services",
     "Footer_nav_packages":"Start-up Packages (Web, Creative Media)",
     "Footer_nav_develop":"Development Consulting (Web & App)",

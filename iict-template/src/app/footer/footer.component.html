@@ -1,9 +1,6 @@
 <!-- ======= Footer code from Flattern Index ======= -->
 <footer id="footer">
-<div class="container-fluid footer fixed-bottom py-2">
-
-
-
+<div class="container-fluid footer fixed-bottom py-3">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -14,47 +11,40 @@
             <p> {{ this.appService.returnText('COMPANY', 'Company_address_3') }} </p>
             <br>
             <div class="inline">
-              <p data-i18n="Footer_label_phone"><strong>Phone:</strong> </p>
+              <p><strong>{{ this.appService.returnText('FOOTER', 'Footer_label_phone') }}</strong> </p>
               <p>&nbsp;&nbsp;</p>
               <p> {{ this.appService.returnText('COMPANY', 'Company_phone_main') }} </p>
             </div>
             <div class="inline">
-              <p data-i18n="Footer_label_email"><strong>Email:</strong></p>
+              <p><strong>{{ this.appService.returnText('FOOTER', 'Footer_label_email') }}</strong></p>
               <p>&nbsp;&nbsp;&nbsp;</p>
               <p> {{ this.appService.returnText('COMPANY', 'Company_email_contact') }} </p>
             </div>
-            <br><br>
-            <!-- <select onchange="changeLanguage()" id="leaveCode" name="leaveCode" class="language-btn ">
-              <ul class="option">
-                <li><option value="en" data-i18n="footer_label_english" >English</option></li>
-                <li><option value="fr" data-i18n="footer_label_french" >français</option></li>
-              </ul>
-            </select> -->
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4 data-i18n="footer_label_links">Quick Links</h4>
+            <h4>{{ this.appService.returnText('FOOTER', 'Footer_label_links') }}</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a data-i18n="footer_nav_home" href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a data-i18n="footer_nav_about" href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a data-i18n="footer_nav_services" href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a data-i18n="footer_nav_terms" href="terms-privacy.html">Terms of Service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a data-i18n="footer_nav_privacy" href="terms-privacy.html">Privacy Policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_home') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_about') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_services') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_terms') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_privacy') }}</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4 data-i18n="footer_services_title">Our Services</h4>
+            <h4>{{ this.appService.returnText('FOOTER', 'Footer_services_title') }}</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a data-i18n="footer_nav_consult" href="#">Project Consulting Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a data-i18n="footer_nav_packages" href="#">Start-up Packages (Web, Creative Media)</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a data-i18n="footer_nav_develop" href="#">Development Consulting (Web & App)</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_consult') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_packages') }}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_develop') }}</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4 data-i18n="footer_mailing_title">Join Our Mailing List</h4>
-            <p data-i18n="footer_mailing_body">For more information on our products and services, subscribe to our mailing list and we will be in contact with you</p>
+            <h4>{{ this.appService.returnText('FOOTER', 'Footer_mailing_title') }}</h4>
+            <p>{{ this.appService.returnText('FOOTER', 'Footer_mailing_body') }}</p>
             <form action="forms/subscribe.php" method="post" role="form" class="php-email-form" >
               <input type="email" name="email" placeholder="Email">
               <input type="submit" value="Subscribe">
@@ -66,7 +56,6 @@
     </div>
 
     <div class="container d-md-flex inline-centered">
-
       <div class=" " >
         <div class="copyright inline">
           {{ this.appService.returnText('FOOTER', 'Footer_cp1') }}
