@@ -1,7 +1,183 @@
-.footer {
-	color:white;
-  background-color: #f99600;
+/*--------------------------------------------------------------
+# Footer Properties & color settings - modified [GN])
+--------------------------------------------------------------*/
+
+#footer .footer-top {
+  padding: 15px 0 10px 0;
+  background: rgba(1, 1, 1, 0.7);
 }
 
+#footer .footer-top .footer-contact h3 { /* column 1 Top Row Company Name */
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  color: #fff;
+}
 
+#footer .footer-top .footer-contact p { /* column 1 Lower Rows (Address, etc) */
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Muli", sans-serif;
+  color: whitesmoke;
+}
 
+#footer .footer-top h4 { /* column 2 & 3 Top Row Labels */
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links ul a { /* column 2 & 3 lower row Links */
+  color: whitesmoke;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #fe5828;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #ff914d;
+}
+
+#footer .footer-newsletter h4 { /* column 4 Top Row Label */
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter { /* column 4 Body text */
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px 0 0 4px;
+  text-align: left;
+}
+
+#footer .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #fe5828;
+  /* modified */
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+  background: #ff914d;
+  /* modified */
+}
+
+#footer .copyright { /* copyright line properties */
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+#footer .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background: #fe5828;
+  color: #fff;
+  line-height: 1;
+  padding: 5px 5px;
+  margin: -1rem 10px 0 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #ff914d;
+  /* modified */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .language-btn {
+  background: #ef6603;
+  border: 0;
+  padding: 3px 10px 3px 15px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.option .dropdown {
+  display: block;
+  position: absolute;
+  width: 11rem;
+  height: fit-content;
+  top: 70px;
+  color: #111;
+  right: 15px;
+  bottom: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.7);
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.option .hover {
+  background: red;
+  color: #fff;
+} */

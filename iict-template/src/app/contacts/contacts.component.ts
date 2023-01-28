@@ -4,6 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app.service';
 import { ContactService } from '../services/contact.service';
 import * as AOS from 'aos';
+import 'boxicons';
 
 @Component({
   selector: 'app-contacts',
