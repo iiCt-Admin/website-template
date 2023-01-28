@@ -61,6 +61,18 @@
     "Policy_private_subtitle": "Privacy Details"
 	},
 
+  "BUTTON":{
+    "Button_read_more": "Read More",
+    "Button_send_message" : "Send Message",
+    "Button_learn_more": "Learn More",
+    "Button_contact_us": "Contact Us",
+    "Button_subscribe": "Subscribe",
+    "Button_submit": "Submit",
+    "Button_step_1": "Step 1",
+    "Button_step_2a": "Step 2(a)",
+    "Button_step_2b": "Step 2(b)"
+	},
+
 	"FOOTER":{
     "Footer":"Footer",
 		"Footer_Title":"(c) 2022 Some Company",
