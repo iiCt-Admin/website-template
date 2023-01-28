@@ -1,4 +1,17 @@
 {
+  "COMPANY": {
+    "Company_title": "iiConsult tech Inc.",
+    "Company_content": "",
+    "Company_name_long": "iiConsult tech Inc.",
+    "Company_name_short": "iiCt",
+    "Company_address_1": "1401 - 203 rue Catherine",
+    "Company_address_2": "Ottawa, ON K2P 1J5",
+    "Company_address_3": "Canada",
+    "Company_address_short": "203 rue Catherine, Ottawa, ON K2P 1J5",
+    "Company_email_support": "support@iiconsult.tech",
+    "Company_email_contact": "contact_us@iiconsult.tech",
+    "Company_phone_main": "+1 (613) 241-4700"
+},
   "HOME": {
     "Home_Title": "Bonjour Angular avec ngx-translate !",
     "Home_Select": "langue"
@@ -40,10 +53,42 @@
     "Contacts_subject": "sujet"
 
 	},
+	"POLICY":{
+    "Policy_title": "Conditions et confidentialité",
+    "Policy_terms_title": "Conditions de service",
+    "Policy_terms_subtitle": "Détails des termes",
+    "Policy_private_title": "Confidentialité",
+    "Policy_private_subtitle": "Détails sur la confidentialité"
+	},
+
 	"FOOTER":{
-		"Footer":"Footer-fr",
+    "Footer":"Footer",
 		"Footer_Title":"(c) 2022 Some Company",
-    "Title_1":"this is the 1st title - fr",
-    "Title_2":"this is the 2nd title-fr"
+    "Footer_Title_1":"this is the 1st title",
+    "Footer_Title_2":"this is the 2nd title",
+    "Footer_label_phone": "téléphone",
+    "Footer_label_email": "email",
+    "Footer_label_english": "English",
+    "Footer_label_french": "français",
+    "Footer_label_short_en": "EN",
+    "Footer_label_short_fr": "fr",
+    "Footer_label_links": "Liens rapides",
+    "Footer_label_contact": "contactez-nous",
+    "Footer_nav_home" : "accueil",
+    "Footer_nav_about" : "à propos de nous",
+    "Footer_nav_services" : "nos services",
+    "Footer_nav_terms": "Conditions de service",
+    "Footer_nav_privacy" : "Politique de confidentialité",
+    "Footer_back_home": "Retour à la page d'accueil",
+    "Footer_services_title": "Nos services",
+    "Footer_nav_consult":"Services de conseil de projet",
+    "Footer_nav_packages":"Packs de démarrage (Web, médias créatifs)",
+    "Footer_nav_develop":"Conseil en développement (Web & App)",
+    "Footer_mailing_title" : "Rejoindre notre liste de diffusion",
+    "Footer_mailing_body" : "Pour plus d'informations sur nos produits et services, inscrivez-vous à notre liste de diffusion et nous vous contacterons",
+    "Footer_cp1": "© Copyright",
+    "Footer_cp2": "2023. Tous droits réservés",
+    "Footer_label_path_en": "assets/img/lang_en.png",
+    "Footer_label_path_fr": "assets/img/lang_fr.png"
 	}
 }
