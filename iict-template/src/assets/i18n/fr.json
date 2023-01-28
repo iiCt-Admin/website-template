@@ -1,6 +1,6 @@
 {
   "COMPANY": {
-    "Company_title": "iiConsult tech Inc.",
+    "Company_title": "votre entreprise",
     "Company_content": "",
     "Company_name_long": "iiConsult tech Inc.",
     "Company_name_short": "iiCt",
@@ -17,7 +17,7 @@
     "Home_Select": "langue"
   },
   "NAVBAR":{
-		"Nav_Company":"Company Name",
+		"Nav_Company":"entreprise",
 		"Nav_SignOut":"déconnecter"
 	},
   "COMPONENT":{

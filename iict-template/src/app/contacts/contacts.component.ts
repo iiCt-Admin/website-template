@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app.service';
 import { ContactService } from '../services/contact.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-contacts',
@@ -16,8 +16,8 @@ export class ContactsComponent implements OnInit {
   constructor(public translate : TranslateService, private builder: FormBuilder,  private contact: ContactService, private appService: AppService) { }
 
   ngOnInit(): void {
-
-  this.FormData = this.builder.group({
+    AOS.init()
+    this.FormData = this.builder.group({
     Fullname: new FormControl('', [Validators.required]),
     Email: new FormControl('', [Validators.required, Validators.email]),
     Comment: new FormControl('', [Validators.required])
