@@ -61,7 +61,6 @@ section {
   height: 2px;
   display: inline-block;
   background: #fe5828;
-  /* Modified - lines in titles - logo orange */
   margin: 4px 10px;
 }
 
@@ -71,7 +70,6 @@ section {
   height: 2px;
   display: inline-block;
   background: #fe5828;
-  /* Modified - lines in titles - logo orange */
   margin: 4px 10px;
 }
 
@@ -80,14 +78,12 @@ section {
   font-size: 36px;
   font-weight: 700;
   /* text-transform: uppercase; */
-  /* Modified */
   font-family: "Yanone Kaffeesatz";
-  /* Changed font */
   color: #2a2c39;
 }
 
 /* Responsive Styles */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
 
 .section {
     padding: 0;

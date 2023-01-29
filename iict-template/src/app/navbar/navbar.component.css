@@ -14,7 +14,7 @@
 
 /* customizes the secondary button function's look and feel */
 .btn-secondary {
-  background-color: rgb(247, 143, 23);
+  background-color: #fe5828;
   border-radius: 25px;
   font-style: italic;
   font-weight: 600;
@@ -23,14 +23,14 @@
 .toolbar {
   height: 60px;
   align-items: center;
-  background-color: #f99600;
+  background-color: #ff914d;
   color: white;
   font-weight: 600;
 }
 
-.toolbar img {
-  /* left side logo control  */
-  margin: 0 16px;
+.toolbar img {   /* left side logo control  */
+  margin:8px;
+  width: 40px;
 }
 
 .toolbar #twitter-logo {

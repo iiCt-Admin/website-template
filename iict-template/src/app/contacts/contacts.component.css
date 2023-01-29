@@ -1,14 +1,29 @@
 .btn-custom {
-    background-color: rgb(247, 143, 23);
-    border-radius: 25px;
-    font-style: italic;
-    font-weight: 600;
-  }
+  font-family: "Yanone Kaffeesatz";
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px 7px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #fe5828;
+}
 
-    .contact .info {
-      margin-left: 8rem;
-      background: #fff;
-    }
+.btn-custom:hover {
+  background: #fff;
+  color: #fe5828;
+}
+
+.contact .info {
+  margin-left: 8rem;
+  background: #fff;
+  padding: 5px;
+}
 
     /* modifies the icon looks & properties @ left side */
   .contact .info i {
@@ -61,10 +76,13 @@
     /* color: #fe5828; */
   }
 
-    @media (max-width: 400px) {
-      .contact {
-        display: block !important;
-      }
+@media (max-width: 769px) {
+  .contact {
+    display: block;
+  }
 
-
-    }
+  .contact .info {
+    margin-left: 1rem;
+    background-color: transparent;
+  }
+}
