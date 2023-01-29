@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs';
-
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-admin',
@@ -19,21 +18,9 @@ export class AdminComponent implements OnInit {
 	  this.route.queryParams
       .subscribe(params => {
 		  this.params = params["child"];
-        console.log(params["child"]); // { orderby: "price"
-		//var k = Object.params.
-        //this.order = params.order;
-        //alert(this.order); // price
+        console.log(params["child"]);
       }
     );
-    //   .filter(params => params.order)
-    //   .subscribe(params => {
-    //     console.log(params); // { order: "popular" }
-	//
-    //     this.order = params.order;
-	//
-    //     alert(this.order); // popular
-    //   }
-    // );
   }
 
 }

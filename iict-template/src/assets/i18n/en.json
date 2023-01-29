@@ -70,9 +70,11 @@
   },
 
    "TEAM": {
-    "Team_Title": "Team",
+    "Team_title": "Team",
     "Team_subtitle": "Our team is here for you",
-    "Team_role_1": "Developer"
+    "Team_role_1": "Developer",
+    "Team_role_2": "Manager",
+    "Team_role_3": "Operations"
   },
 
 	"CONTACTS" : {

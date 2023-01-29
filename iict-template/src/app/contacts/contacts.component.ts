@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { filter } from 'rxjs';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app.service';
@@ -14,7 +16,14 @@ import 'boxicons';
 export class ContactsComponent implements OnInit {
    FormData: FormGroup;
 
-  constructor(public translate : TranslateService, private builder: FormBuilder,  private contact: ContactService, private appService: AppService) { }
+  constructor(public translate : TranslateService,
+              private builder: FormBuilder,
+              private contact: ContactService,
+              private appService: AppService,
+              private route: ActivatedRoute) { }
+
+  order : string = '';
+	params = new Object();
 
   ngOnInit(): void {
     AOS.init()
@@ -23,6 +32,7 @@ export class ContactsComponent implements OnInit {
     Email: new FormControl('', [Validators.required, Validators.email]),
     Comment: new FormControl('', [Validators.required])
   })
+
   }
 
   returnText(key : string, value : string){
