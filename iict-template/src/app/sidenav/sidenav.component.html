@@ -1,150 +1,72 @@
 <div class="sidebar" [ngClass]="{ 'expanded': isExpanded }">
-  <div class="sidebar-header">
-    <h1 class="sidebar-title">
-      deskbird
-    </h1>
+
+  <div class="sidebar-header"> <!-- Sidebar Top Line / Title -->
+    <h1 class="sidebar-title">{{ returnText('COMPANY', 'Company_name_short') }}</h1>
     <div class="toggle" (click)="handleSidebarToggle()">
       <span class="chevron"></span>
     </div>
   </div>
-  <div class="sidebar-content">
-    <div class="sidebar-link">
+
+  <div class="sidebar-content"> <!-- Items to be included in the sidebar under here -->
+
+    <div class="sidebar-link">  <!-- Home Line -->
       <div class="sidebar-content" [routerLink]="['/home']" [routerLinkActive]="'active'">
-        <div class="sidebar-icon">
-          <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-            <title>Stockholm-icons / Home / Flower2</title>
-            <desc>Created with Sketch.</desc>
-            <defs></defs>
-            <g id="Stockholm-icons-/-Home-/-Flower2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
-              <circle id="Oval-32" fill="#000000" opacity="0.3" cx="15" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy" fill="#000000" opacity="0.3" cx="9" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy-2" fill="#000000" opacity="0.3" cx="7" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-3" fill="#000000" opacity="0.3" cx="17" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-4" fill="#000000" opacity="0.3" cx="12" cy="7" r="5"></circle>
-            </g>
-          </svg>
-        </div>
-        <div class="sidebar-title">Home</div>
-      </div>
-    </div>
-    <div class="sidebar-link with-children">
-      <div class="sidebar-content" [routerLink]="['/admin']" [routerLinkActive]="'active'">
-        <div class="sidebar-icon">
-          <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-            <title>Stockholm-icons / Home / Flower2</title>
-            <desc>Created with Sketch.</desc>
-            <defs></defs>
-            <g id="Stockholm-icons-/-Home-/-Flower2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
-              <circle id="Oval-32" fill="#000000" opacity="0.3" cx="15" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy" fill="#000000" opacity="0.3" cx="9" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy-2" fill="#000000" opacity="0.3" cx="7" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-3" fill="#000000" opacity="0.3" cx="17" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-4" fill="#000000" opacity="0.3" cx="12" cy="7" r="5"></circle>
-            </g>
-          </svg>
-        </div>
-        <div class="sidebar-title">Configuration</div>
-      </div>
-      <div class="sidebar-children">
-        <div class="sidebar-link">
-          <div class="sidebar-content" [routerLink]="['/admin']" [queryParams]="{ 'child': '1' }"
-            [routerLinkActive]="'active'">
-            <div class="sidebar-icon">
-              <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-                <title>Stockholm-icons / Home / Flower2</title>
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
-                <g id="Stockholm-icons-/-Home-/-Flower2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
-                  <circle id="Oval-32" fill="#000000" opacity="0.3" cx="15" cy="17" r="5"></circle>
-                  <circle id="Oval-32-Copy" fill="#000000" opacity="0.3" cx="9" cy="17" r="5"></circle>
-                  <circle id="Oval-32-Copy-2" fill="#000000" opacity="0.3" cx="7" cy="11" r="5"></circle>
-                  <circle id="Oval-32-Copy-3" fill="#000000" opacity="0.3" cx="17" cy="11" r="5"></circle>
-                  <circle id="Oval-32-Copy-4" fill="#000000" opacity="0.3" cx="12" cy="7" r="5"></circle>
-                </g>
-              </svg>
-            </div>
-            <div class="sidebar-title">child 1</div>
-          </div>
-        </div>
-        <div class="sidebar-link">
-          <div class="sidebar-content" [routerLink]="['/admin']" [queryParams]="{ 'child': '2' }"
-            [routerLinkActive]="'active'">
-            <div class="sidebar-icon">
-              <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-                <title>Stockholm-icons / Home / Flower2</title>
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
-                <g id="Stockholm-icons-/-Home-/-Flower2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
-                  <circle id="Oval-32" fill="#000000" opacity="0.3" cx="15" cy="17" r="5"></circle>
-                  <circle id="Oval-32-Copy" fill="#000000" opacity="0.3" cx="9" cy="17" r="5"></circle>
-                  <circle id="Oval-32-Copy-2" fill="#000000" opacity="0.3" cx="7" cy="11" r="5"></circle>
-                  <circle id="Oval-32-Copy-3" fill="#000000" opacity="0.3" cx="17" cy="11" r="5"></circle>
-                  <circle id="Oval-32-Copy-4" fill="#000000" opacity="0.3" cx="12" cy="7" r="5"></circle>
-                </g>
-              </svg>
-            </div>
-            <div class="sidebar-title">child 2</div>
-          </div>
-        </div>
-        <div class="sidebar-link">
-          <div class="sidebar-content" [routerLink]="['/admin']" [queryParams]="{ 'child': '3' }"
-            [routerLinkActive]="'active'">
-            <div class="sidebar-icon">
-              <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-                <title>Stockholm-icons / Home / Flower2</title>
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
-                <g id="Stockholm-icons-/-Home-/-Flower2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
-                  <circle id="Oval-32" fill="#000000" opacity="0.3" cx="15" cy="17" r="5"></circle>
-                  <circle id="Oval-32-Copy" fill="#000000" opacity="0.3" cx="9" cy="17" r="5"></circle>
-                  <circle id="Oval-32-Copy-2" fill="#000000" opacity="0.3" cx="7" cy="11" r="5"></circle>
-                  <circle id="Oval-32-Copy-3" fill="#000000" opacity="0.3" cx="17" cy="11" r="5"></circle>
-                  <circle id="Oval-32-Copy-4" fill="#000000" opacity="0.3" cx="12" cy="7" r="5"></circle>
-                </g>
-              </svg>
-            </div>
-            <div class="sidebar-title">child 3</div>
-          </div>
+        <div class="inline sidebar-icon">
+          <i class="bx bx-home-alt-2"></i>
+          <div class="sidebar-title">&nbsp;{{ returnText('COMPONENT', 'Home') }}</div>
         </div>
       </div>
     </div>
-    <div class="sidebar-link">
+
+    <div class="sidebar-link with-children"> <!-- Link line with child links below -->
+      <div class="sidebar-content" [routerLink]="['/Teams']" [routerLinkActive]="'active'"> <!-- Link top line item -->
+        <div class="inline sidebar-icon">
+          <i class='bx bxl-microsoft-teams'></i>
+          <div class="sidebar-title">&nbsp;{{ returnText('TEAM', 'Team_title') }}</div>
+        </div>
+      </div>
+
+      <div class="sidebar-children">  <!-- Link child line items -->
+
+        <div class="sidebar-link">  <!-- Link child 1 -->
+          <div class="sidebar-content" [routerLink]="['/admin']" [queryParams]="{ 'child': '1' }" [routerLinkActive]="'active'">
+            <div class="inline sidebar-icon">
+              <i class='bx bx-dice-1'></i>
+              <div class="sidebar-title">&nbsp;{{ returnText('TEAM', 'Team_role_1') }}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-link">  <!-- Link child 2 -->
+          <div class="sidebar-content" [routerLink]="['/admin']" [queryParams]="{ 'child': '2' }" [routerLinkActive]="'active'">
+            <div class="inline sidebar-icon">
+              <i class='bx bx-dice-2'></i>
+              <div class="sidebar-title">&nbsp;{{ returnText('TEAM', 'Team_role_2') }}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-link">  <!-- Link child 3 -->
+          <div class="sidebar-content" [routerLink]="['/admin']" [queryParams]="{ 'child': '3' }" [routerLinkActive]="'active'">
+            <div class="inline sidebar-icon">
+              <i class='bx bx-dice-3'></i>
+              <div class="sidebar-title">&nbsp;{{ returnText('TEAM', 'Team_role_3') }}</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sidebar-link">  <!-- Link line - no chilren -->
       <div class="sidebar-content" [routerLink]="['/bookings']" [routerLinkActive]="'active'">
-        <div class="sidebar-icon">
-          <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-            <title>Stockholm-icons / Home / Flower2</title>
-            <desc>Created with Sketch.</desc>
-            <defs></defs>
-            <g id="Stockholm-icons-/-Home-/-Flower2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
-              <circle id="Oval-32" fill="#000000" opacity="0.3" cx="15" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy" fill="#000000" opacity="0.3" cx="9" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy-2" fill="#000000" opacity="0.3" cx="7" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-3" fill="#000000" opacity="0.3" cx="17" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-4" fill="#000000" opacity="0.3" cx="12" cy="7" r="5"></circle>
-            </g>
-          </svg>
+        <div class="inline sidebar-icon">
+          <i class='bx bx-phone'></i>
+          <div class="sidebar-title">&nbsp;{{ returnText('COMPONENT', 'Contacts') }}</div>
         </div>
-        <div class="sidebar-title">Bookings</div>
       </div>
     </div>
   </div>
-  <div class="footer"></div>
+
+
 </div>
