@@ -11,15 +11,35 @@
     "Company_email_support": "support@iiconsult.tech",
     "Company_email_contact": "contact_us@iiconsult.tech",
     "Company_phone_main": "+1 (613) 241-4700"
-},
+  },
+
   "HOME": {
-    "Home_Title": "Bonjour Angular avec ngx-translate !",
+    "Home_Title": "Accueil",
+    "Home_subtitle": "bienvenue à ",
     "Home_Select": "langue"
   },
+
+	"HERO" : {
+		"Hero_title_1": "Bienvenue à iiConsult tech Inc.",
+    "Hero_body_1": "Nous sommes une société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
+    "Hero_title_2" : "Services de consultation",
+    "Hero_body_2": "Laissez-nous aider votre entreprise dans votre prochain projet en offrant des conseils en assurance qualité, en développement d'applications ou en gestion de projets.",
+    "Hero_title_3": "Services de développement",
+    "Hero_body_3": "Laissez notre équipe travailler sur votre prochain projet en développant du code, en créant des médias et plus encore."
+	},
+
+  "ABOUT": {
+    "About_Title": "à propos de nous",
+    "About_subtitle": "Qui sommes-nous ?",
+    "About_body_1": "Nous sommes une nouvelle société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
+    "About_bullet_1": "Services de conseil et de projet"
+  },
+
   "NAVBAR":{
 		"Nav_Company":"entreprise",
 		"Nav_SignOut":"déconnecter"
 	},
+
   "COMPONENT":{
     "About":"About",
     "Admin":"Admin",
@@ -43,25 +63,28 @@
 		"Signin_btn_Signin":"inscrire"
 	},
 
-	"HERO" : {
-		"Hero_title_1": "Bienvenue à iiConsult tech Inc.",
-    "Hero_body_1": "Nous sommes une société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
-    "Hero_title_2" : "Services de consultation",
-    "Hero_body_2": "Laissez-nous aider votre entreprise dans votre prochain projet en offrant des conseils en assurance qualité, en développement d'applications ou en gestion de projets.",
-    "Hero_title_3": "Services de développement",
-    "Hero_body_3": "Laissez notre équipe travailler sur votre prochain projet en développant du code, en créant des médias et plus encore."
-	},
+  "FAQ": {
+    "Faq_Title": "f.a.q.",
+    "Faq_subtitle": "foire aux questions",
+    "Faq_text": "Bienvenue sur notre page F.A.Q. (Foire aux questions)."
+  },
+
+  "TEAM": {
+    "Team_Title": "l'équipe",
+    "Team_subtitle": "Notre équipe est là pour vous you",
+    "Team_role_1": "Développement"
+  },
 
   "CONTACTS" : {
-  "Contacts_section_title": "contactez-nous",
-  "Contacts_section_subtitle": "informations de contact",
-  "Contacts_location": "location:",
-  "Contacts_email_short": "email:",
-  "Contacts_call": "appeler:",
-  "Contacts_name": "votre nom",
-  "Contacts_email_long": "votre email",
-  "Contacts_message": "votre message",
-  "Contacts_subject": "sujet"
+    "Contacts_section_title": "contactez-nous",
+    "Contacts_section_subtitle": "informations de contact",
+    "Contacts_location": "location:",
+    "Contacts_email_short": "email:",
+    "Contacts_call": "appeler:",
+    "Contacts_name": "votre nom",
+    "Contacts_email_long": "votre email",
+    "Contacts_message": "votre message",
+    "Contacts_subject": "sujet"
 	},
 
 	"POLICY":{
