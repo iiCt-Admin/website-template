@@ -37,22 +37,33 @@
 		"SignUp":"enregistrer",
 		"Teams":"equipe"
 	},
+
 	"SIGNIN" : {
 		"Signin_Title":"Page de connexion",
 		"Signin_btn_Signin":"inscrire"
 	},
-  	"CONTACTS" : {
-		"Contacts_section_title": "contactez-nous",
-    "Contacts_section_subtitle": "informations de contact",
-    "Contacts_location": "location:",
-    "Contacts_email_short": "email:",
-    "Contacts_call": "appeler:",
-    "Contacts_name": "votre nom",
-    "Contacts_email_long": "votre email",
-    "Contacts_message": "votre message",
-    "Contacts_subject": "sujet"
 
+	"HERO" : {
+		"Hero_title_1": "Bienvenue à iiConsult tech Inc.",
+    "Hero_body_1": "Nous sommes une société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
+    "Hero_title_2" : "Services de consultation",
+    "Hero_body_2": "Laissez-nous aider votre entreprise dans votre prochain projet en offrant des conseils en assurance qualité, en développement d'applications ou en gestion de projets.",
+    "Hero_title_3": "Services de développement",
+    "Hero_body_3": "Laissez notre équipe travailler sur votre prochain projet en développant du code, en créant des médias et plus encore."
 	},
+
+  "CONTACTS" : {
+  "Contacts_section_title": "contactez-nous",
+  "Contacts_section_subtitle": "informations de contact",
+  "Contacts_location": "location:",
+  "Contacts_email_short": "email:",
+  "Contacts_call": "appeler:",
+  "Contacts_name": "votre nom",
+  "Contacts_email_long": "votre email",
+  "Contacts_message": "votre message",
+  "Contacts_subject": "sujet"
+	},
+
 	"POLICY":{
     "Policy_title": "Conditions et confidentialité",
     "Policy_terms_title": "Conditions de service",
