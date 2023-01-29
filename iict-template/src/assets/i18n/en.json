@@ -11,15 +11,35 @@
     "Company_email_support": "support@email",
     "Company_email_contact": "contact_us@email",
     "Company_phone_main": "+1 (613) phone #"
-},
+  },
+
   "HOME": {
-    "Home_Title": "Hello Angular with ngx-translate!",
+    "Home_Title": "Home",
+    "Home_subtitle": "Welcome to ",
     "Home_Select": "Language"
-},
+  },
+
+  "HERO" : {
+		"Hero_title_1": "Welcome to iiConsult tech Inc.",
+    "Hero_body_1": "We are a management quality & development consultancy for software development and technology work.",
+    "Hero_title_2" : "Consulting Services",
+    "Hero_body_2": "Let us help your company with your next project by offering consulting in Quality Assurance, Application Development or Project Management.",
+    "Hero_title_3": "Development Services",
+    "Hero_body_3": "Let our team work on your next project through code development, media creation and more."
+	},
+
+  "ABOUT": {
+    "About_Title": "About Us",
+    "About_subtitle": "Who are we?",
+    "About_body_1": "We are a new aged management quality & development consultancy for software development and technology work.",
+    "About_bullet_1": "Consulting and Project Services"
+  },
+
 	"NAVBAR":{
 		"Nav_Company":"Company Name",
 		"Nav_SignOut":"Sign Out"
-	},
+},
+
   "COMPONENT":{
     "About":"About",
     "Admin":"Admin",
@@ -36,11 +56,25 @@
     "SignIn":"Sign In",
 		"SignUp":"Sign Up",
 		"Teams":"Team"
-	},
+  },
+
 	"SIGNIN" : {
 		"Signin_Title":"Sign In Page",
 		"Signin_btn_Signin":"Sign In"
-	},
+  },
+
+  "FAQ": {
+    "Faq_Title": "F.A.Q.",
+    "Faq_subtitle": "Frequently Asked Questions",
+    "Faq_text": "Welcome to our F.A.Q. (Frequently Asked Questions) page."
+  },
+
+   "TEAM": {
+    "Team_Title": "Team",
+    "Team_subtitle": "Our team is here for you",
+    "Team_role_1": "Developer"
+  },
+
 	"CONTACTS" : {
 		"Contacts_section_title": "Contact Us",
     "Contacts_section_subtitle": "Contact Information",
