@@ -1,6 +1,6 @@
 {
   "COMPANY": {
-    "Company_title": "iiConsult tech Inc.",
+    "Company_title": "votre entreprise",
     "Company_content": "",
     "Company_name_long": "iiConsult tech Inc.",
     "Company_name_short": "iiCt",
@@ -17,7 +17,7 @@
     "Home_Select": "langue"
   },
   "NAVBAR":{
-		"Nav_Company":"Company Name",
+		"Nav_Company":"entreprise",
 		"Nav_SignOut":"déconnecter"
 	},
   "COMPONENT":{
@@ -93,9 +93,9 @@
     "Footer_nav_privacy" : "Politique de confidentialité",
     "Footer_back_home": "Retour à la page d'accueil",
     "Footer_services_title": "Nos services",
-    "Footer_nav_consult":"Services de conseil de projet",
-    "Footer_nav_packages":"Packs de démarrage (Web, médias créatifs)",
-    "Footer_nav_develop":"Conseil en développement (Web & App)",
+    "Footer_nav_consult":"Services",
+    "Footer_nav_packages":"Produits",
+    "Footer_nav_develop":"Conseil",
     "Footer_mailing_title" : "Rejoindre notre liste de diffusion",
     "Footer_mailing_body" : "Pour plus d'informations sur nos produits et services, inscrivez-vous à notre liste de diffusion et nous vous contacterons",
     "Footer_cp1": "© Copyright",

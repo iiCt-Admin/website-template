@@ -1,11 +1,12 @@
-<app-navbar></app-navbar>
-<br>
-<br>
-<br>
+<div class="">
+  <br><br><br>
+  <div class="left-padding" [ngClass]="{ 'sidebarExpanded': 'sidebarExpanded' }">
+    <app-navbar></app-navbar>
+    <app-sidenav [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></app-sidenav>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
 
-<div class="left-padding" [ngClass]="{ 'sidebarExpanded': 'sidebarExpanded' }">
-	<app-sidenav [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></app-sidenav>
-	<router-outlet></router-outlet>
+
 </div>
 
-<app-footer></app-footer>
