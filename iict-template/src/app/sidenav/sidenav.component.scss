@@ -1,29 +1,30 @@
 .chevron::before {
+  color: whitesmoke;
   border-style: solid;
   border-width: 0.15em 0.15em 0 0;
   content: "";
   display: inline-block;
-  height: 0.35em;
-  left: 0.15em;
+  height: 1em;
+  width: 1em;
+  left: 0.25em;
   position: relative;
-  top: 0.3em;
+  top: -0.4em;
   vertical-align: top;
-  width: 0.35em;
 }
 .sidebar {
   position: fixed;
   left: 0;
   top: 3.75rem;
-
   height: 100vh;
   transition: 0.3s;
-
+  background: #000000;
   width: 50px;
   &.expanded {
-    width: 150px;
-
+    width: 190px;
     .sidebar-header {
+      background: #fe5828;
       h1 {
+        color: whitesmoke;
         margin-left: 0px;
       }
       .chevron {
@@ -33,10 +34,12 @@
         }
       }
     }
-    .sidebar-content {
+    .sidebar-content { /* menu item configurations */
+      background: #000000;
       .sidebar-link {
         .sidebar-content {
-          .sidebar-title {
+          .sidebar-title {  /* colors of the menu items */
+            color: #ff914d;
             max-width: 100px;
           }
           .sidebar-icon {
@@ -52,24 +55,18 @@
     }
   }
 
-  background: #1d1e2c;
-  color: #6d6e7e;
-
   .sidebar-header {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-
-    background: #0f1017;
-
+    background: #000000;
     h1 {
       font-size: 20px;
-      color: #6d6e7e;
+      color: #000000;
       margin: 0;
       flex: 1;
       transition: 0.3s;
-
       margin-left: -100px;
     }
 

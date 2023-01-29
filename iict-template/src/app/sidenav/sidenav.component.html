@@ -1,8 +1,6 @@
 <div class="sidebar" [ngClass]="{ 'expanded': isExpanded }">
   <div class="sidebar-header">
-    <h1 class="sidebar-title">
-      deskbird
-    </h1>
+    <h1 class="sidebar-title">{{ returnText('COMPANY', 'Company_name_short') }}</h1>
     <div class="toggle" (click)="handleSidebarToggle()">
       <span class="chevron"></span>
     </div>
