@@ -3,52 +3,64 @@
   <div class="footer-top">
     <div class="row ">
       <div class="col-lg-3 col-md-6 footer-contact"> <!-- Footer Info  Column 1-->
-        <h3> {{ this.appService.returnText('COMPANY', 'Company_name_long') }} </h3>
-        <p> {{ this.appService.returnText('COMPANY', 'Company_address_1') }} </p>
-        <p> {{ this.appService.returnText('COMPANY', 'Company_address_2') }} </p>
-        <p> {{ this.appService.returnText('COMPANY', 'Company_address_3') }} </p>
+        <h3> {{ returnText('COMPANY', 'Company_name_long') }} </h3>
+        <p> {{ returnText('COMPANY', 'Company_address_1') }} </p>
+        <p> {{ returnText('COMPANY', 'Company_address_2') }} </p>
+        <p> {{ returnText('COMPANY', 'Company_address_3') }} </p>
         <br>
         <div class="inline">
-          <p><strong>{{ this.appService.returnText('FOOTER', 'Footer_label_phone') }}</strong> </p>
+          <p><strong>{{ returnText('FOOTER', 'Footer_label_phone') }}</strong> </p>
           <p>&nbsp;&nbsp;</p>
-          <p> {{ this.appService.returnText('COMPANY', 'Company_phone_main') }} </p>
+          <p> {{ returnText('COMPANY', 'Company_phone_main') }} </p>
         </div>
         <div class="inline">
-          <p><strong>{{ this.appService.returnText('FOOTER', 'Footer_label_email') }}</strong></p>
+          <p><strong>{{ returnText('FOOTER', 'Footer_label_email') }}</strong></p>
           <p>&nbsp;&nbsp;&nbsp;</p>
-          <p> {{ this.appService.returnText('COMPANY', 'Company_email_contact') }} </p>
+          <p> {{ returnText('COMPANY', 'Company_email_contact') }} </p>
         </div>
       </div>
 
       <div class="col-lg-2 col-md-6 footer-links"> <!-- Footer Quick Links Column 2 -->
-        <h4>{{ this.appService.returnText('FOOTER', 'Footer_label_links') }}</h4>
+        <h4>{{ returnText('FOOTER', 'Footer_label_links') }}</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_home') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_about') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_services') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_terms') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_privacy') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_home') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_about') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_services') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_terms') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_privacy') }}</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links"> <!-- Footer Services Column 3 -->
-        <h4>{{ this.appService.returnText('FOOTER', 'Footer_services_title') }}</h4>
+        <h4>{{ returnText('FOOTER', 'Footer_services_title') }}</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_consult') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_packages') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ this.appService.returnText('FOOTER', 'Footer_nav_develop') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ returnText('FOOTER', 'Footer_nav_consult') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ returnText('FOOTER', 'Footer_nav_packages') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ returnText('FOOTER', 'Footer_nav_develop') }}</a></li>
         </ul>
       </div>
 
       <div class="col-lg-4 col-md-6 footer-newsletter"> <!-- Footer Mailing List Column 4 -->
-        <h4>{{ this.appService.returnText('FOOTER', 'Footer_mailing_title') }}</h4>
-        <p>{{ this.appService.returnText('FOOTER', 'Footer_mailing_body') }}</p>
-        <form action="forms/subscribe.php" method="post" role="form" class="php-email-form" >
+        <h4>{{ returnText('FOOTER', 'Footer_mailing_title') }}</h4>
+        <p>{{ returnText('FOOTER', 'Footer_mailing_body') }}</p>
+        <!-- <form action="forms/subscribe.php" method="post" role="form" class="php-email-form" >
           <input type="email" name="email" placeholder="Email">
           <input type="submit" value="Subscribe">
-        </form>
+        </form> -->
+        <div class="">
+          <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+                  <input type="text" class="form-control placeholders py-1" name="Email" aria-describedby="emailHelp"
+                      placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" formControlName="Email">
+                  <div class= "py-1"></div>
+                  <input type="text" class="form-control placeholders py-1" name="Fullname" placeholder="{{ returnText('CONTACTS', 'Contacts_name') }}"
+                      formControlName="Fullname">
+              <div class="inline-centered py-2">
+                  <button type="submit" class="one_space_r btn-custom" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_subscribe') }} </button>
+              </div>
+          </form>
+        </div>
       </div>
-
+     
       <div class="row">
         <div class="inline-centered social-links">  <!-- Social Links -->
           <a href="https://www.linkedin.com/company/iiconsult-tech-inc" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bx bxl-linkedin icon-settings one_space_r one_space_l"></i></a>
@@ -70,11 +82,11 @@
           </a> -->
         </div>
         <div class="copyright inline-centered"> <!-- Copyright Line -->
-          {{ this.appService.returnText('FOOTER', 'Footer_cp1') }}
+          {{ returnText('FOOTER', 'Footer_cp1') }}
           <p>&nbsp;&nbsp;</p>
-          <p><strong><span class="name-highlight"> {{ this.appService.returnText('COMPANY', 'Company_name_long') }}</span></strong></p>
+          <p><strong><span class="name-highlight"> {{ returnText('COMPANY', 'Company_name_long') }}</span></strong></p>
           <p>&nbsp;&nbsp;</p>
-          {{ this.appService.returnText('FOOTER', 'Footer_cp2') }}
+          {{ returnText('FOOTER', 'Footer_cp2') }}
         </div>
       </div>
     </div>

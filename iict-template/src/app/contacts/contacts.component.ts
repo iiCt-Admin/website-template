@@ -39,9 +39,10 @@ export class ContactsComponent implements OnInit {
     return this.appService.returnText(key, value);
   }
 
+private contactmailApi = 'https://mailthis.to/Contact_iiCt'
   onSubmit(FormData: any) {
     console.log(FormData)
-    this.contact.PostMessage(FormData)
+    this.contact.PostMessage(FormData, this.contactmailApi)
     .subscribe(response => {
     location.href = 'https://mailthis.to/confirm'
     console.log(response)
