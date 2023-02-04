@@ -87,39 +87,38 @@
   color: whitesmoke;
 }
 
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px 0 0 4px;
-  text-align: left;
-}
-
-#footer .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: -4px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #fe5828;
+.btn-custom {
+  font-family: "Yanone Kaffeesatz";
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 4px 20px 3px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 10px;
   color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: #fe5828;
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: #ff914d;
+.btn-custom:hover {
+  background: #fff;
+  color: #fe5828;
+}
+
+#footer .footer-newsletter form {
+
+
+  border-radius: 4px 0 0 4px;
+
+}
+
+#footer .footer-newsletter form input[type=text] {
+
+
+
 }
 
 #footer .copyright { /* copyright line properties */
@@ -158,7 +157,6 @@
   #footer .footer-newsletter form {
     margin-top: 25px;
     margin-left: -15px;
-    background: #fff;
     padding: 6px 5px;
     position: relative;
     border-radius: 4px 0 0 4px;
