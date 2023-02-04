@@ -11,21 +11,25 @@ import { ContactService } from '../services/contact.service';
 })
 export class FooterComponent implements OnInit {
   FormData: FormGroup;
+  
 
   constructor(public appService : AppService, public translate : TranslateService,  private builder: FormBuilder,
     private contact: ContactService) { }
 
   ngOnInit(): void {
+    let date = new Date();
 
     this.FormData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
       Email: new FormControl('', [Validators.required, Validators.email]),
+      DateStamp: new FormControl(date.toLocaleString())
     })
   }
 
   returnText(key : string, value : string){
     return this.appService.returnText(key, value);
   }
+
   private emailApi = 'https://mailthis.to/Email_iiCt'
   onSubmit(FormData: any) {
     console.log(FormData)
