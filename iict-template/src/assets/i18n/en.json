@@ -59,8 +59,8 @@
   },
 
 	"SIGNIN" : {
-		"Signin_Title":"Sign In Page",
-		"Signin_btn_Signin":"Sign In"
+		"Signin_title":"Sign In Page",
+		"Signin_message":"Sign In to your account below:"
   },
 
   "FAQ": {
@@ -104,9 +104,16 @@
     "Button_contact_us": "Contact Us",
     "Button_subscribe": "Subscribe",
     "Button_submit": "Submit",
+    "Button_signin":"Sign In",
+		"Button_signup":"Sign Up",
     "Button_step_1": "Step 1",
     "Button_step_2a": "Step 2(a)",
     "Button_step_2b": "Step 2(b)"
+	},
+
+  "LABEL":{
+    "Label_password": "Password",
+    "Label_email_address": "Email Address"
 	},
 
 	"FOOTER":{

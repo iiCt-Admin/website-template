@@ -1,30 +1,34 @@
-<div class="container-fluid">
-<p class="d-flex justify-content-center page-center">{{ appService.returnText('SIGNIN', 'Signin_Title') }}</p>
+<section id="SignIn" class="signin">
+  <div class="section-title center-text" data-aos="zoom-out">
+    <h2 >{{ returnText('COMPONENT', 'SignIn') }}</h2>
+    <p >{{ returnText('SIGNIN', 'Signin_title') }}</p>
+  </div>
+   <p class="signin"></p>
+  <div>
 
-<div class="container-fluid center d-flex signin-width">
+  <div class="container-fluid center d-flex signin-width">
+    <form class="form-control center login-email">
+      <H4> {{ returnText('SIGNIN', 'Signin_message') }} </H4>
+      <div class="form-group m-2">
+        <label class="sr-only d-flex justify-content-center py-2" for="inputEmail"> {{ returnText('LABEL', 'Label_email_address') }} </label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email"/>
+      </div>
+      <div class="form-group">
+        <label class="sr-only d-flex justify-content-center py-2" for="inputPassword"> {{ returnText('LABEL', 'Label_password') }} </label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+      <p class="d-flex justify-content-center py-4">
+        <button class="btn btn-primary" type="submit" (click)="handleLogin()">{{ returnText('BUTTON', 'Button_signin') }}</button>
+      </p>
+    </form>
+  </div>
+
+  <div>
+    <h1> </h1>
+    <p></p>
+  </div>
 
 
-  <form class="form-control center login-email">
-
-    <div class="form-group m-2">
-      <label class="sr-only d-flex justify-content-center" for="inputEmail">Email address</label>
-     <input type="email" class="form-control" id="inputEmail" placeholder="Email"/>
-    </div>
-
-    <div class="form-group">
-
-      <label class="sr-only d-flex justify-content-center" for="inputPassword">Password</label>
 
 
-      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
 
-    </div>
-    <p class="d-flex justify-content-center">
-    <button class="btn btn-primary nav-bar-button-color" type="submit" (click)="handleLogin()">{{ appService.returnText('SIGNIN', 'Signin_btn_Signin') }}</button>
-    </p>
-
-
-  </form>
-
-</div>
-</div>

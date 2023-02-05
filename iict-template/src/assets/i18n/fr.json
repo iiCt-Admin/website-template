@@ -41,7 +41,7 @@
 	},
 
   "COMPONENT":{
-    "About":"About",
+    "About":"sur le site",
     "Admin":"Admin",
     "Contacts":"contacts",
     "Faq":"FAQ",
@@ -59,8 +59,8 @@
 	},
 
 	"SIGNIN" : {
-		"Signin_Title":"Page de connexion",
-		"Signin_btn_Signin":"inscrire"
+		"Signin_title":"Page de connexion",
+		"Signin_message":"Connectez-vous à votre compte ci-dessous :"
 	},
 
   "FAQ": {
@@ -104,9 +104,16 @@
     "Button_contact_us": "contactez-nous",
     "Button_subscribe": "S'abonner à",
     "Button_submit": "Submit fr",
+    "Button_signin":"inscrire",
+		"Button_signup":"enregistrer",
     "Button_step_1": "Étape 1",
     "Button_step_2a": "Étape 2(a)",
     "Button_step_2b": "Étape 2(b)"
+	},
+
+  "LABEL":{
+    "Label_password": "mot de passe",
+    "Label_email_address": "adresse de courriel"
 	},
 
 	"FOOTER":{
