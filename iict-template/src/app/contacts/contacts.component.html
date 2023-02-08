@@ -38,20 +38,20 @@
                       placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" formControlName="Email">
               </div>
               <div class="col-md-1">
-                <p></p>
+                <p class="contact"></p>
               </div>
               <div class="form-group col-md-5 py-2">
-                  <label class="labels" for="fullname">{{ returnText('CONTACTS', 'Contacts_name') }}</label>
+                  <label class="labels" for="fullname">{{ returnText('CONTACTS', 'Contacts_name_label') }}</label>
                   <input type="text" class="form-control placeholders" name="Fullname" placeholder="{{ returnText('CONTACTS', 'Contacts_name') }}"
                       formControlName="Fullname">
               </div>
             </div>
               <div class="form-group py-2">
-                  <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_subject') }}</label>
+                  <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_subject_label') }}</label>
                   <input type="text" class="form-control placeholders" formControlName="Subject" name="Subject" placeholder="{{ returnText('CONTACTS', 'Contacts_subject') }}">
               </div>
               <div class="form-group py-2">
-                  <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_message') }}</label>
+                  <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_message_label') }}</label>
                   <textarea class="form-control placeholders" formControlName="Comment" name="Comment" placeholder="{{ returnText('CONTACTS', 'Contacts_message') }}">
                   </textarea>
               </div>

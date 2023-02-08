@@ -81,12 +81,15 @@
     "Contacts_section_title": "contactez-nous",
     "Contacts_section_subtitle": "informations de contact",
     "Contacts_location": "location:",
-    "Contacts_email_short": "email:",
+    "Contacts_email_short": "e-mail:",
     "Contacts_call": "appeler:",
+    "Contacts_name_label": "Nom:",
     "Contacts_name": "votre nom",
     "Contacts_email_long": "votre email",
-    "Contacts_message": "votre message",
-    "Contacts_subject": "sujet"
+    "Contacts_message_label": "Message:",
+    "Contacts_message": "Votre bref message détaille ...",
+    "Contacts_subject_label": "Sujet:",
+    "Contacts_subject": "Dites-nous de quoi il s'agit"
 	},
 
 	"POLICY":{

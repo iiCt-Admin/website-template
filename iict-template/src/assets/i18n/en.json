@@ -83,10 +83,13 @@
     "Contacts_location": "Location:",
     "Contacts_email_short": "Email:",
     "Contacts_call": "Call:",
+    "Contacts_name_label": "Name:",
     "Contacts_name": "Your Name",
     "Contacts_email_long": "Your email",
-    "Contacts_message": "Your message",
-    "Contacts_subject": "Subject"
+    "Contacts_message_label": "Message:",
+    "Contacts_message": "Your brief message details ...",
+    "Contacts_subject_label": "Subject:",
+    "Contacts_subject": "Tell us what this is about"
 	},
 
   "POLICY":{

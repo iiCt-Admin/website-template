@@ -79,6 +79,8 @@
 @media (max-width: 769px) {
   .contact {
     display: block;
+    margin: 2rem;
+    justify-content: space-between;
   }
 
   .contact .info {
