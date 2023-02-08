@@ -30,6 +30,7 @@ export class ContactsComponent implements OnInit {
     this.FormData = this.builder.group({
     Fullname: new FormControl('', [Validators.required]),
     Email: new FormControl('', [Validators.required, Validators.email]),
+    Subject: new FormControl('', [Validators.required]),
     Comment: new FormControl('', [Validators.required])
   })
 
