@@ -14,8 +14,8 @@
   },
 
   "HOME": {
-    "Home_Title": "Accueil",
-    "Home_subtitle": "bienvenue à ",
+    "Home_title": "Accueil",
+    "Home_subtitle": "Bienvenue à iiConsult tech Inc.",
     "Home_Select": "langue"
   },
 
@@ -29,7 +29,7 @@
 	},
 
   "ABOUT": {
-    "About_Title": "à propos de nous",
+    "About_title": "à propos de nous",
     "About_subtitle": "Qui sommes-nous ?",
     "About_body_1": "Nous sommes une nouvelle société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
     "About_bullet_1": "Services de conseil et de projet"
@@ -60,11 +60,18 @@
 
 	"SIGNIN" : {
 		"Signin_title":"Page de connexion",
-		"Signin_message":"Connectez-vous à votre compte ci-dessous :"
+		"Signin_subtitle":"Connectez-vous à votre compte ci-dessous :",
+    "Signin_message":"Message: Connectez-vous à votre compte ci-dessous :"
 	},
 
+  "SIGNUP" : {
+		"Signup_title":"Page d'inscription",
+		"Signup_subtitle":"Inscrivez-vous pour votre compte ci-dessous :",
+    "Signup_message":"Message: Inscrivez-vous pour votre compte ci-dessous :"
+  },
+
   "FAQ": {
-    "Faq_Title": "f.a.q.",
+    "Faq_title": "f.a.q.",
     "Faq_subtitle": "foire aux questions",
     "Faq_text": "Bienvenue sur notre page F.A.Q. (Foire aux questions)."
   },
@@ -81,11 +88,11 @@
     "Contacts_section_title": "contactez-nous",
     "Contacts_section_subtitle": "informations de contact",
     "Contacts_location": "location:",
-    "Contacts_email_short": "e-mail:",
     "Contacts_call": "appeler:",
+    "Contacts_email_short": "e-mail:",
+    "Contacts_email_long": "votre email",
     "Contacts_name_label": "Nom:",
     "Contacts_name": "votre nom",
-    "Contacts_email_long": "votre email",
     "Contacts_message_label": "Message:",
     "Contacts_message": "Votre bref message détaille ...",
     "Contacts_subject_label": "Sujet:",

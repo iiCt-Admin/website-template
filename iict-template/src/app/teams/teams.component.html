@@ -1,4 +1,8 @@
-<div class="container-fluid">
-  <p>teams works!</p>
-  <p *ngIf="params != null">Page Parameter 'Child' = {{ params }}
-</div>
+<p *ngIf="params != null">Page Parameter 'Child' = {{ params }}
+<section id="team" class="team">
+  <div class="section-title center-text" data-aos="zoom-out">
+    <h2 >{{ returnText('TEAM', 'Team_title') }}</h2>
+    <p >{{ returnText('TEAM', 'Team_subtitle') }}</p>
+    <p></p>
+
+  </div>

@@ -14,8 +14,8 @@
   },
 
   "HOME": {
-    "Home_Title": "Home",
-    "Home_subtitle": "Welcome to ",
+    "Home_title": "Home",
+    "Home_subtitle": "Welcome to iiConsult tech Inc.",
     "Home_Select": "Language"
   },
 
@@ -29,7 +29,7 @@
 	},
 
   "ABOUT": {
-    "About_Title": "About Us",
+    "About_title": "About Us",
     "About_subtitle": "Who are we?",
     "About_body_1": "We are a new aged management quality & development consultancy for software development and technology work.",
     "About_bullet_1": "Consulting and Project Services"
@@ -43,7 +43,7 @@
   "COMPONENT":{
     "About":"About",
     "Admin":"Admin",
-    "Contacts":"Contacts",
+    "Contacts":"Contact",
     "Faq":"FAQ",
     "Footer":"Footer",
     "Gallery":"Gallery",
@@ -60,11 +60,18 @@
 
 	"SIGNIN" : {
 		"Signin_title":"Sign In Page",
-		"Signin_message":"Sign In to your account below:"
+		"Signin_subtitle":"Sign In to your account below:",
+    "Signin_message":"Message: Sign In to your account below:"
+  },
+
+  "SIGNUP" : {
+		"Signup_title":"Sign Up Page",
+		"Signup_subtitle":"Sign Up for your account below:",
+    "Signup_message":"Message: Sign Up for your account below:"
   },
 
   "FAQ": {
-    "Faq_Title": "F.A.Q.",
+    "Faq_title": "F.A.Q.",
     "Faq_subtitle": "Frequently Asked Questions",
     "Faq_text": "Welcome to our F.A.Q. (Frequently Asked Questions) page."
   },
@@ -81,11 +88,11 @@
 		"Contacts_section_title": "Contact Us",
     "Contacts_section_subtitle": "Contact Information",
     "Contacts_location": "Location:",
-    "Contacts_email_short": "Email:",
     "Contacts_call": "Call:",
+    "Contacts_email_short": "Email:",
+    "Contacts_email_long": "Your email",
     "Contacts_name_label": "Name:",
     "Contacts_name": "Your Name",
-    "Contacts_email_long": "Your email",
     "Contacts_message_label": "Message:",
     "Contacts_message": "Your brief message details ...",
     "Contacts_subject_label": "Subject:",
