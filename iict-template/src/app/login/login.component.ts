@@ -28,4 +28,7 @@ export class LoginComponent implements OnInit {
 
   }
 
+  returnText(key : string, value : string){
+    return this.appService.returnText(key, value);
+  }
 }

@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
+import { AppService } from '../services/app.service';
+import { ContactService } from '../services/contact.service';
+import * as AOS from 'aos';
+import 'boxicons';
 
 @Component({
   selector: 'app-teams',
@@ -10,7 +15,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class TeamsComponent implements OnInit {
 
-  constructor(public translate : TranslateService, private route: ActivatedRoute) { }
+  constructor(public translate : TranslateService,
+              private route: ActivatedRoute,
+              private builder: FormBuilder,
+              private contact: ContactService,
+              private appService: AppService) { }
   order : string = '';
 	params = new Object();
 
@@ -23,5 +32,8 @@ export class TeamsComponent implements OnInit {
     );
   }
 
+  returnText(key : string, value : string){
+    return this.appService.returnText(key, value);
+  }
 
 }

@@ -1,12 +1,17 @@
 <section id="homepage" class="home">
+  <div class="section-title center-text" data-aos="zoom-out">
+    <h2 >{{ returnText('HOME', 'Home_title') }}</h2>
+    <p >{{ returnText('HOME', 'Home_subtitle') }}</p>
+    <div>
+      <button class="one_space_r btn btn-custom" (click)="this.appService.switchPage('about')">{{ returnText('COMPONENT', 'About') }}</button>
+    </div>
+  </div>
   <div class="">
-    <p>home works!</p>
+    <p></p>
     <div *ngIf="this.authService.signedIn == true">
       <p>Signed in</p>
     </div>
-    <div>
-      <button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('about')">about</button>
-    </div>
+
   </div>
 
 
