@@ -32,7 +32,13 @@
     "About_title": "à propos de nous",
     "About_subtitle": "Qui sommes-nous ?",
     "About_body_1": "Nous sommes une nouvelle société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
-    "About_bullet_1": "Services de conseil et de projet"
+    "About_body_2": "Nos services visent à fournir à nos clients de la valeur et de l'expertise par le biais de travaux de conseil, de conception et de développement.",
+    "About_body_3": "Si vous êtes à la recherche d'une expertise expérimentée en matière d'assurance qualité et de gestion de projet pour un grand projet ou si une nouvelle startup/petite entreprise cherche quelqu'un pour rejoindre son équipe offrant de multiples disciplines et connaissances en technologie, projets et gestion, alors vous êtes la personne avec laquelle nous voulons travailler.",
+    "About_bullet_1": "Services de consultation et de projet",
+    "About_bullet_2": "Modules de services pour le démarrage et les médias",
+    "About_bullet_3": "Services de conception et de développement",
+    "About_bullet_4": "Expertise en matière d'assurance qualité",
+    "About_bullet_5": "Soutien des services technologiques"
   },
 
   "NAVBAR":{

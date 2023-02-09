@@ -1,9 +1,7 @@
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about {
+/* Add space to top if desired - pushes page items down */
+/* .about {
   padding-top: 80px;
-}
+} */
 
 .about .content h3 {
   font-weight: 600;
@@ -21,21 +19,16 @@
 }
 
 .bullet-align {
-  /* Added */
   margin-bottom: 3px;
   margin-left: -1.6rem;
 }
 
-/* .about .content ul li + li {
-  margin-top: 10px;
-} removed */
 .about .content ul i {
   position: absolute;
   left: 0;
   top: 2px;
   font-size: 20px;
   color: #fe5828;
-  /* Modified */
   line-height: 1;
 }
 
@@ -48,7 +41,6 @@
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
-  /* Added - needed after linking to other pages */
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -56,23 +48,20 @@
   transition: 0.3s;
   line-height: 1;
   color: #fe5828;
-  /* Modified */
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  margin-top: 6px;
+  margin-top: 25px;
   border: 2px solid #fe5828;
-  /* Modified */
 }
 
 .about .content .btn-learn-more:hover {
   background: #fe5828;
-  /* Modified */
   color: #fff;
   text-decoration: none;
 }
 
 .about-second-col {
-  /* margin-top: 40px; */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,16 +69,18 @@
 }
 
 .margin-top {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .promo-right {
-  margin-left: 3rem;
-  width: 88%;
-  height: 110%;
+  margin-top: 1rem;
+  width: 80%;
+  height: 100%;
 }
 
 .promo-left {
+  margin-top: 1rem;
+  margin-left: -4rem;
   width: 80%;
-  height: 75%;
+  height: 100%;
 }
