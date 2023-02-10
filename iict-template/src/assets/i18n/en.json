@@ -31,7 +31,7 @@
   "ABOUT": {
     "About_title": "About Us",
     "About_subtitle": "Who are we?",
-    "About_body_1": "We are a new aged management quality & development consultancy for software development and technology work.",
+    "About_body_1": "We are a new-aged management quality & development consultancy for software development and technology work.",
     "About_body_2": "Our services focus on providing our clients value and expertise through consulting, design and development work.",
     "About_body_3": "If you are looking for experienced Quality Assurance project and management expertise for a large project or a new startup / small business looking for someone to join their team offering multiple disciplines and knowledge in technology, projects & management, then you are who we want to work with.",
     "About_bullet_1": "Consulting and Project Services",
@@ -41,10 +41,16 @@
     "About_bullet_5": "Technology Service support"
   },
 
+	"CTA":{
+		"Cta_title":"Next steps ...",
+		"Cta_body_p1":"If you have a project role that you’re looking to fill,",
+    "Cta_body_p2":"and fill out our contact sheet, telling us about the work and your needs."
+  },
+
 	"NAVBAR":{
 		"Nav_Company":"Company Name",
 		"Nav_SignOut":"Sign Out"
-},
+  },
 
   "COMPONENT":{
     "About":"About",

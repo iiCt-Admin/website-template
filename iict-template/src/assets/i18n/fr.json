@@ -41,6 +41,12 @@
     "About_bullet_5": "Soutien des services technologiques"
   },
 
+  "CTA":{
+		"Cta_title":"Next steps ...",
+		"Cta_body_p1":"If you have a project role that you’re looking to fill,",
+    "Cta_body_p2":"and fill out our contact sheet, telling us about the work and your needs."
+  },
+
   "NAVBAR":{
 		"Nav_Company":"entreprise",
 		"Nav_SignOut":"déconnecter"
