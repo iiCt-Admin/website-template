@@ -90,22 +90,6 @@
   height: 100%;
 }
 
-@media (max-width: 769px) {
-  .about {
-    display: block;
-    /* margin: 2rem; */
-    justify-content: space-between;
-  }
-
-  .promo-right {
-    width: 100%;
-  }
-
-    .promo-left {
-      width: 100%;
-      margin-left: 0rem;
-    }
-}
 /*--------------------------------------------------------------
 # Call to Action (cta)
 --------------------------------------------------------------*/
@@ -120,6 +104,7 @@
 
 .cta .container {
   width: 80%;
+  background: wheat;
   padding: 30px 90px 15px 90px;
   border: #fe5828;
   border-style: solid;
@@ -160,22 +145,54 @@
   /* Modified */
 }
 
+.cta .cta-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .cta .name-highlight {
   font-family: "Yanone Kaffeesatz";
   font-weight: 600;
   font-size: larger;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1072px) {
+  .promo-left {
+    width: 80%;
+    margin-left: 0rem;
+  }
   .cta {
+    display: block;
     background-attachment: scroll;
+  }
+
+  .cta .container {
+    padding: 30px 30px 15px 30px;
+  }
+
+  .cta .cta-btn-container {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
   }
 }
 
-@media (min-width: 769px) {
-  .cta .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+@media (min-width: 770px) {
+  .about {
+      display: block;
+      /* margin: 2rem; */
+      justify-content: space-between;
+    }
+
+  .promo-right {
+    width: 90%;
   }
+
+  .promo-left {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+
 }
