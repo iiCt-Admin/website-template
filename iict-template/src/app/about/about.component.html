@@ -1,5 +1,73 @@
 <section id="about" class="about">
-  <div class="section-title center-text" data-aos="zoom-out">
-    <h2 >{{ returnText('ABOUT', 'About_title') }}</h2>
-    <p >{{ returnText('ABOUT', 'About_subtitle') }}</p>
+  <div class="container">
+    <div class="section-title center-text" data-aos="zoom-out">
+      <h2 >{{ returnText('ABOUT', 'About_title') }}</h2>
+      <p >{{ returnText('ABOUT', 'About_subtitle') }}</p>
+    </div>
+      <div class="row content" data-aos="fade-up">
+            <div class="col-lg-6">
+              <p class="margin-top" > {{ returnText('ABOUT', 'About_body_1') }} </p>
+              <p class="" > {{ returnText('ABOUT', 'About_body_2') }} </p>
+              <ul>  <!-- Bullet point text items About_bullet_1-5 -->
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_1') }} </li>
+                </div>
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_2') }} </li>
+                </div>
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_3') }} </li>
+                </div>
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_4') }} </li>
+                </div>
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_5') }} </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col-lg-6 about-second-col">  <!-- Right Side Video -->
+              <video controls class="promo-right">
+                <source src="assets/video/iiConsult.tech_promo_2.mp4" type="video/mp4">
+              </video>
+        </div>
+      </div>
+          <div class="row content" data-aos="fade-up">
+            <div class="col-lg-6 about-second-col">  <!-- Left Side Video -->
+              <video controls class="promo-left">
+                <source src="assets/video/iiConsult.tech_promo_3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-lg-6 about-second-col margin-top">
+              <p class=""> {{ returnText('ABOUT', 'About_body_3') }} </p>
+              <a href="new.html#" class="btn-learn-more" > {{ returnText('BUTTON', 'Button_learn_more') }} </a>
+            </div>
+          </div>
   </div>
+
+        <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container">
+
+          <div class="row" data-aos="zoom-out">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3> {{ returnText('CTA', 'Cta_title') }}  </h3>
+              <div class="inline">
+                <p class=""> {{ returnText('CTA', 'Cta_body_p1') }}  <span class="name-highlight"> {{ returnText('COMPANY', 'Company_name_short') }} </span> {{ returnText('CTA', 'Cta_body_p2') }}  </p>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#" > {{ returnText('BUTTON', 'Button_contact_us') }}  </a>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- End Cta Section -->
