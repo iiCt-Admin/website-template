@@ -41,10 +41,43 @@
     "About_bullet_5": "Soutien des services technologiques"
   },
 
+  "FEATURES":{
+		"Features_title":"",
+		"Features_tab_1":"Services aux entreprises et médias",
+    "Features_tab_2":"Services de consultation et de projet",
+    "Features_tab_3":"Services de développement et de conception",
+    "Features_tab_4":"n/a",
+    "Features_1_title": "Offres de services de consultation et de projet",
+    "Features_1_body_1": "Offrir des années d'expérience et d'expertise en matière de qualité et de gestion pour aider votre entreprise à aller de l'avant.",
+    "Features_1_body_2": "Avec plus de 25 ans d'expertise dans le secteur financier, dans des environnements de grandes entreprises, des services de taille moyenne et des industries de détail, nos consultants seront en mesure de vous aider à relever les défis et les exigences uniques de votre prochain projet.",
+    "Features_1_bullet_1": "Expérience avec les grandes, moyennes et petites organisations.",
+    "Features_1_bullet_2": "Gestion de l'assurance qualité et leadership pour votre prochain projet.",
+    "Features_1_bullet_3": "Conseil en gestion d'entreprise pour votre entreprise existante ou en démarrage.",
+    "Features_1_bullet_4": "n/a",
+    "Features_1_bullet_5": "n/a",
+    "Features_2_title": "Paquets de services pour le démarrage et les médias",
+    "Features_2_body_1": "Nous pouvons préparer les conceptions et le matériel dont vous aurez besoin pour votre entreprise, votre projet ou votre idée, nouveaux ou existants.",
+    "Features_2_body_2": "Faites-nous travailler pour vous sur votre prochain projet :",
+    "Features_2_bullet_1": "Votre prochain projet de conception ou de mise à jour de site Web",
+    "Features_2_bullet_2": "Services continus de révision et de déploiement de sites Web",
+    "Features_2_bullet_3": "Services de conception pour les médias en ligne",
+    "Features_2_bullet_4": "Identité et matériel publicitaire",
+    "Features_2_bullet_5": "n/a",
+    "Features_3_title": "Capacités des services de développement et de conception",
+    "Features_3_body_1": "Services de conception et de développement numériques pour que votre entreprise réussisse et s'épanouisse",
+    "Features_3_body_2": "Notre équipe a travaillé avec de nombreuses technologies et plateformes de développement différentes :",
+    "Features_3_bullet_1": "Développement de sites Web (HTML5, CSS, Javascript et Typescript)",
+    "Features_3_bullet_2": "Technologies et lancements Android (Android studio, Kotlin & Java)",
+    "Features_3_bullet_3": "Technologies iOS (xCode, Swift et Swift UI)",
+    "Features_3_bullet_4": "Plateformes de développement Web (Angular, Node JS, React, PHP)",
+    "Features_3_bullet_5": "Technologies de développement (Github, Jira, Teamworks, Sourcetree)",
+    "Features_3_bullet_6": "Données et bases de données (SQL, Firebase, MongoDB, Realm, Room)"
+  },
+
   "CTA":{
-		"Cta_title":"Next steps ...",
-		"Cta_body_p1":"If you have a project role that you’re looking to fill,",
-    "Cta_body_p2":"and fill out our contact sheet, telling us about the work and your needs."
+		"Cta_title":"Prochaines étapes ...",
+		"Cta_body_p1":"Si vous avez un rôle dans un projet que vous cherchez à remplir,",
+    "Cta_body_p2":"et remplissez notre fiche de contact, en nous parlant du travail et de vos besoins."
   },
 
   "NAVBAR":{
