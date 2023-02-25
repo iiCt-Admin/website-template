@@ -12,7 +12,10 @@ import { AuthService } from '../services/authentication.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public translate : TranslateService,public appService : AppService, public authService : AuthService, private router : Router) { }
+  constructor(public translate : TranslateService,
+    public appService : AppService, 
+    public authService : AuthService, 
+    private router : Router) { }
 
   ngOnInit(): void {
   }

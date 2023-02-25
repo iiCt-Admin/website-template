@@ -1,0 +1,25 @@
+.signin-width{
+	width : 600px;
+}
+
+@media (max-width: 769px) {
+  .contact {
+    display: block;
+  }
+
+  .signin{
+    margin-bottom: 3rem;
+  }
+
+  .signin-width {
+      width: 75%
+    }
+  }
+
+@media (max-width: 450px) {
+
+  .signin-width {
+    width: 100%
+  }
+}
+
