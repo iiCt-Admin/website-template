@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'news', component: NewsComponent},
   { path: 'gallery', component: GalleryComponent},
+  { path:'signin',component:SigninComponent}
   // { path: 'account', component: AccountComponent },
   // { path: 'self-manager-dashboard', component: SelfmanagerPageComponent },
   // { path: 'employee-dashboard', component: EmployeePageComponent },

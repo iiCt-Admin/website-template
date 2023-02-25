@@ -14,8 +14,8 @@
   },
 
   "HOME": {
-    "Home_Title": "Home",
-    "Home_subtitle": "Welcome to ",
+    "Home_title": "Home",
+    "Home_subtitle": "Welcome to iiConsult tech Inc.",
     "Home_Select": "Language"
   },
 
@@ -29,21 +29,66 @@
 	},
 
   "ABOUT": {
-    "About_Title": "About Us",
+    "About_title": "About Us",
     "About_subtitle": "Who are we?",
-    "About_body_1": "We are a new aged management quality & development consultancy for software development and technology work.",
-    "About_bullet_1": "Consulting and Project Services"
+    "About_body_1": "We are a new-aged management quality & development consultancy for software development and technology work.",
+    "About_body_2": "Our services focus on providing our clients value and expertise through consulting, design and development work.",
+    "About_body_3": "If you are looking for experienced Quality Assurance project and management expertise for a large project or a new startup / small business looking for someone to join their team offering multiple disciplines and knowledge in technology, projects & management, then you are who we want to work with.",
+    "About_bullet_1": "Consulting and Project Services",
+    "About_bullet_2": "Start-Up and Media Service Packages",
+    "About_bullet_3": "Development and Design Services",
+    "About_bullet_4": "Quality Assurance expertise",
+    "About_bullet_5": "Technology Service support"
+  },
+
+  "FEATURES":{
+		"Features_title":"Next steps ...",
+		"Features_tab_1":"Start-Up & Media Services",
+    "Features_tab_2":"Consulting & Project Services",
+    "Features_tab_3":"Development & Design Services",
+    "Features_tab_4":"n/a",
+    "Features_1_title": "Consulting & Project Service Offerings",
+    "Features_1_body_1": "Offering years of quality and management experience and expertise to help your company move forward.",
+    "Features_1_body_2": "With more than 25 years of financial industry expertise in large corporate environments, mid-sized service and retail industries, our consultants will be able to help navigate the unique challenges and requirements of your  next project.",
+    "Features_1_bullet_1": "Experience with large, mid-sized & small organizations.",
+    "Features_1_bullet_2": "Quality Assurance management & leadership for your next project.",
+    "Features_1_bullet_3": "Business management consulting for your existing or start-up company.",
+    "Features_1_bullet_4": "n/a",
+    "Features_1_bullet_5": "n/a",
+    "Features_2_title": "Start-Up and Media Service Packages",
+    "Features_2_body_1": "We can prepare designs and materials you'll need for your new or existing business, project or idea.",
+    "Features_2_body_2": "Get us working for you on your next project: ",
+    "Features_2_bullet_1": "Your next website design or update project",
+    "Features_2_bullet_2": "Ongoing website maintenance and deployment services",
+    "Features_2_bullet_3": "Design services for online media",
+    "Features_2_bullet_4": "Identity packages and collateral materials",
+    "Features_2_bullet_5": "n/a",
+    "Features_3_title": "Development & Design Service Capabilities",
+    "Features_3_body_1": "Digital design and development services for your business to succeed and flourish.",
+    "Features_3_body_2": "Our team has worked with many different development technologies and platforms:",
+    "Features_3_bullet_1": "Web site development (HTML5, CSS, Javascript & Typescript)",
+    "Features_3_bullet_2": "Android technologies & launches (Android studio, Kotlin & Java)",
+    "Features_3_bullet_3": "iOS tecnologies (xCode, Swift and Swift UI)",
+    "Features_3_bullet_4": "Web development platforms (Angular, Node JS, React, PHP)",
+    "Features_3_bullet_5": "Development technologies (Github, Jira, Teamworks, Sourcetree)",
+    "Features_3_bullet_6": "Data and databases (SQL, Firebase, MongoDB, Realm, Room)"
+  },
+
+	"CTA":{
+		"Cta_title":"Next steps ...",
+		"Cta_body_p1":"If you have a project role that you’re looking to fill,",
+    "Cta_body_p2":"and fill out our contact sheet, telling us about the work and your needs."
   },
 
 	"NAVBAR":{
 		"Nav_Company":"Company Name",
 		"Nav_SignOut":"Sign Out"
-},
+  },
 
   "COMPONENT":{
     "About":"About",
     "Admin":"Admin",
-    "Contacts":"Contacts",
+    "Contacts":"Contact",
     "Faq":"FAQ",
     "Footer":"Footer",
     "Gallery":"Gallery",
@@ -59,21 +104,19 @@
   },
 
 	"SIGNIN" : {
-		"Signin_Title":"Sign In Page",
-		"Signin_btn_Signin":"Sign In",
-    "Signin_password":"Enter your password"
+		"Signin_title":"Sign In Page",
+		"Signin_subtitle":"Sign In to your account below:",
+    "Signin_message":"Message: Sign In to your account below:"
   },
 
   "SIGNUP" : {
-		"Signup_Title":"Sign Up Page",
-    "Signup_subtitle":"Sign Into your Page",
-		"Signup_btn_Signup":"Sign Up",
-    "Signup_first_name":"First Name",
-    "Signup_last_name":"Last Name"
+		"Signup_title":"Sign Up Page",
+		"Signup_subtitle":"Sign Up for your account below:",
+    "Signup_message":"Message: Sign Up for your account below:"
   },
 
   "FAQ": {
-    "Faq_Title": "F.A.Q.",
+    "Faq_title": "F.A.Q.",
     "Faq_subtitle": "Frequently Asked Questions",
     "Faq_text": "Welcome to our F.A.Q. (Frequently Asked Questions) page."
   },
@@ -90,12 +133,15 @@
 		"Contacts_section_title": "Contact Us",
     "Contacts_section_subtitle": "Contact Information",
     "Contacts_location": "Location:",
-    "Contacts_email_short": "Email:",
     "Contacts_call": "Call:",
-    "Contacts_name": "Your Name",
+    "Contacts_email_short": "Email:",
     "Contacts_email_long": "Your email",
-    "Contacts_message": "Your message",
-    "Contacts_subject": "Subject"
+    "Contacts_name_label": "Name:",
+    "Contacts_name": "Your Name",
+    "Contacts_message_label": "Message:",
+    "Contacts_message": "Your brief message details ...",
+    "Contacts_subject_label": "Subject:",
+    "Contacts_subject": "Tell us what this is about"
 	},
 
   "POLICY":{
@@ -113,9 +159,18 @@
     "Button_contact_us": "Contact Us",
     "Button_subscribe": "Subscribe",
     "Button_submit": "Submit",
+    "Button_signin":"Sign In",
+		"Button_signup":"Sign Up",
     "Button_step_1": "Step 1",
     "Button_step_2a": "Step 2(a)",
     "Button_step_2b": "Step 2(b)"
+	},
+
+  "LABEL":{
+    "Label_password": "Password",
+    "Label_email_address": "Email Address",
+    "Label_first_name":"First Name",
+    "Label_last_name":"Last Name"
 	},
 
 	"FOOTER":{

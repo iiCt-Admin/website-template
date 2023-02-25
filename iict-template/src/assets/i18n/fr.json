@@ -14,8 +14,8 @@
   },
 
   "HOME": {
-    "Home_Title": "Accueil",
-    "Home_subtitle": "bienvenue à ",
+    "Home_title": "Accueil",
+    "Home_subtitle": "Bienvenue à iiConsult tech Inc.",
     "Home_Select": "langue"
   },
 
@@ -29,10 +29,55 @@
 	},
 
   "ABOUT": {
-    "About_Title": "à propos de nous",
+    "About_title": "à propos de nous",
     "About_subtitle": "Qui sommes-nous ?",
     "About_body_1": "Nous sommes une nouvelle société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
-    "About_bullet_1": "Services de conseil et de projet"
+    "About_body_2": "Nos services visent à fournir à nos clients de la valeur et de l'expertise par le biais de travaux de conseil, de conception et de développement.",
+    "About_body_3": "Si vous êtes à la recherche d'une expertise expérimentée en matière d'assurance qualité et de gestion de projet pour un grand projet ou si une nouvelle startup/petite entreprise cherche quelqu'un pour rejoindre son équipe offrant de multiples disciplines et connaissances en technologie, projets et gestion, alors vous êtes la personne avec laquelle nous voulons travailler.",
+    "About_bullet_1": "Services de consultation et de projet",
+    "About_bullet_2": "Modules de services pour le démarrage et les médias",
+    "About_bullet_3": "Services de conception et de développement",
+    "About_bullet_4": "Expertise en matière d'assurance qualité",
+    "About_bullet_5": "Soutien des services technologiques"
+  },
+
+  "FEATURES":{
+		"Features_title":"",
+		"Features_tab_1":"Services aux entreprises et médias",
+    "Features_tab_2":"Services de consultation et de projet",
+    "Features_tab_3":"Services de développement et de conception",
+    "Features_tab_4":"n/a",
+    "Features_1_title": "Offres de services de consultation et de projet",
+    "Features_1_body_1": "Offrir des années d'expérience et d'expertise en matière de qualité et de gestion pour aider votre entreprise à aller de l'avant.",
+    "Features_1_body_2": "Avec plus de 25 ans d'expertise dans le secteur financier, dans des environnements de grandes entreprises, des services de taille moyenne et des industries de détail, nos consultants seront en mesure de vous aider à relever les défis et les exigences uniques de votre prochain projet.",
+    "Features_1_bullet_1": "Expérience avec les grandes, moyennes et petites organisations.",
+    "Features_1_bullet_2": "Gestion de l'assurance qualité et leadership pour votre prochain projet.",
+    "Features_1_bullet_3": "Conseil en gestion d'entreprise pour votre entreprise existante ou en démarrage.",
+    "Features_1_bullet_4": "n/a",
+    "Features_1_bullet_5": "n/a",
+    "Features_2_title": "Paquets de services pour le démarrage et les médias",
+    "Features_2_body_1": "Nous pouvons préparer les conceptions et le matériel dont vous aurez besoin pour votre entreprise, votre projet ou votre idée, nouveaux ou existants.",
+    "Features_2_body_2": "Faites-nous travailler pour vous sur votre prochain projet :",
+    "Features_2_bullet_1": "Votre prochain projet de conception ou de mise à jour de site Web",
+    "Features_2_bullet_2": "Services continus de révision et de déploiement de sites Web",
+    "Features_2_bullet_3": "Services de conception pour les médias en ligne",
+    "Features_2_bullet_4": "Identité et matériel publicitaire",
+    "Features_2_bullet_5": "n/a",
+    "Features_3_title": "Capacités des services de développement et de conception",
+    "Features_3_body_1": "Services de conception et de développement numériques pour que votre entreprise réussisse et s'épanouisse",
+    "Features_3_body_2": "Notre équipe a travaillé avec de nombreuses technologies et plateformes de développement différentes :",
+    "Features_3_bullet_1": "Développement de sites Web (HTML5, CSS, Javascript et Typescript)",
+    "Features_3_bullet_2": "Technologies et lancements Android (Android studio, Kotlin & Java)",
+    "Features_3_bullet_3": "Technologies iOS (xCode, Swift et Swift UI)",
+    "Features_3_bullet_4": "Plateformes de développement Web (Angular, Node JS, React, PHP)",
+    "Features_3_bullet_5": "Technologies de développement (Github, Jira, Teamworks, Sourcetree)",
+    "Features_3_bullet_6": "Données et bases de données (SQL, Firebase, MongoDB, Realm, Room)"
+  },
+
+  "CTA":{
+		"Cta_title":"Prochaines étapes ...",
+		"Cta_body_p1":"Si vous avez un rôle dans un projet que vous cherchez à remplir,",
+    "Cta_body_p2":"et remplissez notre fiche de contact, en nous parlant du travail et de vos besoins."
   },
 
   "NAVBAR":{
@@ -41,7 +86,7 @@
 	},
 
   "COMPONENT":{
-    "About":"About",
+    "About":"sur le site",
     "Admin":"Admin",
     "Contacts":"contacts",
     "Faq":"FAQ",
@@ -59,12 +104,19 @@
 	},
 
 	"SIGNIN" : {
-		"Signin_Title":"Page de connexion",
-		"Signin_btn_Signin":"inscrire"
+		"Signin_title":"Page de connexion",
+		"Signin_subtitle":"Connectez-vous à votre compte ci-dessous :",
+    "Signin_message":"Message: Connectez-vous à votre compte ci-dessous :"
 	},
 
+  "SIGNUP" : {
+		"Signup_title":"Page d'inscription",
+		"Signup_subtitle":"Inscrivez-vous pour votre compte ci-dessous :",
+    "Signup_message":"Message: Inscrivez-vous pour votre compte ci-dessous :"
+  },
+
   "FAQ": {
-    "Faq_Title": "f.a.q.",
+    "Faq_title": "f.a.q.",
     "Faq_subtitle": "foire aux questions",
     "Faq_text": "Bienvenue sur notre page F.A.Q. (Foire aux questions)."
   },
@@ -81,12 +133,15 @@
     "Contacts_section_title": "contactez-nous",
     "Contacts_section_subtitle": "informations de contact",
     "Contacts_location": "location:",
-    "Contacts_email_short": "email:",
     "Contacts_call": "appeler:",
-    "Contacts_name": "votre nom",
+    "Contacts_email_short": "e-mail:",
     "Contacts_email_long": "votre email",
-    "Contacts_message": "votre message",
-    "Contacts_subject": "sujet"
+    "Contacts_name_label": "Nom:",
+    "Contacts_name": "votre nom",
+    "Contacts_message_label": "Message:",
+    "Contacts_message": "Votre bref message détaille ...",
+    "Contacts_subject_label": "Sujet:",
+    "Contacts_subject": "Dites-nous de quoi il s'agit"
 	},
 
 	"POLICY":{
@@ -104,9 +159,16 @@
     "Button_contact_us": "contactez-nous",
     "Button_subscribe": "S'abonner à",
     "Button_submit": "Submit fr",
+    "Button_signin":"inscrire",
+		"Button_signup":"enregistrer",
     "Button_step_1": "Étape 1",
     "Button_step_2a": "Étape 2(a)",
     "Button_step_2b": "Étape 2(b)"
+	},
+
+  "LABEL":{
+    "Label_password": "mot de passe",
+    "Label_email_address": "adresse de courriel"
 	},
 
 	"FOOTER":{

@@ -35,7 +35,7 @@
 	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('legal')">{{ returnText('COMPONENT', 'Legal') }}</button>
 
 	<div >
-	<button class="one_space_r btn btn-primary">{{ returnText('COMPONENT', 'SignIn') }}</button>
+	<button class="one_space_r btn btn-primary"(click)="this.appService.switchPage('signin')">{{ returnText('COMPONENT', 'SignIn') }}</button>
 	</div>
 	<ng-template #otherBlock>
 		<button class="one_space_r btn btn-primary">{{ returnText('NAVBAR', 'Nav_SignOut') }}</button>

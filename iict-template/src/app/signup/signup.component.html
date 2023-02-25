@@ -2,33 +2,36 @@
   <div class="section-title center-text" data-aos="zoom-out">
     <h2>{{ returnText('COMPONENT', 'SignUp') }}</h2>
     <p>{{ returnText('SIGNUP', 'Signup_title') }}</p>
-    <p>{{ returnText('SIGNUP', 'Signup_subtitle') }}</p>
   </div>
   <div>
     <div class="container-fluid center d-flex signin-width">
-      <form class="form-control center login-email">
-        <!-- <H4> {{ returnText('SIGNUP', 'Signup_subtitle') }} </H4> -->
+      <form class="form-control center">
+        <H5> {{ returnText('SIGNUP', 'Signup_subtitle') }} </H5>
         <div class="form-group m-2 inline">
-          <label class="sr-only d-flex justify-content-center py-2"> {{ returnText('SIGNUP',
-            'Signup_first_name') }} </label>
-          <input type="first name" class="formControl" placeholder="{{ returnText('SIGNUP',
-          'Signup_first_name') }}" #userFirstName required />
+          <label class="sr-only d-flex justify-content-center py-2"> {{ returnText('LABEL',
+            'Label_first_name') }} </label>
+            <p class="py-2"></p>
+          <input type="first name" class="formControl" placeholder="{{ returnText('LABEL',
+          'Label_first_name') }}" #userFirstName required />
         </div>
         <div class="form-group m-2 inline">
-          <label class="sr-only d-flex justify-content-center py-2" > {{ returnText('SIGNUP',
-            'Signup_last_name') }} </label>
-          <input type="last name" class="formControl" placeholder="{{ returnText('SIGNUP',
-          'Signup_last_name') }}" #userLastName required />
+          <label class="sr-only d-flex justify-content-center py-2" > {{ returnText('LABEL',
+            'Label_last_name') }} </label>
+            <p></p>
+          <input type="last name" class="formControl" placeholder="{{ returnText('LABEL',
+          'Label_last_name') }}" #userLastName required />
         </div>
         <div class="form-group m-2 inline">
-          <label class="sr-only d-flex justify-content-center py-2" for="inputEmail"> {{ returnText('',
+          <label class="sr-only d-flex justify-content-center py-2" for="inputEmail"> {{ returnText('LABEL',
             'Label_email_address') }} </label>
-          <input type="Email" class="formControl" placeholder="email" #userEmail required />
+          <input type="Email" class="formControl" placeholder="{{ returnText('LABEL',
+          'Label_email_address') }}" #userEmail required />
         </div>
-        <div class="form-group m-2">
+        <div class="form-group m-2 inline">
           <label class="sr-only d-flex justify-content-center py-2" for="inputPassword"> {{ returnText('LABEL',
-            'Label_email_address') }} </label>
-          <input type="password" class="formControl" placeholder="Password" #userPwd required />
+            'Label_password') }} </label>
+          <input type="password" class="formControl" placeholder="{{ returnText('LABEL',
+          'Label_password') }}" #userPwd required />
         </div>
         <p class="d-flex justify-content-center py-4">
           <button class="btn btn-primary" type="submit"
