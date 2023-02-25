@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from '../services/authentication.service';
 import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app.service'
+import { AuthService } from '../services/authentication.service';
 
 
 @Component({
@@ -13,9 +13,9 @@ import { AppService } from '../services/app.service'
 export class HomeComponent implements OnInit {
 
   constructor(public translate : TranslateService,
-              public authService : AuthenticationService,
-              public appService : AppService,
-              private router : Router) { }
+    public appService : AppService, 
+    public authService : AuthService, 
+    private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -24,8 +24,5 @@ export class HomeComponent implements OnInit {
   return this.appService.returnText(key, value);
   }
 
-  login(){
-	this.appService.switchPage('login');
-  }
 
 }

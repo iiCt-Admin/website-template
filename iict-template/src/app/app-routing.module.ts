@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
 import { FaqComponent } from './faq/faq.component';
 import { LegalComponent } from './legal/legal.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 const routes: Routes = [
@@ -21,12 +21,12 @@ const routes: Routes = [
 	{ path: 'contacts', component: ContactsComponent },
   { path: 'team', component: TeamsComponent },
   { path: 'legal', component: LegalComponent },
-  { path: 'login', component: LoginComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'about', component: AboutComponent},
   { path: 'news', component: NewsComponent},
   { path: 'gallery', component: GalleryComponent},
+  { path:'signin',component:SigninComponent}
   // { path: 'account', component: AccountComponent },
   // { path: 'self-manager-dashboard', component: SelfmanagerPageComponent },
   // { path: 'employee-dashboard', component: EmployeePageComponent },
