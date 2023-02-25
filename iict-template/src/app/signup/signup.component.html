@@ -1,3 +1,65 @@
 <div class="container-fluid">
-<p>signup works!</p>
+    <div class="displayTable">
+        <div class="displayTableCell">
+          <div class="authBlock">
+            <h3>Sign Up</h3>
+            <div class="formGroup py-2">
+              <input
+                type="email"
+                class="formControl"
+                placeholder="Email Address"
+                #userEmail
+                required
+              />
+            </div>
+            <div class="formGroup py-2">
+              <input
+                type="first name"
+                class="formControl"
+                placeholder="First name"
+                #userFirstName
+                required
+              />
+            </div>
+            <div class="formGroup py-2">
+              <input
+                type="last name"
+                class="formControl"
+                placeholder="Last name"
+                #userLastName
+                required
+              />
+            </div>
+            
+            <div class="formGroup py-2">
+              <input
+                type="password"
+                class="formControl"
+                placeholder="Password"
+                #userPwd
+                required
+              />
+            </div>
+            <div class="formGroup py-2">
+              <input
+                type="button"
+                class="btn btnPrimary"
+                value="Sign Up"
+                (click)="authService.new_register(userEmail.value, userPwd.value,userFirstName.value, userLastName.value)"
+              />
+            </div>
+            <!-- Continue with Google -->
+            <!-- <div class="formGroup">
+              <button
+                type="button"
+                class="btn googleBtn"
+                (click)="authService.GoogleAuth()"
+              >
+                <i class="fab fa-google-plus-g"></i>
+                Continue with Google
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
 </div>

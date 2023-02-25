@@ -5,7 +5,6 @@ import {TranslateService} from '@ngx-translate/core';
 
 import { Observable, of } from 'rxjs';
 
-import { AuthenticationService } from '../services/authentication.service'
 import { AppService } from '../services/app.service'
 
 @Component({
@@ -25,7 +24,7 @@ export class NavbarComponent implements OnInit {
 		language: 'fr'
 	},
 ]
-  constructor(public translate: TranslateService, public authService : AuthenticationService,public appService : AppService) {
+  constructor(public translate: TranslateService,public appService : AppService) {
 	  this.translate.addLangs(['en', 'fr']);
 	     this.translate.setDefaultLang('en');
 
@@ -37,7 +36,7 @@ returnText(key : string, value : string){
 	return this.appService.returnText(key, value);
 }
   ngOnInit(): void {
-	  this.authService.signedIn = false;
+	//   this.authService.signedIn = false;
 	//   this.auth.signedIn.subscribe(pp =>{
     //   return pp;
     // })
@@ -72,14 +71,14 @@ returnText(key : string, value : string){
 	  return '';
   }
 
-login(){
-		this.appService.switchPage('login');
-		//this.auth.signedIn = true;
-	}
+// login(){
+// 		this.appService.switchPage('login');
+// 		//this.auth.signedIn = true;
+// 	}
 
-logout(){
-		this.authService.signedIn = false;
-		this.appService.switchPage('home');
-	}
+// logout(){
+// 		this.authService.signedIn = false;
+// 		this.appService.switchPage('home');
+// 	}
 
 }

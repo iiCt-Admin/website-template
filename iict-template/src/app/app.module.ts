@@ -6,7 +6,6 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
 import { FaqComponent } from './faq/faq.component';
 import { LegalComponent } from './legal/legal.component';
 import { HomeComponent } from './home/home.component';
@@ -15,13 +14,13 @@ import { TeamsComponent } from './teams/teams.component';
 import { AdminComponent } from './admin/admin.component';
 
 // Services
-import { AuthenticationService } from './services/authentication.service';
+
 import { AppService } from './services/app.service';
 import { FirebaseService } from './services/firebase.service';
 import { NavbarComponent } from './navbar/navbar.component';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import { TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SignupComponent } from './signup/signup.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -40,7 +39,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   declarations: [
     AppComponent,
     FooterComponent,
-    LoginComponent,
     FaqComponent,
     LegalComponent,
     HomeComponent,
@@ -71,7 +69,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AngularFirestoreModule,
     NgbModule,
   ],
-  providers: [AuthenticationService, AppService, FirebaseService, ContactService],
+  providers: [ AppService, FirebaseService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
