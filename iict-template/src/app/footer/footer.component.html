@@ -43,12 +43,8 @@
       <div class="col-lg-4 col-md-6 footer-newsletter"> <!-- Footer Mailing List Column 4 -->
         <h4>{{ returnText('FOOTER', 'Footer_mailing_title') }}</h4>
         <p>{{ returnText('FOOTER', 'Footer_mailing_body') }}</p>
-        <!-- <form action="forms/subscribe.php" method="post" role="form" class="php-email-form" >
-          <input type="email" name="email" placeholder="Email">
-          <input type="submit" value="Subscribe">
-        </form> -->
         <div class="">
-          <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+          <form class="" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
                   <input type="text" class="form-control placeholders py-1" name="Email" aria-describedby="emailHelp"
                       placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" formControlName="Email">
                   <div class= "py-1"></div>
@@ -58,11 +54,12 @@
                   <button type="submit" class="one_space_r btn-custom" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_subscribe') }} </button>
               </div>
           </form>
+
         </div>
       </div>
-     
-      <div class="row">
-        <div class="inline-centered social-links">  <!-- Social Links -->
+      <div></div>
+      <div class="row py-2">
+        <div class="inline-centered social-links ">  <!-- Social Links -->
           <a href="https://www.linkedin.com/company/iiconsult-tech-inc" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bx bxl-linkedin icon-settings one_space_r one_space_l"></i></a>
           <a href="https://twitter.com/iiconsulttech?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer" class="twitter"><i class="bx bxl-twitter icon-settings one_space_l"></i></a>
           <a href="https://www.facebook.com/iiConsult.tech" target="_blank" rel="noopener noreferrer" class="facebook"><i class="bx bxl-facebook icon-settings one_space_l"></i></a>
