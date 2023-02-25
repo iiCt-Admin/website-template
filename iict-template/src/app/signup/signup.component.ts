@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import {TranslateService} from '@ngx-translate/core';
+import { AppService } from '../services/app.service';
 import { AuthService } from '../services/authentication.service';
 
 @Component({
@@ -10,9 +11,11 @@ import { AuthService } from '../services/authentication.service';
 })
 export class SignupComponent implements OnInit {
 
-  constructor(public translate : TranslateService,  public authService: AuthService) { }
+  constructor(public translate : TranslateService,  public authService: AuthService, public appService:AppService) { }
 
   ngOnInit(): void {
   }
-
+  returnText(key : string, value : string){
+    return this.appService.returnText(key, value);
+    }
 }

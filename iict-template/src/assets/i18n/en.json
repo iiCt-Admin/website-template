@@ -60,7 +60,16 @@
 
 	"SIGNIN" : {
 		"Signin_Title":"Sign In Page",
-		"Signin_btn_Signin":"Sign In"
+		"Signin_btn_Signin":"Sign In",
+    "Signin_password":"Enter your password"
+  },
+
+  "SIGNUP" : {
+		"Signup_Title":"Sign Up Page",
+    "Signup_subtitle":"Sign Into your Page",
+		"Signup_btn_Signup":"Sign Up",
+    "Signup_first_name":"First Name",
+    "Signup_last_name":"Last Name"
   },
 
   "FAQ": {
