@@ -19,7 +19,7 @@
     </div>
 
     <div class="sidebar-link with-children"> <!-- Link line with child links below -->
-      <div class="sidebar-content" [routerLink]="['/Teams']" [routerLinkActive]="'active'"> <!-- Link top line item -->
+      <div class="sidebar-content" [routerLink]="['/team']" [routerLinkActive]="'active'"> <!-- Link top line item -->
         <div class="inline sidebar-icon">
           <i class='bx bxl-microsoft-teams'></i>
           <div class="sidebar-title">&nbsp;{{ returnText('TEAM', 'Team_title') }}</div>
@@ -59,7 +59,7 @@
     </div>
 
     <div class="sidebar-link">  <!-- Link line - no chilren -->
-      <div class="sidebar-content" [routerLink]="['/bookings']" [routerLinkActive]="'active'">
+      <div class="sidebar-content" [routerLink]="['/contacts']" [routerLinkActive]="'active'">
         <div class="inline sidebar-icon">
           <i class='bx bx-phone'></i>
           <div class="sidebar-title">&nbsp;{{ returnText('COMPONENT', 'Contacts') }}</div>
