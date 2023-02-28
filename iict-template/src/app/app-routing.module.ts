@@ -5,6 +5,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FaqComponent } from './faq/faq.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { LegalComponent } from './legal/legal.component';
 import { NewsComponent } from './news/news.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'contacts', component: ContactsComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'gallery', component: GalleryComponent},
+  { path: 'hero', component: HeroComponent },
   { path: 'home', component: HomeComponent },
   { path: 'legal', component: LegalComponent },
 	{ path: 'news', component: NewsComponent},

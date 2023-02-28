@@ -168,7 +168,9 @@
 
   "LABEL":{
     "Label_password": "mot de passe",
-    "Label_email_address": "adresse de courriel"
+    "Label_email_address": "adresse de courriel",
+    "Label_first_name":"prénom",
+    "Label_last_name":"nom de famille"
 	},
 
 	"FOOTER":{
