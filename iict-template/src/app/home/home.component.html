@@ -1,41 +1,41 @@
-<section id="homepage" class="home">
-  <div class="section-title center-text" data-aos="zoom-out"> <!-- Title section -->
-    <h2 >{{ returnText('HOME', 'Home_title') }}</h2>
-    <p >{{ returnText('HOME', 'Home_subtitle') }}</p>
-    <div>
-      <button class="one_space_r btn btn-custom" (click)="this.appService.switchPage('about')">{{ returnText('COMPONENT', 'About') }}</button>
+  <section id="homepage" class="home">
+    <div class="section-title center-text" data-aos="zoom-out">
+      <h2 >{{ returnText('HOME', 'Home_title') }}</h2>
+      <p >{{ returnText('HOME', 'Home_subtitle') }}</p>
+      <!-- <div>
+        <button class="one_space_r btn btn-custom-one" (click)="this.appService.switchPage('about')">{{ returnText('COMPONENT', 'About') }}</button>
+      </div> -->
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="row ">   <!-- Hero Section -->
-  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
-    <div id="heroCarousel" data-bs-interval="8000" class="container carousel carousel-fade" data-bs-ride="carousel">
+  <section id="hero" class="hero">  <!-- Hero Section -->
+    <div class="container d-flex flex-column justify-content-end align-items-center">
+          <div id="heroCarousel" data-bs-interval="8000" class=" carousel carousel-fade" data-bs-ride="carousel">
 
       <!-- Slide 1 -->
-      <div class="carousel-item active ">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown"> {{ returnText('HERO', 'Hero_title_1') }} </h2>
+      <div class="carousel-item active">
+        <div class="carousel-container ">
+          <h2 class="animate__animated animate__fadeInDown "> {{ returnText('HERO', 'Hero_title_1') }} </h2>
           <p class="animate__animated fanimate__adeInUp"> {{ returnText('HERO', 'Hero_body_1') }} </p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
+          <a [routerLink]="['/about']" class="btn-get-started animate__animated animate__fadeInUp scrollto "> {{ returnText('BUTTON', 'Button_read_more') }} </a>
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="carousel-item">
-        <div class="carousel-container">
+        <div class="carousel-container ">
           <h2 class="animate__animated animate__fadeInDown"> {{ returnText('HERO', 'Hero_title_2') }} </h2>
           <p class="animate__animated animate__fadeInUp"> {{ returnText('HERO', 'Hero_body_2') }} </p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
+          <a [routerLink]="['/about'] " class="btn-get-started animate__animated animate__fadeInUp scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
-        <div class="carousel-container">
+        <div class="carousel-container ">
           <h2 class="animate__animated animate__fadeInDown"> {{ returnText('HERO', 'Hero_title_3') }} </h2>
           <p class="animate__animated animate__fadeInUp"> {{ returnText('HERO', 'Hero_body_3') }} </p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
+          <a [routerLink]="['/about']" class="btn-get-started animate__animated animate__fadeInUp scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
         </div>
       </div>
 
@@ -48,6 +48,12 @@
       </a>
 
     </div>
+    </div>
+
+  </section>
+
+    <section id="about" class="about">
+    <app-about></app-about>
 
     <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
       <defs>
@@ -61,6 +67,9 @@
 
       <g class="wave3">
         <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+
+
+
 
   <!-- End Hero -->
 

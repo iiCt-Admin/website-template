@@ -1,4 +1,5 @@
 /* common spacer functions to add space to the right or left of an object */
+
 .one_space_r {
   margin-right: .5rem;
 }
@@ -29,6 +30,27 @@
   border-radius: 25px;
   font-style: italic;
   font-weight: 600;
+}
+
+.btn-custom-one {
+  font-family: "Yanone Kaffeesatz";
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  /* display: inline-block; */
+  padding: 4px 20px 3px;
+  border-radius: 50px;
+  /* transition: 0.5s; */
+  margin-top: 10px;
+  color: #fff;
+  background: #fe5828;
+}
+
+.btn-custom-one:hover {
+  background: #fff;
+  color: #fe5828;
 }
 
 /*--------------------------------------------------------------
