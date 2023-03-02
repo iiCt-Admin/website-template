@@ -1,3 +1,139 @@
 <br>
 <br>
 <p>gallery works!</p>
+<div class="container">
+ </div>
+
+<section id="portfolio" class="portfolio">
+        <div class="container">
+
+
+
+          <div class="section-title" data-aos="zoom-out">
+            <h2 data-i18n="portfolio_section_title">The Portfolio</h2>
+            <p data-i18n="portfolio_section_subtitle">What we've worked on & done</p>
+          </div>
+
+          <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
+			<button class="btn btn-primary" (click)="change('All')">All</button>
+			<button class="btn btn-primary" (click)="change('App')">App</button>
+			<button class="btn btn-primary" (click)="change('Media')">Media</button>
+			<button class="btn btn-primary" (click)="change('Web')">Web</button>
+			<!-- <li (click)="change('All')" data-i18n="portfolio_all" data-filter="*" class="filter-active">All</li>
+            <li data-i18n="portfolio_app" data-filter=".filter-app">App</li>
+            <li data-i18n="portfolio_media" data-filter=".filter-card">Media</li>
+            <li data-i18n="portfolio_web" data-filter=".filter-web">Web</li> -->
+          </ul>
+
+
+
+
+          <div class="row portfolio-container" data-aos="fade-up">
+
+			  <!-- <div > -->
+  				<div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item filter-app">
+  				  <div class="portfolio-img"><img src="assets/img/portfolio/vara_copy.png" class="img-fluid" alt=""></div>
+  				  <div class="portfolio-info">
+  					<h4>{{ port.title }}</h4>
+  					<p data-i18n="portfolio_app" >{{ port.category }}</p>
+  					<a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+  					<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+  				  </div>
+  				</div>
+  			<!-- </div> -->
+
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img"><img src="assets/img/portfolio/vara_copy.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Vara on Android</h4>
+                <p data-i18n="portfolio_app" >App</p>
+                <a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img"><img src="assets/img/portfolio/vara_web_2.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Vara Platforms</h4>
+                <p data-i18n="portfolio_web">Web</p>
+                <a href="assets/img/portfolio/vara_web_2.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img"><img src="assets/img/portfolio/big_game_2.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Big Game</h4>
+                <p data-i18n="portfolio_web" >Web</p>
+                <a href="assets/img/portfolio/big_game_2.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img"><img src="assets/img/portfolio/my-pet-game.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>My Pet on Android</h4>
+                <p data-i18n="portfolio_app" >App</p>
+                <a href="assets/img/portfolio/my-pet-game.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img"><img src="assets/img/portfolio/Recipe-android.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Recipies on Android</h4>
+                <p data-i18n="portfolio_app" >App</p>
+                <a href="assets/img/portfolio/Recipe-android.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p data-i18n="portfolio_app" >App</p>
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p data-i18n="portfolio_media">Media</p>
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p data-i18n="portfolio_media">Media</p>
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p data-i18n="portfolio_web">Web</p>
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div> -->
+
+          </div>
+
+        </div>
+      </section><!-- End Portfolio Section -->

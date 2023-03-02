@@ -1,0 +1,107 @@
+/* Wildcard styling */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Padding for whole body */
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* Styling h2 tag */
+    h1 {
+        Color: green;
+        word-break: break-all;
+    }
+
+    /* Anchor tag decoration */
+    a {
+        text-decoration: none;
+        color: #5673C8;
+    }
+
+    a:hover {
+        color: lightblue;
+    }
+
+    .row {
+        margin: 0px -14px;
+        padding: 8px;
+    }
+
+    .row > .column {
+        padding: 6px;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        display: none;
+    }
+
+    /* Content decoration */
+    .content {
+        background-color: white;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+
+    /* Paragraph decoration */
+    p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .content {
+        background-color: white;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+
+    .show {
+        display: block;
+    }
+
+    /* Style the filter buttons */
+    .bttn {
+        border: none;
+        padding: 8px 14px;
+        background-color: gray;
+    }
+
+    .bttn:hover {
+        background-color: #007EE5;
+        opacity: 0.8;
+    }
+
+    .bttn.active {
+        background-color: #007EE5;
+        color: white;
+    }
+
+    /* Window size 850 width set */
+    @media screen and (max-width: 850px) {
+        .column {
+            width: 50%;
+        }
+    }
+
+    /* Window size 400 width set */
+    @media screen and (max-width: 400px) {
+        .column {
+            width: 100%;
+        }
+    }
