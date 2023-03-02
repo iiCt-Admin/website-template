@@ -4,16 +4,16 @@
 
 
 
-          <div class="section-title" data-aos="zoom-out">
+          <div class="section-title center-text" data-aos="zoom-out">
             <h2 data-i18n="portfolio_section_title">The Portfolio</h2>
             <p data-i18n="portfolio_section_subtitle">What we've worked on & done</p>
           </div>
 
           <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
-			<button class="btn btn-primary" (click)="ChangeFilter('All')">All</button>
-			<button class="btn btn-primary" (click)="ChangeFilter('App')">App</button>
-			<button class="btn btn-primary" (click)="ChangeFilter('Media')">Media</button>
-			<button class="btn btn-primary" (click)="ChangeFilter('Web')">Web</button>
+			<button class="btn btn-primary bttn" (click)="ChangeFilter('All')">All</button>
+			<button class="btn btn-primary bttn" (click)="ChangeFilter('App')">App</button>
+			<button class="btn btn-primary bttn" (click)="ChangeFilter('Media')">Media</button>
+			<button class="btn btn-primary bttn" (click)="ChangeFilter('Web')">Web</button>
 			<!-- <li (click)="change('All')" data-i18n="portfolio_all" data-filter="*" class="filter-active">All</li>
             <li data-i18n="portfolio_app" data-filter=".filter-app">App</li>
             <li data-i18n="portfolio_media" data-filter=".filter-card">Media</li>
@@ -23,7 +23,7 @@
 
 
 
-          <div class="row portfolio-container" data-aos="fade-up">
+          <div class="row portfolio-container center-text" data-aos="fade-up">
 
 			  <!-- <div > -->
   				<div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-up">
