@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
+import 'boxicons';
 
 @Component({
   selector: 'app-gallery',
@@ -8,18 +10,19 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 	filter = Array<any>();
 
-	portfolio = [{image:"none image",alt:"none alt", title: "no title App 1", category : "App" },
-				{image:"none image",alt:"none alt", title: "no title Web 1", category : "Web"},
-				{image:"none image",alt:"none alt", title: "no title Media 1", category : "Media"},
+	portfolio = [{image:"none image",alt:"none alt", title: "no title App 1", category : "App", detailsLink : "none" },
+				{image:"none image",alt:"none alt", title: "no title Web 1", category : "Web", detailsLink : "none"},
+				{image:"none image",alt:"none alt", title: "no title Media 1", category : "Media", detailsLink : "none"},
 
-				{image:"none image",alt:"none alt", title: "no title App 2", category : "App" },
-				{image:"none image",alt:"none alt", title: "no title Web 2", category : "Web"},
-				{image:"none image",alt:"none alt", title: "no title Media 2", category : "Media"}
+				{image:"none image",alt:"none alt", title: "no title App 2", category : "App", detailsLink : "none" },
+				{image:"none image",alt:"none alt", title: "no title Web 2", category : "Web", detailsLink : "none"},
+				{image:"none image",alt:"none alt", title: "no title Media 2", category : "Media", detailsLink : "none"}
 			];
 
   constructor() { }
 
   ngOnInit(): void {
+	  AOS.init();
 	  this.filter = this.portfolio;
   }
 
