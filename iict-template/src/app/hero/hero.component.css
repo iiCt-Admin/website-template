@@ -2,7 +2,7 @@
   margin-left: -15px;
   margin-top: -100px;
   overflow: hidden;
-  background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
+  background: linear-gradient(180deg, #fe5828 0%, #ff914d 100%); /* Modified - the backgroud shaded */
   padding: 0;
 }
 
@@ -12,15 +12,17 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
   height: 90vh;
 }
 
 #hero h2 {
-  font-family: "Yanone Kaffeesatz";
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  font-family: "Yanone Kaffeesatz";
+  letter-spacing: 0.15rem;
 }
 
 #hero p {
@@ -29,6 +31,7 @@
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 #hero .carousel-control-prev,
@@ -37,8 +40,7 @@
   text-decoration: none;
 }
 
-#hero .carousel-control-next-icon,
-#hero .carousel-control-prev-icon {
+#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
   background: none;
   font-size: 60px;
   line-height: 1;
@@ -50,6 +52,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -60,13 +63,11 @@
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #fe5828;
-  text-decoration: none;
+  border: 2px solid #545454;
 }
 
 #hero .btn-get-started:hover {
   background: #fe5828;
-  /* modified */
   color: #fff;
   text-decoration: none;
 }
@@ -76,8 +77,7 @@
     width: 60%;
   }
 
-  #hero .carousel-control-prev,
-  #hero .carousel-control-next {
+  #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
   }
 }
