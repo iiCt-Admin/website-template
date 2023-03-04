@@ -1,10 +1,18 @@
-<section id="homepage" class="home">
-  <div class="section-title center-text" data-aos="zoom-out">
-    <h2 >{{ returnText('HOME', 'Home_title') }}</h2>
-    <p >{{ returnText('HOME', 'Home_subtitle') }}</p>
-    <div>
-      <button class="one_space_r btn btn-custom" (click)="this.appService.switchPage('about')">{{ returnText('COMPONENT', 'About') }}</button>
+  <section id="homepage" class="home">
+    <div class="section-title center-text" data-aos="zoom-out">
+      <h2 >{{ returnText('HOME', 'Home_title') }}</h2>
+      <p >{{ returnText('HOME', 'Home_subtitle') }}</p>
+      <!-- <div>
+        <button class="one_space_r btn btn-custom-one" (click)="this.appService.switchPage('about')">{{ returnText('COMPONENT', 'About') }}</button>
+      </div> -->
     </div>
-  </div>
-  </section>
+
+  <section id="hero" class="hero">
+    <app-hero></app-hero>
+
+  <section id="about" class="about">
+    <app-about></app-about>
+
+
+
 

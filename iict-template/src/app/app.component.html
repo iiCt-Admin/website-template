@@ -1,6 +1,6 @@
 <div class="">
 
-  <div class="left-padding" [ngClass]="{ 'sidebarExpanded': 'sidebarExpanded' }">
+  <div class="" [ngClass]="{ 'sidebarExpanded': 'sidebarExpanded' }">
     <app-navbar></app-navbar>
     <app-sidenav [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></app-sidenav>
     <router-outlet></router-outlet>

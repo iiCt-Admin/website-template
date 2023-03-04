@@ -1,20 +1,20 @@
-.btn-custom {
+.btn-custom-one {
   font-family: "Yanone Kaffeesatz";
   /* text-transform: uppercase; */
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
   letter-spacing: 1px;
-  display: inline-block;
+  /* display: inline-block; */
   padding: 4px 20px 3px;
   border-radius: 50px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   margin-top: 10px;
   color: #fff;
   background: #fe5828;
 }
 
-.btn-custom:hover {
+.btn-custom-one:hover {
   background: #fff;
   color: #fe5828;
 }
