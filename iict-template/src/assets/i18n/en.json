@@ -121,6 +121,18 @@
     "Faq_text": "Welcome to our F.A.Q. (Frequently Asked Questions) page."
   },
 
+  "GALLERY": {
+    "Gallery_title": "F.A.Q.",
+    "Gallery_subtitle": "Frequently Asked Questions",
+    "Gallery_filter_all": "All",
+    "Gallery_filter_app": "App",
+    "Gallery_filter_media": "Media",
+    "Gallery_filter_web": "Web",
+    "Gallery_category": "Category",
+    "Gallery_item_title": "Title",
+    "Gallery_details": "More Details"
+  },
+
    "TEAM": {
     "Team_title": "Team",
     "Team_subtitle": "Our team is here for you",
