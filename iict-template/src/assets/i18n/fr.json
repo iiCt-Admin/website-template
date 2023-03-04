@@ -121,16 +121,16 @@
     "Faq_text": "Bienvenue sur notre page F.A.Q. (Foire aux questions)."
   },
 
-    "GALLERY": {
-    "Gallery_title": "F.A.Q.",
-    "Gallery_subtitle": "Frequently Asked Questions",
-    "Gallery_filter_all": "All",
+  "GALLERY": {
+    "Gallery_title": "Le portefeuille",
+    "Gallery_subtitle": "Ce sur quoi nous avons travaillé et ce que nous avons fait",
+    "Gallery_filter_all": "Tout",
     "Gallery_filter_app": "App",
-    "Gallery_filter_media": "Media",
+    "Gallery_filter_media": "Médias",
     "Gallery_filter_web": "Web",
-    "Gallery_category": "Category",
-    "Gallery_item_title": "Title",
-    "Gallery_details": "More Details"
+    "Gallery_category": "Catégorie",
+    "Gallery_item_title": "Titre",
+    "Gallery_details": "Plus de détails"
   },
 
 
