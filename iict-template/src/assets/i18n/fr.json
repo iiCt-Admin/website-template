@@ -121,6 +121,19 @@
     "Faq_text": "Bienvenue sur notre page F.A.Q. (Foire aux questions)."
   },
 
+  "GALLERY": {
+    "Gallery_title": "Le portefeuille",
+    "Gallery_subtitle": "Ce sur quoi nous avons travaillé et ce que nous avons fait",
+    "Gallery_filter_all": "Tout",
+    "Gallery_filter_app": "App",
+    "Gallery_filter_media": "Médias",
+    "Gallery_filter_web": "Web",
+    "Gallery_category": "Catégorie",
+    "Gallery_item_title": "Titre",
+    "Gallery_details": "Plus de détails"
+  },
+
+
   "TEAM": {
     "Team_title": "l'équipe",
     "Team_subtitle": "Notre équipe est là pour vous you",
@@ -168,7 +181,9 @@
 
   "LABEL":{
     "Label_password": "mot de passe",
-    "Label_email_address": "adresse de courriel"
+    "Label_email_address": "adresse de courriel",
+    "Label_first_name":"prénom",
+    "Label_last_name":"nom de famille"
 	},
 
 	"FOOTER":{

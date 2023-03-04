@@ -29,6 +29,7 @@ import { NewsComponent } from './news/news.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './services/contact.service';
+import { HeroComponent } from './hero/hero.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -51,6 +52,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AboutComponent,
     NewsComponent,
     GalleryComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,
