@@ -12,6 +12,10 @@
   flex: 1;
 }
 
+.indent-left75 { /* used to pad left for side nav bar spacing */
+  margin-left: 75px;
+}
+
 .inline {
   display: flex;
 }
