@@ -16,6 +16,10 @@
   margin-left: 75px;
 }
 
+.indent-right75 {  /* used to pad right to offset left side spacing */
+  margin-right: 75px;
+}
+
 .inline {
   display: flex;
 }

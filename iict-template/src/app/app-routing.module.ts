@@ -9,6 +9,8 @@ import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { LegalComponent } from './legal/legal.component';
 import { NewsComponent } from './news/news.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { ProductsComponent } from './products/products.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { TeamsComponent } from './teams/teams.component';
@@ -24,15 +26,11 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'legal', component: LegalComponent },
 	{ path: 'news', component: NewsComponent},
+  { path: 'pricing', component: PricingComponent},
+  { path: 'products', component: ProductsComponent},
   { path: 'signin',component:SigninComponent},
   { path: 'signup', component: SignupComponent },
   { path: 'teams', component: TeamsComponent }
-
-  // { path: 'account', component: AccountComponent },
-  // { path: 'self-manager-dashboard', component: SelfmanagerPageComponent },
-  // { path: 'employee-dashboard', component: EmployeePageComponent },
-  // { path : 'add-employee' , component: AddEmployeeComponent },
-  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

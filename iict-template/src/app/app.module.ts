@@ -30,6 +30,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './services/contact.service';
 import { HeroComponent } from './hero/hero.component';
+import { ProductsComponent } from './products/products.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -53,6 +55,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     NewsComponent,
     GalleryComponent,
     HeroComponent,
+    ProductsComponent,
+    PricingComponent,
   ],
   imports: [
     BrowserModule,
