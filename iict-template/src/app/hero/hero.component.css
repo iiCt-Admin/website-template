@@ -1,4 +1,5 @@
 #hero {
+	z-index: 0;
   margin-left: -15px;
   margin-top: -100px;
   overflow: hidden;
@@ -6,17 +7,23 @@
   padding: 0;
 }
 
+#hero .container {
+	z-index: 0;
+}
+
 #hero .carousel-container {
+	z-index:0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   position: relative;
-  height: 90vh;
+  height: 70vh;
 }
 
 #hero h2 {
+	z-index: 0;
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
@@ -26,6 +33,7 @@
 }
 
 #hero p {
+	z-index: 0;
   width: 80%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
@@ -36,11 +44,13 @@
 
 #hero .carousel-control-prev,
 #hero .carousel-control-next {
+	z-index:0;
   width: 10%;
   text-decoration: none;
 }
 
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+	z-index:0;
   background: none;
   font-size: 60px;
   line-height: 1;
@@ -74,46 +84,87 @@
 
 @media (min-width: 1024px) {
   #hero p {
+	  z-index: 0;
     width: 60%;
   }
 
   #hero .carousel-control-prev, #hero .carousel-control-next {
+	  z-index: 0;
     width: 5%;
   }
 }
 
 @media (max-width: 768px) {
   #hero .carousel-container {
+	  z-index:0;
     height: 90vh;
   }
 
   #hero h2 {
+	  z-index: 0;
     font-size: 28px;
   }
 }
 
-.hero-waves {
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/* .hero-waves {
   display: block;
   width: 100%;
   height: 60px;
   position: relative;
 }
 
-.wave1 use {
+.wave1 > use {
   -webkit-animation: move-forever1 10s linear infinite;
   animation: move-forever1 10s linear infinite;
   -webkit-animation-delay: -2s;
   animation-delay: -2s;
 }
 
-.wave2 use {
+.wave2 > use {
   -webkit-animation: move-forever2 8s linear infinite;
   animation: move-forever2 8s linear infinite;
   -webkit-animation-delay: -2s;
   animation-delay: -2s;
 }
 
-.wave3 use {
+.wave3 > use {
   -webkit-animation: move-forever3 6s linear infinite;
   animation: move-forever3 6s linear infinite;
   -webkit-animation-delay: -2s;
@@ -178,4 +229,4 @@
   100% {
     transform: translate(85px, 0%);
   }
-}
+} */
