@@ -3,11 +3,11 @@
   <div class="" [ngClass]="{ 'sidebarExpanded': 'sidebarExpanded' }">
     <app-navbar></app-navbar>
     <app-sidenav [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></app-sidenav>
-    <router-outlet></router-outlet>
+	<div class="menu-padding">
+    	<router-outlet></router-outlet>
+	</div>
     <br>
     <app-footer></app-footer>
   </div>
 
-
 </div>
-
