@@ -18,10 +18,17 @@ export class AppService {
 
 	currentTranslation = new Object();
 
+/*
+	switchPage - switches to page within the router configuration
+*/
+
   switchPage(page : string): void {
 	   this.router.navigate([page]);
   }
 
+/*
+	defaultBrowserLanguage - detects default browser language
+*/
 async defaultBrowserLanguage() : Promise<string>{
 	let lang = await window.navigator.languages ? window.navigator.languages[0] : 'en';
     lang = lang || window.navigator.language;// || window.navigator.browserLanguage;// || window.navigator.userLanguage;
@@ -39,6 +46,9 @@ async defaultBrowserLanguage() : Promise<string>{
 		return await shortLang.match(/en|fr/) ? shortLang : 'en'
 }
 
+/*
+	fetchJSON - Fetches specified language json data
+*/
 async fetchJSON(lang : string) : Promise<string> {
 	const res = await fetch('/assets/i18n/' + lang + '.json')
 	.then((response) => {
@@ -50,11 +60,17 @@ async fetchJSON(lang : string) : Promise<string> {
 async loadDefaultTranslations(){
 	this.currentTranslation = await this.fetchJSON('en');
 }
-/* returns the text from the json file based on language - key: Json Title & value: display text */
+
+/*
+	returns the text from the json file based on language - key: Json Title & value: display text 
+*/
 returnText(key : string, value : string) : string {
 		return this.parseObject(this.currentTranslation, key, value);
 	}
 
+/*
+	parseObject - parses json data and returns a string
+*/
 parseObject(obj : any, inKey : string, inValue : string) : string {
 	 var o = Object.entries(obj);
 	 var k = Object.keys(obj);

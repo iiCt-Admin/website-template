@@ -12,14 +12,52 @@ import 'boxicons';
 export class GalleryComponent implements OnInit {
 	filter = Array<any>();
 
-	portfolio = [{image:"assets/img/iiCt_Round_Light.png",alt:"none alt", title: "no title App 1", category : "App", detailsLink : "none" },
-				{image:"none image",alt:"none alt", title: "no title Web 1", category : "Web", detailsLink : "none"},
-				{image:"none image",alt:"none alt", title: "no title Media 1", category : "Media", detailsLink : "none"},
+	portfolio = [
+		{
+			image:"assets/img/iiCt_Round_Light.png",
+			alt:"none alt",
+			title: "no title App 1",
+			category : "App",
+			detailsLink : "none"
+		},
+		{
+			image:"none image",
+			alt:"none alt",
+			title: "no title Web 1",
+			category : "Web",
+			detailsLink : "none"
+		},
+		{
+			image:"none image",
+			alt:"none alt",
+			title: "no title Media 1",
+			category : "Media",
+			detailsLink : "none"
+		},
 
-				{image:"none image",alt:"none alt", title: "no title App 2", category : "App", detailsLink : "none" },
-				{image:"none image",alt:"none alt", title: "no title Web 2", category : "Web", detailsLink : "none"},
-				{image:"none image",alt:"none alt", title: "no title Media 2", category : "Media", detailsLink : "none"}
-			];
+		{
+			image:"none image",
+			alt:"none alt",
+			title: "no title App 2",
+			category : "App",
+			detailsLink : "none"
+		},
+
+		{
+			image:"none image",
+			alt:"none alt",
+			title: "no title Web 2",
+			category : "Web",
+			detailsLink : "none"
+		},
+		{
+			image:"none image",
+			alt:"none alt",
+			title: "no title Media 2",
+			category : "Media",
+			detailsLink : "none"
+		}
+	];
 
   constructor(public appService : AppService, public translate : TranslateService) { }
 
