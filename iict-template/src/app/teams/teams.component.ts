@@ -5,8 +5,10 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app.service';
 import { ContactService } from '../services/contact.service';
+import Swiper from 'swiper/bundle';
 import * as AOS from 'aos';
 import 'boxicons';
+import 'swiper/css/bundle';
 
 @Component({
   selector: 'app-teams',

@@ -77,18 +77,20 @@
 
     /* Style the filter buttons */
     .bttn {
-        border: none;
-        padding: 8px 14px;
-        background-color: gray;
+      margin-right: 15px;
+      margin-bottom: 50px;
+      border: none;
+      padding: 8px 14px;
+      background-color: gray;
     }
 
     .bttn:hover {
-        background-color: #007EE5;
+        background-color: #fe5828;
         opacity: 0.8;
     }
 
     .bttn.active {
-        background-color: #007EE5;
+        background-color: #fe5828;
         color: white;
     }
 

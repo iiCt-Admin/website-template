@@ -7,11 +7,11 @@
             <p>{{ returnText("GALLERY", "Gallery_subtitle") }}</p>
           </div>
 
-          <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
-			<button class="btn btn-primary bttn" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
-			<button class="btn btn-primary bttn" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
-			<button class="btn btn-primary bttn" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
-			<button class="btn btn-primary bttn" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
+          <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg indent-right75" data-aos="fade-up">
+            <button class="btn btn-primary bttn active" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
+            <button class="btn btn-primary bttn" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
+            <button class="btn btn-primary bttn" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
+            <button class="btn btn-primary bttn" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
           </ul>
 
           <div class="row portfolio-container center-text" data-aos="fade-up">

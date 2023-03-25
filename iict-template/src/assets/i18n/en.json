@@ -155,7 +155,16 @@
     "Team_subtitle": "Our team is here for you",
     "Team_role_1": "Developer",
     "Team_role_2": "Manager",
-    "Team_role_3": "Operations"
+    "Team_role_3": "Operations",
+    "Team_role_gn": "Managing Director & Consultant",
+    "Team_role_ls": "Development Director & Consultant",
+    "Team_role_devcon": "Developer & Consultant",
+    "Team_role_junior": "Developer",
+    "Team_name_gn": "Gervan Nantel",
+    "Team_name_ls": "Lalaantika Sharma",
+    "Team_name_dc": "David Crispin",
+    "Team_name_ra": "Roaa Alamadi",
+    "Team_name_aw": "Andrew Wiseman"
   },
 
   "PRICING" : {
