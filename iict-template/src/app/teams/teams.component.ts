@@ -7,13 +7,18 @@ import { AppService } from '../services/app.service';
 import { ContactService } from '../services/contact.service';
 import * as AOS from 'aos';
 import 'boxicons';
+// import Swiper from 'swiper/swiper';
+// import 'swiper/swiper';
 
 @Component({
   selector: 'app-teams',
   templateUrl: './teams.component.html',
   styleUrls: ['./teams.component.css']
 })
+
 export class TeamsComponent implements OnInit {
+
+
 
   constructor(public translate : TranslateService,
               private route: ActivatedRoute,
@@ -22,6 +27,7 @@ export class TeamsComponent implements OnInit {
               private appService: AppService) { }
   order : string = '';
 	params = new Object();
+  // const swiper = new Swiper(.Swiper);
 
     ngOnInit(): void {
 	  this.route.queryParams

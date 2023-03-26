@@ -45,13 +45,13 @@
         <p>{{ returnText('FOOTER', 'Footer_mailing_body') }}</p>
         <div class="">
           <form class="" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-                  <input type="text" class="form-control placeholders py-1" name="Email" aria-describedby="emailHelp"
-                      placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" formControlName="Email">
+                  <input type="text" class="form-control placeholders py-1" name="Email" aria-describedby="emailHelp" formControlName="Email"
+                      placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" title="{{ returnText('HELP', 'Help_email_address') }}" >
                   <div class= "py-1"></div>
-                  <input type="text" class="form-control placeholders py-1" name="Fullname" placeholder="{{ returnText('CONTACTS', 'Contacts_name') }}"
+                  <input type="text" class="form-control placeholders py-1" name="Fullname" placeholder="{{ returnText('CONTACTS', 'Contacts_name') }}" title="{{ returnText('HELP', 'Help_first_name') }}"
                       formControlName="Fullname">
               <div class="inline-centered py-2">
-                  <button type="submit" class="one_space_r btn-custom" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_subscribe') }} </button>
+                  <button type="submit" class="one_space_r btn-custom" title="{{ returnText('HELP', 'Help_click_send') }}" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_subscribe') }} </button>
               </div>
           </form>
 

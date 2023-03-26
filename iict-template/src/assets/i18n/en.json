@@ -155,7 +155,16 @@
     "Team_subtitle": "Our team is here for you",
     "Team_role_1": "Developer",
     "Team_role_2": "Manager",
-    "Team_role_3": "Operations"
+    "Team_role_3": "Operations",
+    "Team_role_gn": "Managing Director & Consultant",
+    "Team_role_ls": "Development Director & Consultant",
+    "Team_role_devcon": "Developer & Consultant",
+    "Team_role_junior": "Developer",
+    "Team_name_gn": "Gervan Nantel",
+    "Team_name_ls": "Lalaantika Sharma",
+    "Team_name_dc": "David Crispin",
+    "Team_name_ra": "Roaa Alamadi",
+    "Team_name_aw": "Andrew Wiseman"
   },
 
   "PRICING" : {
@@ -259,5 +268,18 @@
     "Footer_cp2": "2023. All Rights Reserved",
     "Footer_label_path_en": "assets/img/lang_en.png",
     "Footer_label_path_fr": "assets/img/lang_fr.png"
+	},
+
+  "HELP" : {
+    "Help_cr_password": "Create your new password",
+    "Help_password": "Enter your password",
+    "Help_cr_email_address": "Create your new email address",
+    "Help_email_address": "Enter the email address",
+    "Help_first_name":"Enter your First Name",
+    "Help_last_name":"Enter your Last Name",
+    "Help_click": "Click to continue",
+    "Help_click_send": "Click to send",
+    "Help_subject": "What is this about?",
+    "Help_message": "Provide a brief description or comments."
 	}
 }

@@ -12,13 +12,15 @@ import 'boxicons';
 export class GalleryComponent implements OnInit {
 	filter = Array<any>();
 
-	portfolio = [{image:"assets/img/iiCt_Round_Light.png",alt:"none alt", title: "no title App 1", category : "App", detailsLink : "none" },
-				{image:"none image",alt:"none alt", title: "no title Web 1", category : "Web", detailsLink : "none"},
-				{image:"none image",alt:"none alt", title: "no title Media 1", category : "Media", detailsLink : "none"},
-
-				{image:"none image",alt:"none alt", title: "no title App 2", category : "App", detailsLink : "none" },
-				{image:"none image",alt:"none alt", title: "no title Web 2", category : "Web", detailsLink : "none"},
-				{image:"none image",alt:"none alt", title: "no title Media 2", category : "Media", detailsLink : "none"}
+	portfolio = [{image:"assets/img/iiCt_Round_Light.png",alt:"alt App 1", title: "no title App 1", category : "App", detailsLink : "none" },
+				{image:"assets/img/iiCt_contact.png",alt:"alt Web 1", title: "no title Web 1", category : "Web", detailsLink : "none"},
+				{image:"assets/img/iiCt_Round_Plain.png",alt:"alt Media 1", title: "no title Media 1", category : "Media", detailsLink : "none"},
+				{image:"assets/img/iiCt_chat.png",alt:"alt App 2", title: "no title App 2", category : "App", detailsLink : "none" },
+				{image:"assets/img/iiCt_email.png",alt:"alt Web 2", title: "no title Web 2", category : "Web", detailsLink : "none"},
+				{image:"assets/img/iiCt_menu.png",alt:"alt Media 2", title: "no title Media 2", category : "Media", detailsLink : "none"},
+        {image:"assets/img/iiCt_support.png",alt:"alt App 3", title: "no title App 3", category : "App", detailsLink : "none" },
+				{image:"assets/img/lang_en.png",alt:"alt Web 3", title: "no title Web 3", category : "Web", detailsLink : "none"},
+				{image:"assets/img/lang_fr.png",alt:"alt Media 3", title: "no title Media 3", category : "Media", detailsLink : "none"},
 			];
 
   constructor(public appService : AppService, public translate : TranslateService) { }
@@ -44,10 +46,9 @@ export class GalleryComponent implements OnInit {
 		  this.filter = this.portfolio;
 		  return;
 	  }
+     // Loop thru portfolio array, can be easily changed to loop thru data that comes from other sources, such as firebase
 	  this.filter = Array<any>();
-	  // Loop thru portfolio array, can be easily changed to loop
-	  // thru data that comes from other sources, such as firebase
-	  for(var i = 0; i < this.portfolio.length; i++){
+	 	  for(var i = 0; i < this.portfolio.length; i++){
 		  if (this.portfolio[i].category == filterChange) this.filter.push(this.portfolio[i]);
 	  }
 

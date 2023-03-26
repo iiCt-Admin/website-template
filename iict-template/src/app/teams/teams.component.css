@@ -6,35 +6,26 @@
 .team .member {
   justify-content: center;
   margin-bottom: 30px;
-  /* Modified */
   border: 1.5px solid rgba(255, 145, 77, .6);
-  /* Modified */
   overflow: hidden;
   border-radius: 8px;
-  /* Modified */
   background: #fff;
   box-shadow: 0px 2px 15px rgba(255, 145, 77, 0.5);
-  /* Modified */
+
 }
 
 .team .member .member-img {
   position: relative;
   overflow: hidden;
   text-align: center;
-  /* Added */
-  max-height: 300px;
-  /* Added */
-  max-width: 300px;
-  /* Added */
+  max-height: 350px;
+  max-width: 350px;
   min-height: 250px;
-  /* Added */
   min-width: 250px;
-  /* Added */
 }
 
 .team .member .member-img>img {
-  /* Added New */
-  width: 100%;
+  width: 50%;
 }
 
 .team .member .social {
@@ -55,22 +46,21 @@
   border-radius: 50px;
   width: 36px;
   height: 36px;
-  background: rgba(239, 102, 3, 0.8);
+  background: rgba(127, 137, 161, 0.7);
   transition: ease-in-out 0.3s;
   color: #fff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .team .member .social a:hover {
-  background: #ff914d;
-  /* Modified */
+  background: rgba(254, 88, 40, 0.5);
 }
 
 .team .member .social i {
   padding-right: 1px;
-  /* Added */
   font-size: 18px;
   line-height: 0;
 }
@@ -81,18 +71,15 @@
 
 .team .member .member-info h4 {
   font-family: "Yanone Kaffeesatz";
-  /* Added font */
   font-weight: 500;
   margin-bottom: 5px;
   font-size: 24px;
-  /* Modified size +6 */
   color: #2a2c39;
 }
 
 .team .member .member-info span {
   display: block;
   font-size: 14px;
-  /* Modified size +1 */
   font-weight: 400;
   color: #aaaaaa;
 }
@@ -117,29 +104,31 @@
 }
 
 .round-img {
-  /*section added */
   border-radius: 50%;
   width: 220px;
   height: 220px;
   margin-top: 2rem;
 }
 
+.swiper-wrapper {
+  width: 40%;
+
+}
+
 .swiper-team {
-  /*section added */
   margin-top: 20px;
   position: relative;
   bottom: 10px;
-  width: 100%;
+  width: 40%;
 }
 
 .box-size {
-  /*section added*/
-  margin-left: 5%;
-  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 350px;
 }
 
 .team .swiper-pagination .swiper-pagination-bullet {
-  /*section added */
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -148,6 +137,5 @@
 }
 
 .team .swiper-pagination .swiper-pagination-bullet-active {
-  /*section added */
   background-color: #fe5828;
 }
