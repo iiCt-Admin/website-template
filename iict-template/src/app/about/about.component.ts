@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app.service';
 import { ContactService } from '../services/contact.service';
 import * as AOS from 'aos';
@@ -14,8 +13,7 @@ import 'boxicons';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(public translate : TranslateService,
-              private contact: ContactService,
+  constructor(private contact: ContactService,
               private appService: AppService,
               private route: ActivatedRoute,
               private router : Router) { }

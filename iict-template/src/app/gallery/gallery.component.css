@@ -92,6 +92,11 @@
         color: white;
     }
 
+	.img-sizing {
+		width : 50%;
+		hight : 50%;
+	}
+
     /* Window size 850 width set */
     @media screen and (max-width: 850px) {
         .column {

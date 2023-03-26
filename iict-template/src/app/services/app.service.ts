@@ -1,19 +1,99 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output } from '@angular/core';
 
 import { Router } from '@angular/router';
+
+import { HttpClient } from '@angular/common/http';
+
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
+
+const { EventEmitter } = require("events");
+
+// import * as deepl from 'deepl';
+
+// const deepl_apikey = "b050ff2c-49e5-7856-fab5-d84b9e4aa7ae:fx";
+
+// const translate = require('@iamtraction/google-translate');
+// const translator = new deepl.Translator(deepl_apikey);
+// const translate = require("deepl");
+
+// interface Translations {
+// 	// detected_source_language:string;
+// 	text : string;
+// 	from : object;
+// // 	from.language	Object	-
+// // from.language.didYouMean	Boolean	Whether or not the API suggest a correction in the source language.
+// // from.language.iso	String	The ISO 639-1 code of the language that the API has recognized in the text.
+// // from.text	Object	-
+// // from.text.autoCorrected	Boolean	Whether or not the API has auto corrected the original text.
+// // from.text.value	String	The auto corrected text or the text with suggested corrections. Only returned if from.text.autoCorrected or from.text.didYouMean is true.
+// // from.text.didYouMean	Boolean	Wherether or not the API has suggested corrections to the text
+// // raw	String
+// }
+
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class AppService {
+	// translations =  Array<Response>();
+	currentLanguage = "en";
 
-  constructor(private router : Router) {
+	@Output() refreshGallery = new EventEmitter();
+	// text = "Hello world";
+
+	// baseUrl = "https://api-free.deepl.com/v2/translate";
+	// useUrl = this.baseUrl + ' Authorization: Deepl-Auth-Key [] ' +
+	// 'text="' + this.text + '" target_lang=' + this.currentLanguage;
+
+  constructor(private router : Router, private http: HttpClient) {
 	  this.init();
+	  // this.newTranslate("Hello World");
+	//alert(this.useUrl);
   }
+
+  //  newTranslate(text : string) : string {
+	//   var returnText : string = "";
+	//    // translate({
+	//    //    free_api: true,
+	//    //    text: text,
+	//    //    target_lang: this.currentLanguage.toUpperCase(),
+	//    //    auth_key: deepl_apikey,
+	//    //  })
+	//    translate(text, { to: this.currentLanguage })
+	// 	.then(result => {
+	// 		// const data = JSON.parse(result.data) as Translations;
+	// 		// console.log(data);
+	// 		let t = Object.assign(new Array<Translations>(), result.data)
+	// 		// this.translations = result.data;
+	// 		// alert(result.data[0].text as Translations);
+	// 		const keys = Object.keys(t);
+	// 			for (const key of keys) {
+	// 			 	// if (result.hasOwnProperty(key)) {
+	// 					returnText = t[key][0].text;
+  //
+	// 			   		// console.log(t[key][0].text);// = instanceData[key];
+	// 			 	// }
+	// 		   }
+	// 		// console.log(t);
+  //     		// console.log(result.data);
+	// 		return returnText;
+  // 		})
+  // 		.catch(error => {
+  //     		console.error(error)
+	// 		return "";
+  // 		});
+  //
+	// 	return returnText;
+  // }
 
   async init(){
 	  this.currentTranslation = await this.fetchJSON(await this.defaultBrowserLanguage());
+  }
+
+  SetLanguage(lang : string){
+	  this.currentLanguage = lang;
   }
 
 	currentTranslation = new Object();
@@ -62,7 +142,7 @@ async loadDefaultTranslations(){
 }
 
 /*
-	returns the text from the json file based on language - key: Json Title & value: display text 
+	returns the text from the json file based on language - key: Json Title & value: display text
 */
 returnText(key : string, value : string) : string {
 		return this.parseObject(this.currentTranslation, key, value);

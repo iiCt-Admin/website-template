@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import {TranslateService} from '@ngx-translate/core';
-
 import { Observable, of } from 'rxjs';
 
 import { AppService } from '../services/app.service'
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-navbar',
@@ -15,6 +14,7 @@ import { AppService } from '../services/app.service'
 export class NavbarComponent implements OnInit {
 
 	collapsed = false;
+
 	languages = [
 		{
 		name:'English',
@@ -24,9 +24,10 @@ export class NavbarComponent implements OnInit {
 		language: 'fr'
 	},
 ]
-  constructor(public translate: TranslateService,public appService : AppService) {
-	  this.translate.addLangs(['en', 'fr']);
-	     this.translate.setDefaultLang('en');
+  constructor(public firebaseService : FirebaseService, public appService : AppService) {
+	  // this.translate.addLangs(['en', 'fr']);
+	  //    this.translate.setDefaultLang('en');
+		 this.appService.SetLanguage('en');
 
 	     //const browserLang = this.translate.getBrowserLang();
 	     //this.translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
@@ -45,10 +46,16 @@ returnText(key : string, value : string){
 
   async selectLanguage(lang : string){
 
-	  // this.translate.setDefaultLang(lang);
 	  this.appService.currentTranslation = await this.appService.fetchJSON(lang);
-	  this.translate.use(lang);
-	  //await alert(this.translate.currentLang);
+	  // this.translate.use(lang);
+	  this.appService.SetLanguage(lang);
+	  await this.firebaseService.GetCategoryList();
+	  await this.firebaseService.GetCategoryData();
+
+	  // Used to refresh gallery page when language changes, otherwise it will
+	  // not display the list in the current language, unless they change category
+	  if (window.location.pathname == "/gallery") this.appService.refreshGallery.emit(true);
+
   }
 
   async load(){

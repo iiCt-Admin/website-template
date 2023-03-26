@@ -1,11 +1,12 @@
-export interface Category{
+export class Category{
 	Portfolio_Cat_Order : number;
-	Portfolio_Name : string;
+	Portfolio_Cat_Name : string;
+	Portfolio_Cat_Sort : string;
 	Portfolio_Cat_Language : string;
 	Portfolio_Cat_Active : boolean;
 }
 
-export interface CategoryData{
+export class CategoryData{
 	Portfolio_Data_Title : string;
 	Portfolio_Data_Category : string;
 	Portfolio_Data_imagePath : string;

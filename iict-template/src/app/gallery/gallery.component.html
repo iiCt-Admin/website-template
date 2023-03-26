@@ -7,21 +7,21 @@
             <p>{{ returnText("GALLERY", "Gallery_subtitle") }}</p>
           </div>
 
+		  <!-- Filter categories and display only if active -->
           <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
-			<button class="btn btn-primary bttn" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
-			<button class="btn btn-primary bttn" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
-			<button class="btn btn-primary bttn" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
-			<button class="btn btn-primary bttn" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
+			  <div *ngFor="let cat of firebaseService.categories">
+				  <button *ngIf="cat.Portfolio_Cat_Active == true" class="btn btn-primary bttn" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ CategoryTranslate(cat.Portfolio_Cat_Sort) }}</button>
+			</div>
           </ul>
 
           <div class="row portfolio-container center-text" data-aos="fade-up">
 
   				<div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-up">
-  				  <div class="portfolio-img"><img src="{{port.image }}" class="img-fluid" alt="{{ port.alt }}"></div>
+  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ port.Portfolio_Data_AltText }}"></div>
   				  <div class="portfolio-info">
-  					<h4>{{ port.title }}</h4>
-  					<p data-i18n="portfolio_app" >{{ CategoryTranslate(port.category) }}</p>
-  					<a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ port.title }}"><i class="bx bx-plus"></i></a>
+  					<h4>{{ port.Portfolio_Data_Title }}</h4>
+  					<p data-i18n="portfolio_app" >{{ CategoryTranslate(port.Portfolio_Data_Category) }}</p>
+  					<a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ port.Portfolio_Data_Title }}"><i class="bx bx-plus"></i></a>
   					<a href="portfolio-details.html" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
   				  </div>
   				</div>
