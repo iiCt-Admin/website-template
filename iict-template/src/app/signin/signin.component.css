@@ -2,6 +2,22 @@
 	width : 600px;
 }
 
+/* modifies the icon looks & properties @ left side */
+.signin i {
+  margin-right: 1rem;
+  font-size: 24px;
+  color: #ef6603;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #ffecde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
 @media (max-width: 769px) {
   .contact {
     display: block;
