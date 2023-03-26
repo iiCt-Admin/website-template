@@ -7,6 +7,11 @@
             <p>{{ returnText("GALLERY", "Gallery_subtitle") }}</p>
           </div>
 
+		  <!-- <input type="file" name="file" id="file"> -->
+		  <!-- <button (click)="upload()" name="submit">Upload File</button> -->
+		  <!-- <input type='file' accept='image/*' (change)='openFile($event)'><br>
+		  <img id="output"/> -->
+
 		  <!-- Filter categories and display only if active -->
           <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
 			  <div *ngFor="let cat of firebaseService.categories">

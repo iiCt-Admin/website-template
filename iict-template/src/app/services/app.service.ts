@@ -46,7 +46,14 @@ export class AppService {
 
   constructor(private router : Router) {
 	  this.init();
+	  const { k1, k2 } = this.d();
+	  console.log(k1);
+	  console.log(k2);
 	  // this.newTranslate("Hello World");
+  }
+
+  d()  {
+	  return { k1 : 1, k2 : 20};
   }
 
   //  newTranslate(text : string) : string {
