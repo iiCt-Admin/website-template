@@ -19,6 +19,7 @@ export class AboutComponent implements OnInit {
               private router : Router) { }
 
   ngOnInit(): void {
+    AOS.init()
   }
 
   returnText(key : string, value : string){

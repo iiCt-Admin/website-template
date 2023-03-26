@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 #footer .footer-top {
+  z-index: 0;
   padding: 20px 180px 20px 150px;
   background: rgba(1, 1, 1, 0.7);
   margin: -15px;

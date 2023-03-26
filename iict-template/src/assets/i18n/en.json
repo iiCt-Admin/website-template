@@ -1,5 +1,5 @@
 {
-  "COMPANY": {
+  "COMPANY" : {
     "Company_title": "Your Company",
     "Company_content": "",
     "Company_name_long": "Company Name L",
@@ -13,7 +13,7 @@
     "Company_phone_main": "+1 (613) phone #"
   },
 
-  "HOME": {
+  "HOME" : {
     "Home_title": "Home",
     "Home_subtitle": "Welcome to iiConsult tech Inc.",
     "Home_Select": "Language"
@@ -28,7 +28,7 @@
     "Hero_body_3": "Let our team work on your next project through code development, media creation and more."
 	},
 
-  "ABOUT": {
+  "ABOUT" : {
     "About_title": "About Us",
     "About_subtitle": "Who are we?",
     "About_body_1": "We are a new-aged management quality & development consultancy for software development and technology work.",
@@ -41,7 +41,7 @@
     "About_bullet_5": "Technology Service support"
   },
 
-  "FEATURES":{
+  "FEATURES" : {
 		"Features_title":"Next steps ...",
 		"Features_tab_1":"Start-Up & Media Services",
     "Features_tab_2":"Consulting & Project Services",
@@ -74,18 +74,18 @@
     "Features_3_bullet_6": "Data and databases (SQL, Firebase, MongoDB, Realm, Room)"
   },
 
-	"CTA":{
+	"CTA" : {
 		"Cta_title":"Next steps ...",
 		"Cta_body_p1":"If you have a project role that you’re looking to fill,",
     "Cta_body_p2":"and fill out our contact sheet, telling us about the work and your needs."
   },
 
-	"NAVBAR":{
+	"NAVBAR" : {
 		"Nav_Company":"Company Name",
 		"Nav_SignOut":"Sign Out"
   },
 
-  "COMPONENT":{
+  "COMPONENT" : {
     "About":"About",
     "Admin":"Admin",
     "Contacts":"Contact",
@@ -115,13 +115,13 @@
     "Signup_message":"Message: Sign Up for your account below:"
   },
 
-  "FAQ": {
+  "FAQ" : {
     "Faq_title": "F.A.Q.",
     "Faq_subtitle": "Frequently Asked Questions",
     "Faq_text": "Welcome to our F.A.Q. (Frequently Asked Questions) page."
   },
 
-  "GALLERY": {
+  "GALLERY" : {
     "Gallery_title": "The Portfolio",
     "Gallery_subtitle": "What we've worked on & done",
     "Gallery_filter_all": "All",
@@ -133,12 +133,66 @@
     "Gallery_details": "More Details"
   },
 
-   "TEAM": {
+  "PRODUCTS" : {
+    "Products_title": "Our Services",
+    "Products_subtitle": "What do we offer",
+    "Products_1_title": "Web Design & Construction",
+    "Products_1_body": "Let our team desing and/or build your next website. We can also help with a re-design.",
+    "Products_2_title": "Media, UI & UX Design",
+    "Products_2_body": "Let us work on designing your next project. From Graphics to Media, your vision is our vision.",
+    "Products_3_title": "Support & Maintenance",
+    "Products_3_body": "Regular support and services designed for your unique needs to keep you up and running on the web.",
+    "Products_4_title": "Quality Assurance",
+    "Products4_body": "Looking for help with designing or developing your QA process? We can help.",
+    "Products_5_title": "APP Development",
+    "Products_5_body": "Get our team working on your next Android or iOS app project.",
+    "Products_6_title": "Project Leadership",
+    "Products_6_body": "We can manage your next QA, Development or project implementation."
+  },
+
+   "TEAM" : {
     "Team_title": "Team",
     "Team_subtitle": "Our team is here for you",
     "Team_role_1": "Developer",
     "Team_role_2": "Manager",
-    "Team_role_3": "Operations"
+    "Team_role_3": "Operations",
+    "Team_role_gn": "Managing Director & Consultant",
+    "Team_role_ls": "Development Director & Consultant",
+    "Team_role_devcon": "Developer & Consultant",
+    "Team_role_junior": "Developer",
+    "Team_name_gn": "Gervan Nantel",
+    "Team_name_ls": "Lalaantika Sharma",
+    "Team_name_dc": "David Crispin",
+    "Team_name_ra": "Roaa Alamadi",
+    "Team_name_aw": "Andrew Wiseman"
+  },
+
+  "PRICING" : {
+    "Pricing_title": "Our Pricing",
+    "Pricing_subtitle": "How we work ...",
+    "Pricing_label_free": "Free",
+    "Pricing_label_monthly": "Monthly",
+    "Pricing_box_1_title": "Initial Consultation",
+    "Pricing_box_1_subtitle": "",
+    "Pricing_box_1_text_1": "Discuss your project / idea",
+    "Pricing_box_1_text_2": "Pin-point your needs",
+    "Pricing_box_1_text_3": "Prepare a quote",
+    "Pricing_box_1_text_4": "Project or design work",
+    "Pricing_box_1_text_5": "Recommendations / advice",
+    "Pricing_box_2_title": "Consulting & Freelance",
+    "Pricing_box_2_subtitle": "/ Time & Materials",
+    "Pricing_box_2_text_1": "Convienient monthly billing options*",
+    "Pricing_box_2_text_2": "Billed for time worked",
+    "Pricing_box_2_text_3": "Billed for Materials / services used",
+    "Pricing_box_2_text_4": "",
+    "Pricing_box_2_text_5": "* Some conditions / restrictions may apply",
+    "Pricing_box_3_title": "Monthly Service Plans",
+    "Pricing_box_3_subtitle": "/ Fixed Rates",
+    "Pricing_box_3_text_1": "Fixed monthly spend / know your budget**",
+    "Pricing_box_3_text_2": "Agreement on services provided",
+    "Pricing_box_3_text_3": "Fixed point of contact",
+    "Pricing_box_3_text_4": "Simplified cancellation policy  ",
+    "Pricing_box_3_text_5": "** Conditions and restrictions apply"
   },
 
 	"CONTACTS" : {
@@ -156,7 +210,7 @@
     "Contacts_subject": "Tell us what this is about"
 	},
 
-  "POLICY":{
+  "POLICY" : {
     "Policy_title": "Terms & Privacy",
     "Policy_terms_title": "Terms of Service",
     "Policy_terms_subtitle": "Term Details",
@@ -164,7 +218,7 @@
     "Policy_private_subtitle": "Privacy Details"
 	},
 
-  "BUTTON":{
+  "BUTTON" : {
     "Button_read_more": "Read More",
     "Button_send_message" : "Send Message",
     "Button_learn_more": "Learn More",
@@ -178,14 +232,14 @@
     "Button_step_2b": "Step 2(b)"
 	},
 
-  "LABEL":{
+  "LABEL" : {
     "Label_password": "Password",
     "Label_email_address": "Email Address",
     "Label_first_name":"First Name",
     "Label_last_name":"Last Name"
 	},
 
-	"FOOTER":{
+	"FOOTER" : {
     "Footer":"Footer",
 		"Footer_Title":"(c) 2022 Some Company",
     "Footer_Title_1":"this is the 1st title",
@@ -214,5 +268,18 @@
     "Footer_cp2": "2023. All Rights Reserved",
     "Footer_label_path_en": "assets/img/lang_en.png",
     "Footer_label_path_fr": "assets/img/lang_fr.png"
+	},
+
+  "HELP" : {
+    "Help_cr_password": "Create your new password",
+    "Help_password": "Enter your password",
+    "Help_cr_email_address": "Create your new email address",
+    "Help_email_address": "Enter the email address",
+    "Help_first_name":"Enter your First Name",
+    "Help_last_name":"Enter your Last Name",
+    "Help_click": "Click to continue",
+    "Help_click_send": "Click to send",
+    "Help_subject": "What is this about?",
+    "Help_message": "Provide a brief description or comments."
 	}
 }

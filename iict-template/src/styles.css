@@ -12,6 +12,14 @@
   flex: 1;
 }
 
+.indent-left75 { /* used to pad left for side nav bar spacing */
+  margin-left: 75px;
+}
+
+.indent-right75 {  /* used to pad right to offset left side spacing */
+  margin-right: 75px;
+}
+
 .inline {
   display: flex;
 }
@@ -23,6 +31,10 @@
 
 .center-text {
   text-align: center;
+}
+
+.icon-width {
+  min-width: 40px;
 }
 
 .btn-custom {

@@ -1,35 +1,35 @@
  <section id="hero" class="hero d-flex flex-column justify-content-end align-items-center">  <!-- Hero Section -->
-    <div id="heroCarousel" data-bs-interval="7000" class="container carousel carousel-fade" data-bs-ride="carousel">
+    <div id="heroCarousel" data-bs-interval="6000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
       <!-- Slide 1 -->
       <div class="carousel-item active">
-        <div class="carousel-container ">
-          <h2 class="animate__animated animate__fadeInDown "> {{ returnText('HERO', 'Hero_title_1') }} </h2>
-          <p class="animate__animated fanimate__fadeInUp"> {{ returnText('HERO', 'Hero_body_1') }} </p>
-          <a [routerLink]="['/about']" class="btn-get-started animate__animated animate__fadeInUp scrollto "> {{ returnText('BUTTON', 'Button_read_more') }} </a>
+        <div data-aos="aos-animate" class="carousel-container ">
+          <h2 data-aos="ease-in" data-aos="fade-in" data-aos="fade-down"> {{ returnText('HERO', 'Hero_title_1') }} </h2>
+          <p data-aos="ease-in" data-aos="fade-in" data-aos="fade-up"> {{ returnText('HERO', 'Hero_body_1') }} </p>
+          <a [routerLink]="['/about']" data-aos="ease-in" data-aos="fade-in" data-aos="fade-up"class="btn-get-started scrollto "> {{ returnText('BUTTON', 'Button_read_more') }} </a>
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="carousel-item">
-        <div class="carousel-container ">
-          <h2 class="animate__animated animate__fadeInDown"> {{ returnText('HERO', 'Hero_title_2') }} </h2>
-          <p class="animate__animated animate__fadeInUp"> {{ returnText('HERO', 'Hero_body_2') }} </p>
-          <a [routerLink]="['/about'] " class="btn-get-started animate__animated animate__fadeInUp scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
+        <div data-aos="aos-animate" class="carousel-container ">
+          <h2 data-aos="ease-in" data-aos="fade-in" data-aos="fade-down"> {{ returnText('HERO', 'Hero_title_2') }} </h2>
+          <p data-aos="ease-in" data-aos="fade-in" data-aos="fade-up"> {{ returnText('HERO', 'Hero_body_2') }} </p>
+          <a [routerLink]="['/about'] " data-aos="ease-in" data-aos="fade-in" data-aos="fade-up" class="btn-get-started scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
-        <div class="carousel-container ">
-          <h2 class="animate__animated animate__fadeInDown"> {{ returnText('HERO', 'Hero_title_3') }} </h2>
-          <p class="animate__animated animate__fadeInUp"> {{ returnText('HERO', 'Hero_body_3') }} </p>
-          <a [routerLink]="['/about']" class="btn-get-started animate__animated animate__fadeInUp scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
+        <div data-aos="aos-animate" class="carousel-container ">
+          <h2 data-aos="ease-in" data-aos="fade-in" data-aos="fade-down"> {{ returnText('HERO', 'Hero_title_3') }} </h2>
+          <p data-aos="ease-in" data-aos="fade-in" data-aos="fade-up"> {{ returnText('HERO', 'Hero_body_3') }} </p>
+          <a [routerLink]="['/about']" data-aos="ease-in" data-aos="fade-in" data-aos="fade-up" class="btn-get-started scrollto"> {{ returnText('BUTTON', 'Button_read_more') }} </a>
         </div>
       </div>
 
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="false"></span>
       </a>
 
       <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">

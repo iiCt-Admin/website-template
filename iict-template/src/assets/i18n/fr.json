@@ -1,5 +1,5 @@
 {
-  "COMPANY": {
+  "COMPANY" : {
     "Company_title": "votre entreprise",
     "Company_content": "",
     "Company_name_long": "iiConsult tech Inc.",
@@ -13,7 +13,7 @@
     "Company_phone_main": "+1 (613) 241-4700"
   },
 
-  "HOME": {
+  "HOME" : {
     "Home_title": "Accueil",
     "Home_subtitle": "Bienvenue à iiConsult tech Inc.",
     "Home_Select": "langue"
@@ -28,7 +28,7 @@
     "Hero_body_3": "Laissez notre équipe travailler sur votre prochain projet en développant du code, en créant des médias et plus encore."
 	},
 
-  "ABOUT": {
+  "ABOUT" : {
     "About_title": "à propos de nous",
     "About_subtitle": "Qui sommes-nous ?",
     "About_body_1": "Nous sommes une nouvelle société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
@@ -41,7 +41,7 @@
     "About_bullet_5": "Soutien des services technologiques"
   },
 
-  "FEATURES":{
+  "FEATURES" : {
 		"Features_title":"",
 		"Features_tab_1":"Services aux entreprises et médias",
     "Features_tab_2":"Services de consultation et de projet",
@@ -74,18 +74,18 @@
     "Features_3_bullet_6": "Données et bases de données (SQL, Firebase, MongoDB, Realm, Room)"
   },
 
-  "CTA":{
+  "CTA" : {
 		"Cta_title":"Prochaines étapes ...",
 		"Cta_body_p1":"Si vous avez un rôle dans un projet que vous cherchez à remplir,",
     "Cta_body_p2":"et remplissez notre fiche de contact, en nous parlant du travail et de vos besoins."
   },
 
-  "NAVBAR":{
+  "NAVBAR" : {
 		"Nav_Company":"entreprise",
 		"Nav_SignOut":"déconnecter"
 	},
 
-  "COMPONENT":{
+  "COMPONENT" : {
     "About":"sur le site",
     "Admin":"Admin",
     "Contacts":"contacts",
@@ -115,7 +115,7 @@
     "Signup_message":"Message: Inscrivez-vous pour votre compte ci-dessous :"
   },
 
-  "FAQ": {
+  "FAQ" : {
     "Faq_title": "f.a.q.",
     "Faq_subtitle": "foire aux questions",
     "Faq_text": "Bienvenue sur notre page F.A.Q. (Foire aux questions)."
@@ -133,13 +133,66 @@
     "Gallery_details": "Plus de détails"
   },
 
+  "PRODUCTS": {
+    "Products_title": "Nos services",
+    "Products_subtitle": "Ce que nous offrons",
+    "Products_1_title": "Conception et réalisation de sites Web",
+    "Products_1_body": "Laissez notre équipe concevoir et/ou construire votre prochain site Web. Nous pouvons également vous aider pour un re-design.",
+    "Products_2_title": "Conception média, UI et UX",
+    "Products_2_body": "Laissez-nous travailler sur la conception de votre prochain projet. Du graphisme aux médias, votre vision est notre vision.",
+    "Products_3_title": "Support et entretien",
+    "Products_3_body": "Support et services réguliers conçus pour vos besoins uniques afin de vous garder opérationnel sur le web.",
+    "Products_4_title": "Assurance qualité",
+    "Products_4_body": "Vous cherchez de l'aide pour concevoir ou développer votre processus d'assurance qualité ? Nous pouvons vous aider.",
+    "Products_5_title": "Développement d'applications",
+    "Products5_body": "Faites travailler notre équipe sur votre prochain projet d'application Android ou iOS.",
+    "Products_6_title": "Direction de projet",
+    "Products_6_body": "Nous pouvons gérer votre prochain projet d'assurance qualité, de développement ou de mise en œuvre."
+  },
 
-  "TEAM": {
+  "TEAM" : {
     "Team_title": "l'équipe",
     "Team_subtitle": "Notre équipe est là pour vous you",
     "Team_role_1": "Développement",
     "Team_role_2": "Directeur",
-    "Team_role_3": "Opérations"
+    "Team_role_3": "Opérations",
+    "Team_role_gn": "Directeur général et consultant",
+    "Team_role_ls": "Directeur du développement et consultant",
+    "Team_role_devcon": "Développeur & Consultant",
+    "Team_role_junior": "Développeur",
+    "Team_name_gn": "Gervan Nantel",
+    "Team_name_ls": "Lalaantika Sharma",
+    "Team_name_dc": "David Crispin",
+    "Team_name_ra": "Roaa Alamadi",
+    "Team_name_aw": "Andrew Wiseman"
+  },
+
+  "PRICING" : {
+    "Pricing_title": "Nos tarifs",
+    "Pricing_subtitle": "Comment nous travaillons...",
+    "Pricing_label_free": "gratuit",
+    "Pricing_label_monthly": "mensuel",
+    "Pricing_box_1_title": "Consultation initiale",
+    "Pricing_box_1_subtitle": "",
+    "Pricing_box_1_text_1": "Discutez de votre projet / idée",
+    "Pricing_box_1_text_2": "Précisez vos besoins",
+    "Pricing_box_1_text_3": "Préparer un devis",
+    "Pricing_box_1_text_4": "Travail de projet ou de conception",
+    "Pricing_box_1_text_5": "Recommandations / conseils",
+    "Pricing_box_2_title": "Conseil et freelance",
+    "Pricing_box_2_subtitle": "/ Temps et matériel",
+    "Pricing_box_2_text_1": "Options de facturation mensuelle pratiques*",
+    "Pricing_box_2_text_2": "Facturé pour le temps travaillé",
+    "Pricing_box_2_text_3": "Facturé pour les matériaux / services utilisés",
+    "Pricing_box_2_text_4": "* Certaines conditions / ",
+    "Pricing_box_2_text_5": "restrictions peuvent s'appliquer",
+    "Pricing_box_3_title": "Plans de services mensuels",
+    "Pricing_box_3_subtitle": "/ Tarifs fixes",
+    "Pricing_box_3_text_1": "Dépenses mensuelles fixes / connaissez votre budget**",
+    "Pricing_box_3_text_2": "Accord sur les services fournis",
+    "Pricing_box_3_text_3": "Point de contact fixe",
+    "Pricing_box_3_text_4": "Politique d'annulation simplifiée",
+    "Pricing_box_3_text_5": "** Des conditions et des restrictions s'appliquent"
   },
 
   "CONTACTS" : {
@@ -157,7 +210,7 @@
     "Contacts_subject": "Dites-nous de quoi il s'agit"
 	},
 
-	"POLICY":{
+	"POLICY" : {
     "Policy_title": "Conditions et confidentialité",
     "Policy_terms_title": "Conditions de service",
     "Policy_terms_subtitle": "Détails des termes",
@@ -165,7 +218,7 @@
     "Policy_private_subtitle": "Détails sur la confidentialité"
 	},
 
-  "BUTTON":{
+  "BUTTON" : {
     "Button_read_more": "En savoir plus",
     "Button_send_message" : "Envoyer le message",
     "Button_learn_more": "En savoir plus",
@@ -179,14 +232,14 @@
     "Button_step_2b": "Étape 2(b)"
 	},
 
-  "LABEL":{
+  "LABEL" : {
     "Label_password": "mot de passe",
     "Label_email_address": "adresse de courriel",
     "Label_first_name":"prénom",
     "Label_last_name":"nom de famille"
 	},
 
-	"FOOTER":{
+	"FOOTER" : {
     "Footer":"Footer",
 		"Footer_Title":"(c) 2022 Some Company",
     "Footer_Title_1":"this is the 1st title",
@@ -215,5 +268,18 @@
     "Footer_cp2": "2023. Tous droits réservés",
     "Footer_label_path_en": "assets/img/lang_en.png",
     "Footer_label_path_fr": "assets/img/lang_fr.png"
+	},
+
+  "HELP" : {
+    "Help_cr_password" : "Créez votre nouveau mot de passe",
+    "Help_password" : "Entrez votre mot de passe",
+    "Help_cr_email_address" : "Créez votre nouvelle adresse électronique",
+    "Help_email_address" : "Entrez l'adresse électronique",
+    "Help_first_name" : "Entrez votre prénom",
+    "Help_last_name" : "Entrez votre nom de famille",
+    "Help_click" : "Cliquez pour continuer",
+    "Help_click_send": "Cliquez pour envoyer",
+    "Help_subject" : "De quoi s'agit-il ?",
+    "Help_message" : "Fournissez une brève description ou des commentaires."
 	}
 }
