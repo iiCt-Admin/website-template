@@ -1,32 +1,32 @@
 
 <section id="portfolio" class="portfolio">
-        <div class="container-fluid">
+  <div class="container bottom-space">
 
-          <div class="section-title center-text" data-aos="zoom-out">
-            <h2>{{ returnText("GALLERY","Gallery_title") }}</h2>
-            <p>{{ returnText("GALLERY", "Gallery_subtitle") }}</p>
-          </div>
+    <div class="section-title center-text" data-aos="zoom-out">  <!-- Portfolio Header -->
+      <h2>{{ returnText("GALLERY","Gallery_title") }}</h2>
+      <p>{{ returnText("GALLERY", "Gallery_subtitle") }}</p>
+    </div>
 
-          <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg indent-right75" data-aos="fade-up">
-            <button class="btn btn-primary bttn active" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
-            <button class="btn btn-primary bttn" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
-            <button class="btn btn-primary bttn" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
-            <button class="btn btn-primary bttn" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
-          </ul>
+    <div class="d-flex justify-content-end">  <!-- Filter Section -->
+      <ul class="portfolio-filters" id="portfolio-filters" data-aos="fade-up">
+        <button class="btn btn-primary portflio-button" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
+        <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
+        <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
+        <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
+      </ul>
+    </div>
 
-          <div class="row portfolio-container center-text" data-aos="fade-up">
-
-  				<div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-up">
-  				  <div class="portfolio-img"><img src="{{port.image }}" class="img-fluid" alt="{{ port.alt }}"></div>
-  				  <div class="portfolio-info">
-  					<h4>{{ port.title }}</h4>
-  					<p data-i18n="portfolio_app" >{{ CategoryTranslate(port.category) }}</p>
-  					<a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ port.title }}"><i class="bx bx-plus"></i></a>
-  					<a href="portfolio-details.html" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
-  				  </div>
-  				</div>
-
-          </div>
-
+    <div class="row portfolio-container center-text " data-aos="fade-up">  <!-- Portfolio Items (looped) -->
+      <div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item " data-aos="fade-up">
+        <div class="portfolio-img"><img src="{{port.image }}" class="img-fluid" alt="{{ port.alt }}"></div>
+        <div class="portfolio-info">
+          <h4>{{ port.title }}</h4>
+          <p data-i18n="portfolio_app" >{{ CategoryTranslate(port.category) }}</p>
+          <a href="{{port.image }}" data-gallery="portfolioGallery" class="preview-link" title="{{ port.title }}"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
         </div>
-      </section><!-- End Portfolio Section -->
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Portfolio Section -->

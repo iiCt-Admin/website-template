@@ -121,6 +121,18 @@
     "Faq_text": "Bienvenue sur notre page F.A.Q. (Foire aux questions)."
   },
 
+  "GALLERY": {
+    "Gallery_title": "Le portefeuille",
+    "Gallery_subtitle": "Ce sur quoi nous avons travaillé et ce que nous avons fait",
+    "Gallery_filter_all": "Tout",
+    "Gallery_filter_app": "App",
+    "Gallery_filter_media": "Médias",
+    "Gallery_filter_web": "Web",
+    "Gallery_category": "Catégorie",
+    "Gallery_item_title": "Titre",
+    "Gallery_details": "Plus de détails"
+  },
+
   "PRODUCTS": {
     "Products_title": "Nos services",
     "Products_subtitle": "Ce que nous offrons",
@@ -138,16 +150,21 @@
     "Products_6_body": "Nous pouvons gérer votre prochain projet d'assurance qualité, de développement ou de mise en œuvre."
   },
 
-  "GALLERY": {
-    "Gallery_title": "Le portefeuille",
-    "Gallery_subtitle": "Ce sur quoi nous avons travaillé et ce que nous avons fait",
-    "Gallery_filter_all": "Tout",
-    "Gallery_filter_app": "App",
-    "Gallery_filter_media": "Médias",
-    "Gallery_filter_web": "Web",
-    "Gallery_category": "Catégorie",
-    "Gallery_item_title": "Titre",
-    "Gallery_details": "Plus de détails"
+  "TEAM" : {
+    "Team_title": "l'équipe",
+    "Team_subtitle": "Notre équipe est là pour vous you",
+    "Team_role_1": "Développement",
+    "Team_role_2": "Directeur",
+    "Team_role_3": "Opérations",
+    "Team_role_gn": "Directeur général et consultant",
+    "Team_role_ls": "Directeur du développement et consultant",
+    "Team_role_devcon": "Développeur & Consultant",
+    "Team_role_junior": "Développeur",
+    "Team_name_gn": "Gervan Nantel",
+    "Team_name_ls": "Lalaantika Sharma",
+    "Team_name_dc": "David Crispin",
+    "Team_name_ra": "Roaa Alamadi",
+    "Team_name_aw": "Andrew Wiseman"
   },
 
   "PRICING" : {
@@ -176,23 +193,6 @@
     "Pricing_box_3_text_3": "Point de contact fixe",
     "Pricing_box_3_text_4": "Politique d'annulation simplifiée",
     "Pricing_box_3_text_5": "** Des conditions et des restrictions s'appliquent"
-  },
-
-  "TEAM" : {
-    "Team_title": "l'équipe",
-    "Team_subtitle": "Notre équipe est là pour vous you",
-    "Team_role_1": "Développement",
-    "Team_role_2": "Directeur",
-    "Team_role_3": "Opérations",
-    "Team_role_gn": "Directeur général et consultant",
-    "Team_role_ls": "Directeur du développement et consultant",
-    "Team_role_devcon": "Développeur & Consultant",
-    "Team_role_junior": "Développeur",
-    "Team_name_gn": "Gervan Nantel",
-    "Team_name_ls": "Lalaantika Sharma",
-    "Team_name_dc": "David Crispin",
-    "Team_name_ra": "Roaa Alamadi",
-    "Team_name_aw": "Andrew Wiseman"
   },
 
   "CONTACTS" : {
