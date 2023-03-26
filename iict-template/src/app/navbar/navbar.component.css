@@ -1,9 +1,8 @@
 
 /* Modifies the language dropdown elements */
 .languageImg {
-	width:24px;
-	height:24px;
-  margin-left: -10px;
+	width:20px;
+  margin-left: -15px;
   margin-right: 2px;
 }
 
@@ -14,10 +13,37 @@
 
 /* customizes the secondary button function's look and feel */
 .btn-secondary {
-  background-color: rgb(247, 143, 23);
+  background-color: #fe5828;
   border-radius: 25px;
   font-style: italic;
   font-weight: 600;
 }
 
+.toolbar {
+  height: 60px;
+  align-items: center;
+  background-color: #ff914d;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {   /* left side logo control  */
+  margin:8px;
+  width: 40px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 0px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.7;
+}
 

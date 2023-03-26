@@ -1,16 +1,94 @@
 {
-  "HOME": {
-    "Home_Title": "Hello Angular with ngx-translate!",
+  "COMPANY" : {
+    "Company_title": "Your Company",
+    "Company_content": "",
+    "Company_name_long": "Company Name L",
+    "Company_name_short": "Company",
+    "Company_address_1": "Address Line 1",
+    "Company_address_2": "Address Line 1",
+    "Company_address_3": "Address Line 1",
+    "Company_address_short": "Short Address Line",
+    "Company_email_support": "support@email",
+    "Company_email_contact": "contact_us@email",
+    "Company_phone_main": "+1 (613) phone #"
+  },
+
+  "HOME" : {
+    "Home_title": "Home",
+    "Home_subtitle": "Welcome to iiConsult tech Inc.",
     "Home_Select": "Language"
-},
-	"NAVBAR":{
+  },
+
+  "HERO" : {
+		"Hero_title_1": "Welcome to iiConsult tech Inc.",
+    "Hero_body_1": "We are a management quality & development consultancy for software development and technology work.",
+    "Hero_title_2" : "Consulting Services",
+    "Hero_body_2": "Let us help your company with your next project by offering consulting in Quality Assurance, Application Development or Project Management.",
+    "Hero_title_3": "Development Services",
+    "Hero_body_3": "Let our team work on your next project through code development, media creation and more."
+	},
+
+  "ABOUT" : {
+    "About_title": "About Us",
+    "About_subtitle": "Who are we?",
+    "About_body_1": "We are a new-aged management quality & development consultancy for software development and technology work.",
+    "About_body_2": "Our services focus on providing our clients value and expertise through consulting, design and development work.",
+    "About_body_3": "If you are looking for experienced Quality Assurance project and management expertise for a large project or a new startup / small business looking for someone to join their team offering multiple disciplines and knowledge in technology, projects & management, then you are who we want to work with.",
+    "About_bullet_1": "Consulting and Project Services",
+    "About_bullet_2": "Start-Up and Media Service Packages",
+    "About_bullet_3": "Development and Design Services",
+    "About_bullet_4": "Quality Assurance expertise",
+    "About_bullet_5": "Technology Service support"
+  },
+
+  "FEATURES" : {
+		"Features_title":"Next steps ...",
+		"Features_tab_1":"Start-Up & Media Services",
+    "Features_tab_2":"Consulting & Project Services",
+    "Features_tab_3":"Development & Design Services",
+    "Features_tab_4":"n/a",
+    "Features_1_title": "Consulting & Project Service Offerings",
+    "Features_1_body_1": "Offering years of quality and management experience and expertise to help your company move forward.",
+    "Features_1_body_2": "With more than 25 years of financial industry expertise in large corporate environments, mid-sized service and retail industries, our consultants will be able to help navigate the unique challenges and requirements of your  next project.",
+    "Features_1_bullet_1": "Experience with large, mid-sized & small organizations.",
+    "Features_1_bullet_2": "Quality Assurance management & leadership for your next project.",
+    "Features_1_bullet_3": "Business management consulting for your existing or start-up company.",
+    "Features_1_bullet_4": "n/a",
+    "Features_1_bullet_5": "n/a",
+    "Features_2_title": "Start-Up and Media Service Packages",
+    "Features_2_body_1": "We can prepare designs and materials you'll need for your new or existing business, project or idea.",
+    "Features_2_body_2": "Get us working for you on your next project: ",
+    "Features_2_bullet_1": "Your next website design or update project",
+    "Features_2_bullet_2": "Ongoing website maintenance and deployment services",
+    "Features_2_bullet_3": "Design services for online media",
+    "Features_2_bullet_4": "Identity packages and collateral materials",
+    "Features_2_bullet_5": "n/a",
+    "Features_3_title": "Development & Design Service Capabilities",
+    "Features_3_body_1": "Digital design and development services for your business to succeed and flourish.",
+    "Features_3_body_2": "Our team has worked with many different development technologies and platforms:",
+    "Features_3_bullet_1": "Web site development (HTML5, CSS, Javascript & Typescript)",
+    "Features_3_bullet_2": "Android technologies & launches (Android studio, Kotlin & Java)",
+    "Features_3_bullet_3": "iOS tecnologies (xCode, Swift and Swift UI)",
+    "Features_3_bullet_4": "Web development platforms (Angular, Node JS, React, PHP)",
+    "Features_3_bullet_5": "Development technologies (Github, Jira, Teamworks, Sourcetree)",
+    "Features_3_bullet_6": "Data and databases (SQL, Firebase, MongoDB, Realm, Room)"
+  },
+
+	"CTA" : {
+		"Cta_title":"Next steps ...",
+		"Cta_body_p1":"If you have a project role that you’re looking to fill,",
+    "Cta_body_p2":"and fill out our contact sheet, telling us about the work and your needs."
+  },
+
+	"NAVBAR" : {
 		"Nav_Company":"Company Name",
 		"Nav_SignOut":"Sign Out"
-	},
-  "COMPONENT":{
+  },
+
+  "COMPONENT" : {
     "About":"About",
     "Admin":"Admin",
-    "Contacts":"Contacts",
+    "Contacts":"Contact",
     "Faq":"FAQ",
     "Footer":"Footer",
     "Gallery":"Gallery",
@@ -23,27 +101,185 @@
     "SignIn":"Sign In",
 		"SignUp":"Sign Up",
 		"Teams":"Team"
-	},
+  },
+
 	"SIGNIN" : {
-		"Signin_Title":"Sign In Page",
-		"Signin_btn_Signin":"Sign In"
-	},
+		"Signin_title":"Sign In Page",
+		"Signin_subtitle":"Sign In to your account below:",
+    "Signin_message":"Message: Sign In to your account below:"
+  },
+
+  "SIGNUP" : {
+		"Signup_title":"Sign Up Page",
+		"Signup_subtitle":"Sign Up for your account below:",
+    "Signup_message":"Message: Sign Up for your account below:"
+  },
+
+  "FAQ" : {
+    "Faq_title": "F.A.Q.",
+    "Faq_subtitle": "Frequently Asked Questions",
+    "Faq_text": "Welcome to our F.A.Q. (Frequently Asked Questions) page."
+  },
+
+  "GALLERY" : {
+    "Gallery_title": "The Portfolio",
+    "Gallery_subtitle": "What we've worked on & done",
+    "Gallery_filter_all": "All",
+    "Gallery_filter_app": "App",
+    "Gallery_filter_media": "Media",
+    "Gallery_filter_web": "Web",
+    "Gallery_category": "Category",
+    "Gallery_item_title": "Title",
+    "Gallery_details": "More Details"
+  },
+
+  "PRODUCTS" : {
+    "Products_title": "Our Services",
+    "Products_subtitle": "What do we offer",
+    "Products_1_title": "Web Design & Construction",
+    "Products_1_body": "Let our team desing and/or build your next website. We can also help with a re-design.",
+    "Products_2_title": "Media, UI & UX Design",
+    "Products_2_body": "Let us work on designing your next project. From Graphics to Media, your vision is our vision.",
+    "Products_3_title": "Support & Maintenance",
+    "Products_3_body": "Regular support and services designed for your unique needs to keep you up and running on the web.",
+    "Products_4_title": "Quality Assurance",
+    "Products4_body": "Looking for help with designing or developing your QA process? We can help.",
+    "Products_5_title": "APP Development",
+    "Products_5_body": "Get our team working on your next Android or iOS app project.",
+    "Products_6_title": "Project Leadership",
+    "Products_6_body": "We can manage your next QA, Development or project implementation."
+  },
+
+   "TEAM" : {
+    "Team_title": "Team",
+    "Team_subtitle": "Our team is here for you",
+    "Team_role_1": "Developer",
+    "Team_role_2": "Manager",
+    "Team_role_3": "Operations",
+    "Team_role_gn": "Managing Director & Consultant",
+    "Team_role_ls": "Development Director & Consultant",
+    "Team_role_devcon": "Developer & Consultant",
+    "Team_role_junior": "Developer",
+    "Team_name_gn": "Gervan Nantel",
+    "Team_name_ls": "Lalaantika Sharma",
+    "Team_name_dc": "David Crispin",
+    "Team_name_ra": "Roaa Alamadi",
+    "Team_name_aw": "Andrew Wiseman"
+  },
+
+  "PRICING" : {
+    "Pricing_title": "Our Pricing",
+    "Pricing_subtitle": "How we work ...",
+    "Pricing_label_free": "Free",
+    "Pricing_label_monthly": "Monthly",
+    "Pricing_box_1_title": "Initial Consultation",
+    "Pricing_box_1_subtitle": "",
+    "Pricing_box_1_text_1": "Discuss your project / idea",
+    "Pricing_box_1_text_2": "Pin-point your needs",
+    "Pricing_box_1_text_3": "Prepare a quote",
+    "Pricing_box_1_text_4": "Project or design work",
+    "Pricing_box_1_text_5": "Recommendations / advice",
+    "Pricing_box_2_title": "Consulting & Freelance",
+    "Pricing_box_2_subtitle": "/ Time & Materials",
+    "Pricing_box_2_text_1": "Convienient monthly billing options*",
+    "Pricing_box_2_text_2": "Billed for time worked",
+    "Pricing_box_2_text_3": "Billed for Materials / services used",
+    "Pricing_box_2_text_4": "",
+    "Pricing_box_2_text_5": "* Some conditions / restrictions may apply",
+    "Pricing_box_3_title": "Monthly Service Plans",
+    "Pricing_box_3_subtitle": "/ Fixed Rates",
+    "Pricing_box_3_text_1": "Fixed monthly spend / know your budget**",
+    "Pricing_box_3_text_2": "Agreement on services provided",
+    "Pricing_box_3_text_3": "Fixed point of contact",
+    "Pricing_box_3_text_4": "Simplified cancellation policy  ",
+    "Pricing_box_3_text_5": "** Conditions and restrictions apply"
+  },
+
 	"CONTACTS" : {
 		"Contacts_section_title": "Contact Us",
     "Contacts_section_subtitle": "Contact Information",
     "Contacts_location": "Location:",
-    "Contacts_email_short": "Email:",
     "Contacts_call": "Call:",
-    "Contacts_name": "Your Name",
+    "Contacts_email_short": "Email:",
     "Contacts_email_long": "Your email",
-    "Contacts_message": "Your message",
-    "Contacts_subject": "Subject"
+    "Contacts_name_label": "Name:",
+    "Contacts_name": "Your Name",
+    "Contacts_message_label": "Message:",
+    "Contacts_message": "Your brief message details ...",
+    "Contacts_subject_label": "Subject:",
+    "Contacts_subject": "Tell us what this is about"
 	},
 
-	"FOOTER":{
+  "POLICY" : {
+    "Policy_title": "Terms & Privacy",
+    "Policy_terms_title": "Terms of Service",
+    "Policy_terms_subtitle": "Term Details",
+    "Policy_private_title": "Privacy",
+    "Policy_private_subtitle": "Privacy Details"
+	},
+
+  "BUTTON" : {
+    "Button_read_more": "Read More",
+    "Button_send_message" : "Send Message",
+    "Button_learn_more": "Learn More",
+    "Button_contact_us": "Contact Us",
+    "Button_subscribe": "Subscribe",
+    "Button_submit": "Submit",
+    "Button_signin":"Sign In",
+		"Button_signup":"Sign Up",
+    "Button_step_1": "Step 1",
+    "Button_step_2a": "Step 2(a)",
+    "Button_step_2b": "Step 2(b)"
+	},
+
+  "LABEL" : {
+    "Label_password": "Password",
+    "Label_email_address": "Email Address",
+    "Label_first_name":"First Name",
+    "Label_last_name":"Last Name"
+	},
+
+	"FOOTER" : {
     "Footer":"Footer",
 		"Footer_Title":"(c) 2022 Some Company",
-    "Title_1":"this is the 1st title",
-    "Title_2":"this is the 2nd title"
+    "Footer_Title_1":"this is the 1st title",
+    "Footer_Title_2":"this is the 2nd title",
+    "Footer_label_phone": "Phone",
+    "Footer_label_email": "Email",
+    "Footer_label_english": "English",
+    "Footer_label_french": "français",
+    "Footer_label_short_en": "EN",
+    "Footer_label_short_fr": "fr",
+    "Footer_label_links": "Quick Links",
+    "Footer_label_contact": "Contact Us @",
+    "Footer_nav_home" : "Home",
+    "Footer_nav_about" : "About",
+    "Footer_nav_services" : "Services",
+    "Footer_nav_terms": "Terms of Service",
+    "Footer_nav_privacy" : "Privacy Policy",
+    "Footer_back_home": "Back to Home Page",
+    "Footer_services_title": "Services",
+    "Footer_nav_consult":"Services",
+    "Footer_nav_packages":"Products",
+    "Footer_nav_develop":"Consulting",
+    "Footer_mailing_title" : "Join Our Mailing List",
+    "Footer_mailing_body" : "For more information on our products and services, subscribe to our mailing list and we will be in contact with you",
+    "Footer_cp1": "© Copyright",
+    "Footer_cp2": "2023. All Rights Reserved",
+    "Footer_label_path_en": "assets/img/lang_en.png",
+    "Footer_label_path_fr": "assets/img/lang_fr.png"
+	},
+
+  "HELP" : {
+    "Help_cr_password": "Create your new password",
+    "Help_password": "Enter your password",
+    "Help_cr_email_address": "Create your new email address",
+    "Help_email_address": "Enter the email address",
+    "Help_first_name":"Enter your First Name",
+    "Help_last_name":"Enter your Last Name",
+    "Help_click": "Click to continue",
+    "Help_click_send": "Click to send",
+    "Help_subject": "What is this about?",
+    "Help_message": "Provide a brief description or comments."
 	}
 }

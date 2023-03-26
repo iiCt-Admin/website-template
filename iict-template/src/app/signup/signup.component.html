@@ -1,3 +1,38 @@
-<div class="container-fluid">
-<p>signup works!</p>
-</div>
+<section id="signup" class="signup">
+  <div class="section-title center-text" data-aos="zoom-out">
+    <h2>{{ returnText('COMPONENT', 'SignUp') }}</h2>
+    <p>{{ returnText('SIGNUP', 'Signup_title') }}</p>
+  </div>
+
+  <div>
+    <div class="container-fluid center d-flex signin-width">
+      <form class="form-control center">
+        <H5> {{ returnText('SIGNUP', 'Signup_subtitle') }} </H5>
+
+        <div class="form-group m-2 py-2">  <!-- Enter first & last names -->
+          <div class="m-2 inline">
+            <i class='bx bx-id-card icon-width'></i>
+            <input type="text" class="form-control one_space_r" id="userFirstName" placeholder="{{ returnText('LABEL', 'Label_first_name') }}" title="{{ returnText('HELP', 'Help_first_name') }}"#userFirstName required />
+            <input type="text" class="form-control " id="userLastName" placeholder="{{ returnText('LABEL', 'Label_last_name') }}" title="{{ returnText('HELP', 'Help_last_name') }}" #userLastName required />
+          </div>
+        </div>
+        <div class="form-group m-2 py-2">  <!-- Enter email adress -->
+          <div class="m-2 inline">
+            <i class='bx bx-mail-send icon-width' ></i>
+            <input type="email" class="form-control" id="userEmail" placeholder="{{ returnText('LABEL', 'Label_email_address') }}" title="{{ returnText('HELP', 'Help_cr_email_address') }}" #userEmail required />
+          </div>
+        </div>
+        <div class="form-group m-2 py-2">  <!-- Enter password for account -->
+          <div class="m-2 inline">
+            <i class='bx bx-lock-alt icon-width' ></i>
+            <input type="password" class="form-control" id="userPwd" placeholder="{{ returnText('LABEL', 'Label_password') }}" title="{{ returnText('HELP', 'Help_cr_password') }}"#userPwd required />
+          </div>
+        </div>
+
+        <p class="d-flex justify-content-center py-2">
+          <button class="btn btn-primary" type="submit" title="{{ returnText('HELP', 'Help_click') }}"
+            (click)="authService.new_register(userEmail.value, userPwd.value,userFirstName.value, userLastName.value)">
+            {{returnText('BUTTON', 'Button_signup') }}</button>
+        </p>
+      </form>
+    </div>

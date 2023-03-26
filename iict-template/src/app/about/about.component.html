@@ -1,1 +1,194 @@
-<p>about works!</p>
+<section id="about" class="about">  <!-- About 1st (Top) Section -->
+  <div class="container">
+    <div class="section-title center-text" data-aos="zoom-out">
+      <h2 >{{ returnText('ABOUT', 'About_title') }}</h2>
+      <p >{{ returnText('ABOUT', 'About_subtitle') }}</p>
+    </div>
+      <div class="row content" data-aos="fade-up">
+            <div class="col-lg-6">
+              <p class="margin-top" > {{ returnText('ABOUT', 'About_body_1') }} </p>
+              <p class="" > {{ returnText('ABOUT', 'About_body_2') }} </p>
+              <ul>  <!-- Bullet point text items About_bullet_1-5 -->
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_1') }} </li>
+                </div>
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_2') }} </li>
+                </div>
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_3') }} </li>
+                </div>
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_4') }} </li>
+                </div>
+                <div class="inline">
+                  <li><i class='bx bx-check-double'></i>
+                  <li class="bullet-align"> {{ returnText('ABOUT', 'About_bullet_5') }} </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col-lg-6 about-second-col">  <!-- Right Side Video -->
+              <video controls class="promo-right">
+                <source src="assets/video/iiConsult.tech_promo_2.mp4" type="video/mp4">
+              </video>
+        </div>
+      </div>
+          <div class="row content" data-aos="fade-up">
+            <div class="col-lg-6 about-second-col">  <!-- Left Side Video -->
+              <video controls class="promo-left">
+                <source src="assets/video/iiConsult.tech_promo_3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-lg-6 about-second-col margin-top">
+              <p class=""> {{ returnText('ABOUT', 'About_body_3') }} </p>
+              <a [routerLink]="['/home']" class="btn-learn-more" > {{ returnText('BUTTON', 'Button_learn_more') }} </a>
+            </div>
+          </div>
+  </div>
+</section><!-- End About Section -->
+
+<section id="features" class="features">   <!-- ======= Features Section ======= -->
+  <div class="container">
+
+    <ul class="nav nav-tabs row d-flex"> <!-- Tab titles and icons -->
+      <li class="nav-item col-4" data-aos="zoom-in" data-aos-delay="100">
+        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-2">
+          <i class="bx bx-cart" label="#1"></i>
+          <!-- <i class='bx bx-list-ol'></i> -->
+          <h4 class="d-none d-lg-block" > {{ returnText('FEATURES', 'Features_tab_1') }} </h4>
+        </a>
+      </li>
+      <li class="nav-item col-4" data-aos="zoom-in">
+        <a class="nav-link " data-bs-toggle="tab" href="#tab-1">
+          <i class='bx bx-conversation'></i> <!-- Modified -->
+          <h4 class="d-none d-lg-block" > {{ returnText('FEATURES', 'Features_tab_2') }} </h4>
+        </a>
+      </li>
+      <li class="nav-item col-4" data-aos="zoom-in" data-aos-delay="200">
+        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+          <i class='bx bx-code-alt' ></i>
+          <h4 class="d-none d-lg-block" > {{ returnText('FEATURES', 'Features_tab_3') }} </h4>
+        </a>
+      </li>
+    </ul>
+
+    <div class="tab-content" data-aos="fade-up">  <!-- Tab content & details -->
+
+      <div class="tab-pane " id="tab-1">  <!-- Tab 1 details -->
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+            <h3> {{ returnText('FEATURES', 'Features_1_title') }} </h3>
+            <p class="fst-italic"> {{ returnText('FEATURES', 'Features_1_body_1') }} </p>
+            <ul>
+              <div class="inline">
+                <i class='bx bxs-check-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_1_bullet_1') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-check-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_1_bullet_2') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-check-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_1_bullet_3') }} </li>
+              </div>
+            </ul>
+            <p class="fst-italic"> {{ returnText('FEATURES', 'Features_1_body_2') }} </p>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="assets/img/Features/consult_2_1024x678.jpeg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane active show " id="tab-2">  <!-- Tab 2 details -->
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+            <h3> {{ returnText('FEATURES', 'Features_2_title') }} </h3>
+            <p> {{ returnText('FEATURES', 'Features_2_body_1') }} </p>
+            <p class="fst-italic"> {{ returnText('FEATURES', 'Features_2_body_2') }} </p>
+            <ul>
+              <div class="inline">
+                <i class='bx bxs-right-arrow-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_2_bullet_1') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-right-arrow-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_2_bullet_2') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-right-arrow-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_2_bullet_3') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-right-arrow-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_2_bullet_4') }} </li>
+              </div>
+            </ul>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="assets/img/Features/consult_1_1920x1090.jpeg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="tab-3"> <!-- Tab 3 details -->
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+            <h3> {{ returnText('FEATURES', 'Features_3_title') }} </h3>
+            <p> {{ returnText('FEATURES', 'Features_3_body_1') }} </p>
+            <p class="fst-italic">  {{ returnText('FEATURES', 'Features_3_body_2') }} </p>
+            <ul>
+              <div class="inline">
+                <i class='bx bxs-plus-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_3_bullet_1') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-plus-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_3_bullet_2') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-plus-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_3_bullet_3') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-plus-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_3_bullet_4') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-plus-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_3_bullet_5') }} </li>
+              </div>
+              <div class="inline">
+                <i class='bx bxs-plus-circle'></i>
+                <li> {{ returnText('FEATURES', 'Features_3_bullet_6') }} </li>
+              </div>
+            </ul>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="assets/img/Features/consult_3_1920x1248.jpeg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Features Section -->
+
+
+<section id="cta" class="cta">  <!-- ======= Cta (Call To Action) Section ======= -->
+  <div class="container">
+          <div class="row" data-aos="zoom-out">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3> {{ returnText('CTA', 'Cta_title') }}  </h3>
+              <div class="inline">
+                <p class=""> {{ returnText('CTA', 'Cta_body_p1') }}  <span class="name-highlight"> {{ returnText('COMPANY', 'Company_name_short') }} </span> {{ returnText('CTA', 'Cta_body_p2') }}  </p>
+              </div>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#" > {{ returnText('BUTTON', 'Button_contact_us') }}  </a>
+            </div>
+          </div>
+        </div>
+</section> <!-- End Cta Section -->

@@ -1,11 +1,36 @@
+  <section id="homepage" class="home">
+    <div class="section-title center-text" data-aos="zoom-out">
+      <h2 >{{ returnText('HOME', 'Home_title') }}</h2>
+      <p >{{ returnText('HOME', 'Home_subtitle') }}</p>
+      <!-- <div>
+        <button class="one_space_r btn btn-custom-one" (click)="this.appService.switchPage('about')">{{ returnText('COMPONENT', 'About') }}</button>
+      </div> -->
+    </div>
 
-<div class="container-fluid">
-<p>home works!</p>
-<div *ngIf="this.authService.signedIn == true">
-	<p>Signed in</p>
-</div>
-<div>
-	<button class="one_space_r btn btn-secondary" (click)="this.appService.switchPage('about')">about</button>
-</div>
+  <section id="hero" class="hero">
+    <app-hero></app-hero>
+  </section>
 
-</div>
+  <section id="about" class="about">
+    <app-about></app-about>
+  </section>
+
+  <section id="services" class="services">
+    <app-products></app-products>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+	  <app-gallery></app-gallery>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <app-pricing></app-pricing>
+  </section>
+
+  <section id="team" class="team">
+    <app-teams></app-teams>
+  </section>
+
+  <section id="contact" class="contact">
+    <app-contacts></app-contacts>
+  </section>

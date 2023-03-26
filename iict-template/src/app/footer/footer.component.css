@@ -1,7 +1,172 @@
-.footer {
-	color:white;
-  background-color: #f99600;
+/*--------------------------------------------------------------
+# Footer Properties & color settings - modified [GN])
+--------------------------------------------------------------*/
+
+#footer .footer-top {
+  z-index: 0;
+  padding: 20px 180px 20px 150px;
+  background: rgba(1, 1, 1, 0.7);
+  margin: -15px;
 }
 
+#footer .footer-top .footer-contact h3 { /* column 1 Top Row Company Name */
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  color: #fff;
+}
 
+#footer .footer-top .footer-contact p { /* column 1 Lower Rows (Address, etc) */
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Muli", sans-serif;
+  color: whitesmoke;
+}
 
+#footer .footer-top h4 { /* column 2 & 3 Top Row Labels */
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links ul a { /* column 2 & 3 lower row Links */
+  color: whitesmoke;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #fe5828;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #ff914d;
+}
+
+#footer .footer-newsletter h4 { /* column 4 Top Row Label */
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter { /* column 4 Body text */
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.btn-custom {
+  font-family: "Yanone Kaffeesatz";
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 4px 20px 3px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: #fff;
+  background: #fe5828;
+}
+
+.btn-custom:hover {
+  background: #fff;
+  color: #fe5828;
+}
+
+#footer .footer-newsletter form {
+  border-radius: 4px 0 0 4px;
+}
+
+#footer .copyright { /* copyright line properties */
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+#footer .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background: #fe5828;
+  color: #fff;
+  line-height: 1;
+  padding: 5px 5px;
+  margin: -1rem 10px 0 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #ff914d;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  #footer .footer-top {
+    padding: 20px 2rem 20px 2rem;
+  }
+
+  #footer .footer-newsletter form {
+    margin-top: 25px;
+    margin-left: -15px;
+    padding: 6px 5px;
+    position: relative;
+    border-radius: 4px 0 0 4px;
+    text-align: left;
+  }
+
+  #footer .copyright {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #footer .copyright p {
+    margin-top: -.5rem;
+    margin-bottom: -.5rem;
+  }
+
+  #footer .social-links a {
+    margin: 2rem 10px 10px 10px;
+  }
+}

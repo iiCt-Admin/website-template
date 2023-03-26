@@ -1,0 +1,32 @@
+<section id="SignIn" class="signin">
+    <div class="section-title center-text" data-aos="zoom-out">
+      <h2 >{{ returnText('COMPONENT', 'SignIn') }}</h2>
+      <p >{{ returnText('SIGNIN', 'Signin_title') }}</p>
+    </div>
+
+
+    <div class="container-fluid center d-flex signin-width">
+      <form class="form-control center">
+        <H4> {{ returnText('SIGNIN', 'Signin_subtitle') }} </H4>
+        <div class="form-group m-2">
+          <label class="sr-only d-flex justify-content-center py-2" for="inputEmail"> {{ returnText('LABEL', 'Label_email_address') }} </label>
+          <div class="m-2 inline">  <!--  email address entry -->
+            <i class='bx bx-mail-send icon-width' ></i>
+            <input type="email" class="form-control" id="inputEmail" placeholder="{{ returnText('LABEL', 'Label_email_address') }}" title="{{ returnText('HELP', 'Help_email_address') }}"/>
+          </div>
+        </div>
+        <div class="form-group m-2">
+          <label class="sr-only d-flex justify-content-center py-2" for="inputPassword"> {{ returnText('LABEL', 'Label_password') }} </label>
+          <div class="m-2 inline">  <!--  password entry -->
+            <i class='bx bx-lock-open-alt icon-width' ></i>
+            <input type="password" class="form-control" id="inputPassword" placeholder="{{ returnText('LABEL', 'Label_password') }}" title="{{ returnText('HELP', 'Help_password') }}">
+          </div>
+        </div>
+        <p class="d-flex justify-content-center py-3">
+          <button class="btn btn-primary" type="submit" title="{{ returnText('HELP', 'Help_click') }}">
+            {{ returnText('BUTTON', 'Button_signin') }}</button>
+        </p>
+      </form>
+    </div>
+
+

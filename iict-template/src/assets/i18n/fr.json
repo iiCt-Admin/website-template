@@ -1,16 +1,94 @@
 {
-  "HOME": {
-    "Home_Title": "Bonjour Angular avec ngx-translate !",
+  "COMPANY" : {
+    "Company_title": "votre entreprise",
+    "Company_content": "",
+    "Company_name_long": "iiConsult tech Inc.",
+    "Company_name_short": "iiCt",
+    "Company_address_1": "1401 - 203 rue Catherine",
+    "Company_address_2": "Ottawa, ON K2P 1J5",
+    "Company_address_3": "Canada",
+    "Company_address_short": "203 rue Catherine, Ottawa, ON K2P 1J5",
+    "Company_email_support": "support@iiconsult.tech",
+    "Company_email_contact": "contact_us@iiconsult.tech",
+    "Company_phone_main": "+1 (613) 241-4700"
+  },
+
+  "HOME" : {
+    "Home_title": "Accueil",
+    "Home_subtitle": "Bienvenue à iiConsult tech Inc.",
     "Home_Select": "langue"
   },
-  "NAVBAR":{
-		"Nav_Company":"Company Name",
+
+	"HERO" : {
+		"Hero_title_1": "Bienvenue à iiConsult tech Inc.",
+    "Hero_body_1": "Nous sommes une société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
+    "Hero_title_2" : "Services de consultation",
+    "Hero_body_2": "Laissez-nous aider votre entreprise dans votre prochain projet en offrant des conseils en assurance qualité, en développement d'applications ou en gestion de projets.",
+    "Hero_title_3": "Services de développement",
+    "Hero_body_3": "Laissez notre équipe travailler sur votre prochain projet en développant du code, en créant des médias et plus encore."
+	},
+
+  "ABOUT" : {
+    "About_title": "à propos de nous",
+    "About_subtitle": "Qui sommes-nous ?",
+    "About_body_1": "Nous sommes une nouvelle société de conseil en gestion de la qualité et du développement pour le développement de logiciels et le travail technologique.",
+    "About_body_2": "Nos services visent à fournir à nos clients de la valeur et de l'expertise par le biais de travaux de conseil, de conception et de développement.",
+    "About_body_3": "Si vous êtes à la recherche d'une expertise expérimentée en matière d'assurance qualité et de gestion de projet pour un grand projet ou si une nouvelle startup/petite entreprise cherche quelqu'un pour rejoindre son équipe offrant de multiples disciplines et connaissances en technologie, projets et gestion, alors vous êtes la personne avec laquelle nous voulons travailler.",
+    "About_bullet_1": "Services de consultation et de projet",
+    "About_bullet_2": "Modules de services pour le démarrage et les médias",
+    "About_bullet_3": "Services de conception et de développement",
+    "About_bullet_4": "Expertise en matière d'assurance qualité",
+    "About_bullet_5": "Soutien des services technologiques"
+  },
+
+  "FEATURES" : {
+		"Features_title":"",
+		"Features_tab_1":"Services aux entreprises et médias",
+    "Features_tab_2":"Services de consultation et de projet",
+    "Features_tab_3":"Services de développement et de conception",
+    "Features_tab_4":"n/a",
+    "Features_1_title": "Offres de services de consultation et de projet",
+    "Features_1_body_1": "Offrir des années d'expérience et d'expertise en matière de qualité et de gestion pour aider votre entreprise à aller de l'avant.",
+    "Features_1_body_2": "Avec plus de 25 ans d'expertise dans le secteur financier, dans des environnements de grandes entreprises, des services de taille moyenne et des industries de détail, nos consultants seront en mesure de vous aider à relever les défis et les exigences uniques de votre prochain projet.",
+    "Features_1_bullet_1": "Expérience avec les grandes, moyennes et petites organisations.",
+    "Features_1_bullet_2": "Gestion de l'assurance qualité et leadership pour votre prochain projet.",
+    "Features_1_bullet_3": "Conseil en gestion d'entreprise pour votre entreprise existante ou en démarrage.",
+    "Features_1_bullet_4": "n/a",
+    "Features_1_bullet_5": "n/a",
+    "Features_2_title": "Paquets de services pour le démarrage et les médias",
+    "Features_2_body_1": "Nous pouvons préparer les conceptions et le matériel dont vous aurez besoin pour votre entreprise, votre projet ou votre idée, nouveaux ou existants.",
+    "Features_2_body_2": "Faites-nous travailler pour vous sur votre prochain projet :",
+    "Features_2_bullet_1": "Votre prochain projet de conception ou de mise à jour de site Web",
+    "Features_2_bullet_2": "Services continus de révision et de déploiement de sites Web",
+    "Features_2_bullet_3": "Services de conception pour les médias en ligne",
+    "Features_2_bullet_4": "Identité et matériel publicitaire",
+    "Features_2_bullet_5": "n/a",
+    "Features_3_title": "Capacités des services de développement et de conception",
+    "Features_3_body_1": "Services de conception et de développement numériques pour que votre entreprise réussisse et s'épanouisse",
+    "Features_3_body_2": "Notre équipe a travaillé avec de nombreuses technologies et plateformes de développement différentes :",
+    "Features_3_bullet_1": "Développement de sites Web (HTML5, CSS, Javascript et Typescript)",
+    "Features_3_bullet_2": "Technologies et lancements Android (Android studio, Kotlin & Java)",
+    "Features_3_bullet_3": "Technologies iOS (xCode, Swift et Swift UI)",
+    "Features_3_bullet_4": "Plateformes de développement Web (Angular, Node JS, React, PHP)",
+    "Features_3_bullet_5": "Technologies de développement (Github, Jira, Teamworks, Sourcetree)",
+    "Features_3_bullet_6": "Données et bases de données (SQL, Firebase, MongoDB, Realm, Room)"
+  },
+
+  "CTA" : {
+		"Cta_title":"Prochaines étapes ...",
+		"Cta_body_p1":"Si vous avez un rôle dans un projet que vous cherchez à remplir,",
+    "Cta_body_p2":"et remplissez notre fiche de contact, en nous parlant du travail et de vos besoins."
+  },
+
+  "NAVBAR" : {
+		"Nav_Company":"entreprise",
 		"Nav_SignOut":"déconnecter"
 	},
-  "COMPONENT":{
-    "About":"About",
+
+  "COMPONENT" : {
+    "About":"sur le site",
     "Admin":"Admin",
-    "Contacts":"Contacts",
+    "Contacts":"contacts",
     "Faq":"FAQ",
     "Footer":"Footer",
     "Gallery":"Gallery",
@@ -24,26 +102,184 @@
 		"SignUp":"enregistrer",
 		"Teams":"equipe"
 	},
+
 	"SIGNIN" : {
-		"Signin_Title":"Page de connexion",
-		"Signin_btn_Signin":"inscrire"
+		"Signin_title":"Page de connexion",
+		"Signin_subtitle":"Connectez-vous à votre compte ci-dessous :",
+    "Signin_message":"Message: Connectez-vous à votre compte ci-dessous :"
 	},
-  	"CONTACTS" : {
-		"Contacts_section_title": "contactez-nous",
+
+  "SIGNUP" : {
+		"Signup_title":"Page d'inscription",
+		"Signup_subtitle":"Inscrivez-vous pour votre compte ci-dessous :",
+    "Signup_message":"Message: Inscrivez-vous pour votre compte ci-dessous :"
+  },
+
+  "FAQ" : {
+    "Faq_title": "f.a.q.",
+    "Faq_subtitle": "foire aux questions",
+    "Faq_text": "Bienvenue sur notre page F.A.Q. (Foire aux questions)."
+  },
+
+  "GALLERY": {
+    "Gallery_title": "Le portefeuille",
+    "Gallery_subtitle": "Ce sur quoi nous avons travaillé et ce que nous avons fait",
+    "Gallery_filter_all": "Tout",
+    "Gallery_filter_app": "App",
+    "Gallery_filter_media": "Médias",
+    "Gallery_filter_web": "Web",
+    "Gallery_category": "Catégorie",
+    "Gallery_item_title": "Titre",
+    "Gallery_details": "Plus de détails"
+  },
+
+  "PRODUCTS": {
+    "Products_title": "Nos services",
+    "Products_subtitle": "Ce que nous offrons",
+    "Products_1_title": "Conception et réalisation de sites Web",
+    "Products_1_body": "Laissez notre équipe concevoir et/ou construire votre prochain site Web. Nous pouvons également vous aider pour un re-design.",
+    "Products_2_title": "Conception média, UI et UX",
+    "Products_2_body": "Laissez-nous travailler sur la conception de votre prochain projet. Du graphisme aux médias, votre vision est notre vision.",
+    "Products_3_title": "Support et entretien",
+    "Products_3_body": "Support et services réguliers conçus pour vos besoins uniques afin de vous garder opérationnel sur le web.",
+    "Products_4_title": "Assurance qualité",
+    "Products_4_body": "Vous cherchez de l'aide pour concevoir ou développer votre processus d'assurance qualité ? Nous pouvons vous aider.",
+    "Products_5_title": "Développement d'applications",
+    "Products5_body": "Faites travailler notre équipe sur votre prochain projet d'application Android ou iOS.",
+    "Products_6_title": "Direction de projet",
+    "Products_6_body": "Nous pouvons gérer votre prochain projet d'assurance qualité, de développement ou de mise en œuvre."
+  },
+
+  "TEAM" : {
+    "Team_title": "l'équipe",
+    "Team_subtitle": "Notre équipe est là pour vous you",
+    "Team_role_1": "Développement",
+    "Team_role_2": "Directeur",
+    "Team_role_3": "Opérations",
+    "Team_role_gn": "Directeur général et consultant",
+    "Team_role_ls": "Directeur du développement et consultant",
+    "Team_role_devcon": "Développeur & Consultant",
+    "Team_role_junior": "Développeur",
+    "Team_name_gn": "Gervan Nantel",
+    "Team_name_ls": "Lalaantika Sharma",
+    "Team_name_dc": "David Crispin",
+    "Team_name_ra": "Roaa Alamadi",
+    "Team_name_aw": "Andrew Wiseman"
+  },
+
+  "PRICING" : {
+    "Pricing_title": "Nos tarifs",
+    "Pricing_subtitle": "Comment nous travaillons...",
+    "Pricing_label_free": "gratuit",
+    "Pricing_label_monthly": "mensuel",
+    "Pricing_box_1_title": "Consultation initiale",
+    "Pricing_box_1_subtitle": "",
+    "Pricing_box_1_text_1": "Discutez de votre projet / idée",
+    "Pricing_box_1_text_2": "Précisez vos besoins",
+    "Pricing_box_1_text_3": "Préparer un devis",
+    "Pricing_box_1_text_4": "Travail de projet ou de conception",
+    "Pricing_box_1_text_5": "Recommandations / conseils",
+    "Pricing_box_2_title": "Conseil et freelance",
+    "Pricing_box_2_subtitle": "/ Temps et matériel",
+    "Pricing_box_2_text_1": "Options de facturation mensuelle pratiques*",
+    "Pricing_box_2_text_2": "Facturé pour le temps travaillé",
+    "Pricing_box_2_text_3": "Facturé pour les matériaux / services utilisés",
+    "Pricing_box_2_text_4": "* Certaines conditions / ",
+    "Pricing_box_2_text_5": "restrictions peuvent s'appliquer",
+    "Pricing_box_3_title": "Plans de services mensuels",
+    "Pricing_box_3_subtitle": "/ Tarifs fixes",
+    "Pricing_box_3_text_1": "Dépenses mensuelles fixes / connaissez votre budget**",
+    "Pricing_box_3_text_2": "Accord sur les services fournis",
+    "Pricing_box_3_text_3": "Point de contact fixe",
+    "Pricing_box_3_text_4": "Politique d'annulation simplifiée",
+    "Pricing_box_3_text_5": "** Des conditions et des restrictions s'appliquent"
+  },
+
+  "CONTACTS" : {
+    "Contacts_section_title": "contactez-nous",
     "Contacts_section_subtitle": "informations de contact",
     "Contacts_location": "location:",
-    "Contacts_email_short": "email:",
     "Contacts_call": "appeler:",
-    "Contacts_name": "votre nom",
+    "Contacts_email_short": "e-mail:",
     "Contacts_email_long": "votre email",
-    "Contacts_message": "votre message",
-    "Contacts_subject": "sujet"
-
+    "Contacts_name_label": "Nom:",
+    "Contacts_name": "votre nom",
+    "Contacts_message_label": "Message:",
+    "Contacts_message": "Votre bref message détaille ...",
+    "Contacts_subject_label": "Sujet:",
+    "Contacts_subject": "Dites-nous de quoi il s'agit"
 	},
-	"FOOTER":{
-		"Footer":"Footer-fr",
+
+	"POLICY" : {
+    "Policy_title": "Conditions et confidentialité",
+    "Policy_terms_title": "Conditions de service",
+    "Policy_terms_subtitle": "Détails des termes",
+    "Policy_private_title": "Confidentialité",
+    "Policy_private_subtitle": "Détails sur la confidentialité"
+	},
+
+  "BUTTON" : {
+    "Button_read_more": "En savoir plus",
+    "Button_send_message" : "Envoyer le message",
+    "Button_learn_more": "En savoir plus",
+    "Button_contact_us": "contactez-nous",
+    "Button_subscribe": "S'abonner à",
+    "Button_submit": "Submit fr",
+    "Button_signin":"inscrire",
+		"Button_signup":"enregistrer",
+    "Button_step_1": "Étape 1",
+    "Button_step_2a": "Étape 2(a)",
+    "Button_step_2b": "Étape 2(b)"
+	},
+
+  "LABEL" : {
+    "Label_password": "mot de passe",
+    "Label_email_address": "adresse de courriel",
+    "Label_first_name":"prénom",
+    "Label_last_name":"nom de famille"
+	},
+
+	"FOOTER" : {
+    "Footer":"Footer",
 		"Footer_Title":"(c) 2022 Some Company",
-    "Title_1":"this is the 1st title - fr",
-    "Title_2":"this is the 2nd title-fr"
+    "Footer_Title_1":"this is the 1st title",
+    "Footer_Title_2":"this is the 2nd title",
+    "Footer_label_phone": "téléphone",
+    "Footer_label_email": "email",
+    "Footer_label_english": "English",
+    "Footer_label_french": "français",
+    "Footer_label_short_en": "EN",
+    "Footer_label_short_fr": "fr",
+    "Footer_label_links": "Liens rapides",
+    "Footer_label_contact": "contactez-nous",
+    "Footer_nav_home" : "accueil",
+    "Footer_nav_about" : "à propos de nous",
+    "Footer_nav_services" : "les services",
+    "Footer_nav_terms": "Conditions de service",
+    "Footer_nav_privacy" : "Politique de confidentialité",
+    "Footer_back_home": "Retour à la page d'accueil",
+    "Footer_services_title": "Nos services",
+    "Footer_nav_consult":"Services",
+    "Footer_nav_packages":"Produits",
+    "Footer_nav_develop":"Conseil",
+    "Footer_mailing_title" : "Rejoindre notre liste de diffusion",
+    "Footer_mailing_body" : "Pour plus d'informations sur nos produits et services, inscrivez-vous à notre liste de diffusion et nous vous contacterons",
+    "Footer_cp1": "© Copyright",
+    "Footer_cp2": "2023. Tous droits réservés",
+    "Footer_label_path_en": "assets/img/lang_en.png",
+    "Footer_label_path_fr": "assets/img/lang_fr.png"
+	},
+
+  "HELP" : {
+    "Help_cr_password" : "Créez votre nouveau mot de passe",
+    "Help_password" : "Entrez votre mot de passe",
+    "Help_cr_email_address" : "Créez votre nouvelle adresse électronique",
+    "Help_email_address" : "Entrez l'adresse électronique",
+    "Help_first_name" : "Entrez votre prénom",
+    "Help_last_name" : "Entrez votre nom de famille",
+    "Help_click" : "Cliquez pour continuer",
+    "Help_click_send": "Cliquez pour envoyer",
+    "Help_subject" : "De quoi s'agit-il ?",
+    "Help_message" : "Fournissez une brève description ou des commentaires."
 	}
 }

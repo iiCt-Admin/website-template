@@ -1,3 +1,67 @@
-<div class="container-fluid">
-<p>contacts works!</p>
-</div>
+<section id="contact" class="contact">
+  <div class="section-title center-text" data-aos="zoom-out">  <!-- Title section -->
+    <h2 >{{ returnText('CONTACTS', 'Contacts_section_title') }}</h2>
+    <p >{{ returnText('CONTACTS', 'Contacts_section_subtitle') }}</p>
+  </div>
+  <div class="row mt-5">  <!-- Contact Body section -->
+    <div class="col-lg-4 indent-left75 " data-aos="fade-right">
+      <div class="info">
+        <div class="address">
+          <div class="inline">
+            <i class="bx bx-map icon-settings"></i>
+            <h4>{{ returnText('CONTACTS', 'Contacts_location') }}</h4>
+          </div>
+          <p>{{ returnText('COMPANY', 'Company_address_short') }}</p>
+        </div>
+        <div class="email">
+          <div class="inline">
+            <i class="bx bx-envelope icon-settings"></i>
+            <h4>{{ returnText('CONTACTS', 'Contacts_email_short') }}</h4>
+          </div>
+          <p>{{ returnText('COMPANY', 'Company_email_support') }}</p>
+        </div>
+        <div class="phone">
+          <div class="inline">
+            <i class="bx bx-phone icon-settings"></i>
+            <h4>{{ returnText('CONTACTS', 'Contacts_call') }}</h4>
+          </div>
+          <p>{{ returnText('COMPANY', 'Company_phone_main') }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 indent-right75" data-aos=zoom-out>
+          <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+            <div class="inline indent-right75">
+              <div class="form-group col-md-6 py-2 ">
+                <label class="labels" for="Email">{{ returnText('CONTACTS', 'Contacts_email_short') }}</label>
+                 <input type="email" class="form-control placeholders" name="Email" formControlName="Email" aria-describedby="emailHelp"
+                  placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" title="{{ returnText('HELP', 'Help_email_address') }}" >
+              </div>
+              <div class="col-md-1 ">
+                <p class="contact"></p>
+              </div>
+              <div class="form-group col-md-5 py-2">
+                <label class="labels" for="fullname">{{ returnText('CONTACTS', 'Contacts_name_label') }}</label>
+                <input type="text" class="form-control placeholders" name="Fullname" formControlName="Fullname"
+                 placeholder="{{ returnText('CONTACTS', 'Contacts_name') }} " title="{{ returnText('HELP', 'Help_first_name') }}"
+                      >
+              </div>
+            </div>
+              <div class="form-group indent-right75 py-2">
+                <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_subject_label') }}</label>
+                <input type="text" class="form-control placeholders" formControlName="Subject" name="Subject"
+                 placeholder="{{ returnText('CONTACTS', 'Contacts_subject') }}" title="{{ returnText('HELP', 'Help_subject') }}">
+              </div>
+              <div class="form-group indent-right75 py-2">
+                  <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_message_label') }}</label>
+                  <textarea class="form-control placeholders" formControlName="Comment" name="Comment"
+                   placeholder="{{ returnText('CONTACTS', 'Contacts_message') }}" title="{{ returnText('HELP', 'Help_message') }}">
+                  </textarea>
+              </div>
+              <div class="inline-centered indent-right75 py-2">
+                  <button type="submit" class="one_space_r btn-custom" title="{{ returnText('HELP', 'Help_click_send') }}" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_send_message') }} </button>
+              </div>
+          </form>
+      </div>
+  </div>
+</section><!-- End Contact Section -->
