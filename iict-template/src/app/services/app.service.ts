@@ -2,12 +2,12 @@ import { Injectable, Output } from '@angular/core';
 
 import { Router } from '@angular/router';
 
-import { HttpClient } from '@angular/common/http';
-
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
 const { EventEmitter } = require("events");
+
+// for possible use of on-the-fly translations
 
 // import * as deepl from 'deepl';
 
@@ -18,9 +18,10 @@ const { EventEmitter } = require("events");
 // const translate = require("deepl");
 
 // interface Translations {
-// 	// detected_source_language:string;
-// 	text : string;
-// 	from : object;
+// 	// detected_source_language:string; // for deepl
+// 	text : string; // for deepl and google
+
+// 	from : object; // the rest is for use with google
 // // 	from.language	Object	-
 // // from.language.didYouMean	Boolean	Whether or not the API suggest a correction in the source language.
 // // from.language.iso	String	The ISO 639-1 code of the language that the API has recognized in the text.
@@ -43,41 +44,33 @@ export class AppService {
 	@Output() refreshGallery = new EventEmitter();
 	// text = "Hello world";
 
-	// baseUrl = "https://api-free.deepl.com/v2/translate";
-	// useUrl = this.baseUrl + ' Authorization: Deepl-Auth-Key [] ' +
-	// 'text="' + this.text + '" target_lang=' + this.currentLanguage;
-
-  constructor(private router : Router, private http: HttpClient) {
+  constructor(private router : Router) {
 	  this.init();
 	  // this.newTranslate("Hello World");
-	//alert(this.useUrl);
   }
 
   //  newTranslate(text : string) : string {
 	//   var returnText : string = "";
+
+	// use for deepl translate which does work
 	//    // translate({
 	//    //    free_api: true,
 	//    //    text: text,
 	//    //    target_lang: this.currentLanguage.toUpperCase(),
 	//    //    auth_key: deepl_apikey,
 	//    //  })
+
+	 // for google translate - if it will work
 	//    translate(text, { to: this.currentLanguage })
+
+	// for use with deepl to process response and return translated text
 	// 	.then(result => {
-	// 		// const data = JSON.parse(result.data) as Translations;
-	// 		// console.log(data);
 	// 		let t = Object.assign(new Array<Translations>(), result.data)
-	// 		// this.translations = result.data;
-	// 		// alert(result.data[0].text as Translations);
 	// 		const keys = Object.keys(t);
 	// 			for (const key of keys) {
-	// 			 	// if (result.hasOwnProperty(key)) {
+
 	// 					returnText = t[key][0].text;
-  //
-	// 			   		// console.log(t[key][0].text);// = instanceData[key];
-	// 			 	// }
-	// 		   }
-	// 		// console.log(t);
-  //     		// console.log(result.data);
+  	// 		   }
 	// 		return returnText;
   // 		})
   // 		.catch(error => {
@@ -92,6 +85,9 @@ export class AppService {
 	  this.currentTranslation = await this.fetchJSON(await this.defaultBrowserLanguage());
   }
 
+/*
+	SetLanguage
+*/
   SetLanguage(lang : string){
 	  this.currentLanguage = lang;
   }
