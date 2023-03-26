@@ -16,7 +16,14 @@
 		  <!-- Filter categories and display only if active -->
           <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
 			  <div *ngFor="let cat of firebaseService.categories">
-				  <button *ngIf="cat.Portfolio_Cat_Active == true" class="btn btn-primary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ CategoryTranslate(cat.Portfolio_Cat_Sort) }}</button>
+				  <div *ngIf="cat.Portfolio_Cat_Active == true">
+					 <div *ngIf="cat.Portfolio_Cat_Sort == currentCategory;else elseBlock">
+				  	<button class="btn btn-primary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ CategoryTranslate(cat.Portfolio_Cat_Sort) }}</button>
+				  </div>
+				  <ng-template #elseBlock>
+					  <button class="btn btn-secondary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ CategoryTranslate(cat.Portfolio_Cat_Sort) }}</button>
+					</ng-template>
+				  </div>
 			</div>
           </ul>
 
