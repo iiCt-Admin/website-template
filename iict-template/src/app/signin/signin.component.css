@@ -2,6 +2,10 @@
 	width : 600px;
 }
 
+.p {
+  margin-top: 10px;
+}
+
 /* modifies the icon looks & properties @ left side */
 .signin i {
   margin-right: 1rem;

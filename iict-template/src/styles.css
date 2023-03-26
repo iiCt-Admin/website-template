@@ -33,6 +33,10 @@
   text-align: center;
 }
 
+.icon-width {
+  min-width: 40px;
+}
+
 .btn-custom {
   background-color: rgb(247, 143, 23);
   border-radius: 25px;

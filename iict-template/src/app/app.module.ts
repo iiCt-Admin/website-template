@@ -33,6 +33,8 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import * as AOS from 'aos';
+import 'boxicons';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {

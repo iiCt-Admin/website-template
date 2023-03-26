@@ -268,5 +268,18 @@
     "Footer_cp2": "2023. Tous droits réservés",
     "Footer_label_path_en": "assets/img/lang_en.png",
     "Footer_label_path_fr": "assets/img/lang_fr.png"
+	},
+
+  "HELP" : {
+    "Help_cr_password" : "Créez votre nouveau mot de passe",
+    "Help_password" : "Entrez votre mot de passe",
+    "Help_cr_email_address" : "Créez votre nouvelle adresse électronique",
+    "Help_email_address" : "Entrez l'adresse électronique",
+    "Help_first_name" : "Entrez votre prénom",
+    "Help_last_name" : "Entrez votre nom de famille",
+    "Help_click" : "Cliquez pour continuer",
+    "Help_click_send": "Cliquez pour envoyer",
+    "Help_subject" : "De quoi s'agit-il ?",
+    "Help_message" : "Fournissez une brève description ou des commentaires."
 	}
 }

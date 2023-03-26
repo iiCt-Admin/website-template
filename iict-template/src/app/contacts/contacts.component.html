@@ -33,30 +33,33 @@
           <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
             <div class="inline indent-right75">
               <div class="form-group col-md-6 py-2 ">
-                  <label class="labels" for="Email">{{ returnText('CONTACTS', 'Contacts_email_short') }}</label>
-                  <input type="email" class="form-control placeholders" name="Email" aria-describedby="emailHelp"
-                      placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" formControlName="Email">
+                <label class="labels" for="Email">{{ returnText('CONTACTS', 'Contacts_email_short') }}</label>
+                 <input type="email" class="form-control placeholders" name="Email" formControlName="Email" aria-describedby="emailHelp"
+                  placeholder="{{ returnText('CONTACTS', 'Contacts_email_long') }}" title="{{ returnText('HELP', 'Help_email_address') }}" >
               </div>
               <div class="col-md-1 ">
                 <p class="contact"></p>
               </div>
               <div class="form-group col-md-5 py-2">
-                  <label class="labels" for="fullname">{{ returnText('CONTACTS', 'Contacts_name_label') }}</label>
-                  <input type="text" class="form-control placeholders" name="Fullname" placeholder="{{ returnText('CONTACTS', 'Contacts_name') }}"
-                      formControlName="Fullname">
+                <label class="labels" for="fullname">{{ returnText('CONTACTS', 'Contacts_name_label') }}</label>
+                <input type="text" class="form-control placeholders" name="Fullname" formControlName="Fullname"
+                 placeholder="{{ returnText('CONTACTS', 'Contacts_name') }} " title="{{ returnText('HELP', 'Help_first_name') }}"
+                      >
               </div>
             </div>
               <div class="form-group indent-right75 py-2">
-                  <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_subject_label') }}</label>
-                  <input type="text" class="form-control placeholders" formControlName="Subject" name="Subject" placeholder="{{ returnText('CONTACTS', 'Contacts_subject') }}">
+                <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_subject_label') }}</label>
+                <input type="text" class="form-control placeholders" formControlName="Subject" name="Subject"
+                 placeholder="{{ returnText('CONTACTS', 'Contacts_subject') }}" title="{{ returnText('HELP', 'Help_subject') }}">
               </div>
               <div class="form-group indent-right75 py-2">
                   <label class="labels" for="comment">{{ returnText('CONTACTS', 'Contacts_message_label') }}</label>
-                  <textarea class="form-control placeholders" formControlName="Comment" name="Comment" placeholder="{{ returnText('CONTACTS', 'Contacts_message') }}">
+                  <textarea class="form-control placeholders" formControlName="Comment" name="Comment"
+                   placeholder="{{ returnText('CONTACTS', 'Contacts_message') }}" title="{{ returnText('HELP', 'Help_message') }}">
                   </textarea>
               </div>
               <div class="inline-centered indent-right75 py-2">
-                  <button type="submit" class="one_space_r btn-custom" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_send_message') }} </button>
+                  <button type="submit" class="one_space_r btn-custom" title="{{ returnText('HELP', 'Help_click_send') }}" [disabled]="!FormData.valid">{{ returnText('BUTTON', 'Button_send_message') }} </button>
               </div>
           </form>
       </div>
