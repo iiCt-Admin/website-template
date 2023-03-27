@@ -39,6 +39,7 @@ import { TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import * as AOS from 'aos';
 import 'boxicons';
+import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -63,7 +64,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     SidenavComponent,
     SigninComponent,
     SignupComponent,
-    TeamsComponent
+    TeamsComponent,
+    PortfolioDetailsComponent
   ],
   imports: [
     BrowserModule,

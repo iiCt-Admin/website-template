@@ -19,6 +19,8 @@ export class GalleryComponent implements OnInit {
 	filter = Array<CategoryData>();
 	currentCategory = "All";
 
+	isAdmin = true;
+
 
   portfolio = [{image:"assets/img/iiCt_Round_Light.png",alt:"alt App 1", title: "no title App 1", category : "App", detailsLink : "none" },
 				{image:"assets/img/iiCt_contact.png",alt:"alt Web 1", title: "no title Web 1", category : "Web", detailsLink : "none"},
@@ -49,6 +51,18 @@ export class GalleryComponent implements OnInit {
 
 	  // this.firebaseService.retrieveFile("output", "/images/web.png");
 	  // console.log(this.appService.newTranslate("this is an example"));
+  }
+
+  edit(port : CategoryData){
+
+  }
+
+  add(){
+
+  }
+
+  remove(port : CategoryData){
+	  
   }
 
   returnText(key : string, value : string){

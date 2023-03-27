@@ -30,14 +30,22 @@
           </ul>
 
           <div class="row portfolio-container center-text" data-aos="fade-up">
-
+			  <div class="portfolio-item" *ngIf="isAdmin == true">
+			    <button class="portflio-button" (click)="add()">+</button>
+			  </div>
   				<div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-up">
   				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_Title) }}"></div>
   				  <div class="portfolio-info">
+					  <div *ngIf="isAdmin == true">
+  						<button class="portflio-button" (click)="edit(port)">Edit</button>
+						<button class="portflio-button" (click)="remove(port)">Remove</button>
+  					</div>
   					<h4>{{ getPortfolioTitle(port.Portfolio_Data_Title) }}</h4>
   					<p data-i18n="portfolio_app" >{{ getCategoryName(port.Portfolio_Data_Category) }}</p>
+
   					<a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port.Portfolio_Data_Title) }}"><i class="bx bx-plus"></i></a>
-  					<a href="portfolio-details.html" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
+					<!-- [routerLink]="['/admin']" [queryParams]="{ 'child': '3' }" -->
+  					<a [routerLink]="['/portfolio-details']" [queryParams]="{ 'child': port.Portfolio_Data_Title }" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
   				  </div>
   				</div>
 
@@ -63,6 +71,13 @@
         </div>
       </div>
     </div> -->
+
+	<div *ngIf="isAdmin == true;else notAdmin">
+		<p>your an admin</p>
+	</div>
+	<ng-template #notAdmin>
+			<p>your NOT an admin</p>
+	</ng-template>
 
   </div>
 </section><!-- End Portfolio Section -->

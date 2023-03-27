@@ -3,16 +3,14 @@ import { Injectable } from '@angular/core';
 import { AppService } from './app.service';
 
 import { initializeApp } from "firebase/app";
-import { FirebaseApp } from '@angular/fire/app/app';
 import firebase from 'firebase/compat/app';
 
-import {  collection, query, where, orderBy, doc, getDoc, getDocs} from "firebase/firestore";
-import { getFirestore } from "firebase/firestore";
+import { collection, query, where, orderBy, doc, getDoc, getDocs, getFirestore } from "firebase/firestore";
 
 import { getStorage, ref, uploadBytes, uploadString, getDownloadURL  } from "firebase/storage";
 
-import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/compat/firestore';
-import { AngularFireStorage } from '@angular/fire/compat/storage';
+// import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/compat/firestore';
+// import { AngularFireStorage } from '@angular/fire/compat/storage';
 
 import { Observable } from 'rxjs';
 
@@ -32,17 +30,18 @@ const storage = getStorage(app);
 })
 export class FirebaseService {
 
-
-
 	categories = new Array<Category>();
 
 	languages = new Array<Language>();
 
 	portfolio_list = new Array<CategoryData>();
 
-	constructor(firestore: AngularFirestore, public appService : AppService) {
-
+	constructor(public appService : AppService) {
 	}
+
+	// async CreateUser(user : firebase.User){
+	// 	// console.log(JSON.parse(localStorage.getItem('user')!));
+	// }
 
 	async GetLanguages(){
 		this.languages = [];
