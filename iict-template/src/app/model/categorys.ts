@@ -1,8 +1,10 @@
 export class Category{
 	Portfolio_Cat_Order : number;
 	Portfolio_Cat_Name : string;
+	Portfolio_Cat_Names : Array<string>;
 	Portfolio_Cat_Sort : string;
 	Portfolio_Cat_Language : string;
+	Portfolio_Cat_Languages : Array<string>;
 	Portfolio_Cat_Active : boolean;
 }
 

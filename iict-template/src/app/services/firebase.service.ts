@@ -43,7 +43,7 @@ export class FirebaseService {
 
 	async GetCategoryList(){
 		this.categories = [];
-		const q = query(collection(db, "PORTFOLIO_CATEGORY"), where("Portfolio_Cat_Language", "==", this.appService.currentLanguage), orderBy("Portfolio_Cat_Order","asc"));
+		const q = query(collection(db, "PORTFOLIO_CATEGORY"), where("Portfolio_Cat_Language", "==", this.appService.currentLanguage), orderBy("Portfolio_Cat_Order"));
 
 		const querySnapshot = await getDocs(q);
 			querySnapshot.forEach((doc) => {

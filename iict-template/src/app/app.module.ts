@@ -63,7 +63,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     SidenavComponent,
     SigninComponent,
     SignupComponent,
-    TeamsComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +80,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AngularFireModule.initializeApp(environment.firebase, 'mytestapp'),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
-    NgbModule,
+    NgbModule
   ],
   providers: [ AppService, FirebaseService, ContactService],
   bootstrap: [AppComponent]

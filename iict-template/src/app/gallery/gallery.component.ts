@@ -31,7 +31,8 @@ export class GalleryComponent implements OnInit {
 				{image:"assets/img/lang_fr.png",alt:"alt Media 3", title: "no title Media 3", category : "Media", detailsLink : "none"},
 			];
 
-  constructor(public appService : AppService, public firebaseService : FirebaseService){}
+  constructor(public appService : AppService, public firebaseService : FirebaseService){
+  }
 	// can re-add this if needed
   //,  public translate : TranslateService) { }
 
