@@ -43,9 +43,10 @@
   					<h4>{{ getPortfolioTitle(port.Portfolio_Data_Title) }}</h4>
   					<p data-i18n="portfolio_app" >{{ getCategoryName(port.Portfolio_Data_Category) }}</p>
 
-  					<a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port.Portfolio_Data_Title) }}"><i class="bx bx-plus"></i></a>
+						<!-- href="/assets/img/Features/consult_4_1024x681.jpeg" -->
+					<a  (click)="preview(port)" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port.Portfolio_Data_Title) }}"><i class="bx bx-plus"></i></a>
 					<!-- [routerLink]="['/admin']" [queryParams]="{ 'child': '3' }" -->
-  					<a [routerLink]="['/portfolio-details']" [queryParams]="{ 'child': port.Portfolio_Data_Title }" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
+  					<a [routerLink]="['/portfolio-details']" [queryParams]="{ 'child': getPortfolioTitle(port.Portfolio_Data_Title) }" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
   				  </div>
   				</div>
 

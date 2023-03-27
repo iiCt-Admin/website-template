@@ -8,6 +8,7 @@ import { FirebaseService } from '../services/firebase.service';
 import { Category, CategoryData } from '../model/categorys';
 
 import * as AOS from 'aos';
+import Swal from 'sweetalert2';
 import 'boxicons';
 
 @Component({
@@ -63,6 +64,11 @@ export class GalleryComponent implements OnInit {
 
   remove(port : CategoryData){
 
+  }
+
+  preview(port : CategoryData){
+	  var index = this.getLanguageIndex(port.Languages);
+	  Swal.fire("Preview of " + port.Descriptions[index]);
   }
 
   returnText(key : string, value : string){
