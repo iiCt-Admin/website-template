@@ -19,6 +19,7 @@ import { Observable } from 'rxjs';
 import Swal from 'sweetalert2';
 
 import { Category, CategoryData } from '../model/categorys'
+import { Language } from '../model/language';
 
 import { environment } from '../../environments/environment';
 
@@ -35,10 +36,25 @@ export class FirebaseService {
 
 	categories = new Array<Category>();
 
+	languages = new Array<Language>();
+
 	portfolio_list = new Array<CategoryData>();
 
 	constructor(firestore: AngularFirestore, public appService : AppService) {
 
+	}
+
+	async GetLanguages(){
+		this.languages = [];
+		const q = query(collection(db, "LANGUAGE"),where("lang_active", "==", true));
+
+
+		const querySnapshot = await getDocs(q);
+			querySnapshot.forEach((doc) => {
+  				// doc.data() is never undefined for query doc snapshots
+				this.languages.push(doc.data() as unknown as Language);
+  				// console.log(doc.id, " => ", doc.data());
+			});
 	}
 
 	async GetCategoryList(){
