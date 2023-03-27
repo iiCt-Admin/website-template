@@ -43,7 +43,8 @@ export class FirebaseService {
 
 	async GetCategoryList(){
 		this.categories = [];
-		const q = query(collection(db, "PORTFOLIO_CATEGORY"), where("Portfolio_Cat_Language", "==", this.appService.currentLanguage), orderBy("Portfolio_Cat_Order"));
+		const q = query(collection(db, "PORTFOLIO_CATEGORY"),where("Portfolio_Cat_Language", "==", "en"),  orderBy("Portfolio_Cat_Order"));
+
 
 		const querySnapshot = await getDocs(q);
 			querySnapshot.forEach((doc) => {
@@ -57,7 +58,7 @@ export class FirebaseService {
 
 		this.portfolio_list = [];
 		// where("Portfolio_Data_Category","==","app")
-		const q = query(collection(db, "PORTFOLIO_DATA"), where("Portfolio_Data_Language", "==", this.appService.currentLanguage));
+		const q = query(collection(db, "PORTFOLIO_DATA"), where("Portfolio_Data_Language", "==", "en"));
 
 		const querySnapshot = await getDocs(q);
 			querySnapshot.forEach((doc) => {
@@ -85,7 +86,7 @@ retrieveFile(elementID : string, filename : string){
 
     // Or inserted into an <img> element
     const img = document.getElementById(elementID);
-    img.setAttribute('src', url);
+    img?.setAttribute('src', url);
   })
   .catch((error) => {
     // Handle any errors

@@ -18,10 +18,12 @@
 			  <div *ngFor="let cat of firebaseService.categories">
 				  <div *ngIf="cat.Portfolio_Cat_Active == true">
 					 <div *ngIf="cat.Portfolio_Cat_Sort == currentCategory;else elseBlock">
-				  	<button class="btn btn-primary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ CategoryTranslate(cat.Portfolio_Cat_Sort) }}</button>
+
+				  	<button class="btn btn-primary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ getCategoryName(cat.Portfolio_Cat_Sort) }}</button>
+					<!-- CategoryTranslate(cat.Portfolio_Cat_Sort) -->
 				  </div>
 				  <ng-template #elseBlock>
-					  <button class="btn btn-secondary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ CategoryTranslate(cat.Portfolio_Cat_Sort) }}</button>
+					  <button class="btn btn-secondary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ getCategoryName(cat.Portfolio_Cat_Sort) }}</button>
 					</ng-template>
 				  </div>
 			</div>
@@ -30,11 +32,11 @@
           <div class="row portfolio-container center-text" data-aos="fade-up">
 
   				<div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-up">
-  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ port.Portfolio_Data_AltText }}"></div>
+  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_Title) }}"></div>
   				  <div class="portfolio-info">
-  					<h4>{{ port.Portfolio_Data_Title }}</h4>
-  					<p data-i18n="portfolio_app" >{{ CategoryTranslate(port.Portfolio_Data_Category) }}</p>
-  					<a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ port.Portfolio_Data_Title }}"><i class="bx bx-plus"></i></a>
+  					<h4>{{ getPortfolioTitle(port.Portfolio_Data_Title) }}</h4>
+  					<p data-i18n="portfolio_app" >{{ getCategoryName(port.Portfolio_Data_Category) }}</p>
+  					<a href="assets/img/portfolio/vara_copy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port.Portfolio_Data_Title) }}"><i class="bx bx-plus"></i></a>
   					<a href="portfolio-details.html" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
   				  </div>
   				</div>

@@ -45,6 +45,7 @@ export class GalleryComponent implements OnInit {
 	  this.appService.refreshGallery.on(true,async ()=>{
 		  await this.ChangeFilter(this.currentCategory);
 	  })
+	  // this.getCategoryName("All");
 
 	  // this.firebaseService.retrieveFile("output", "/images/web.png");
 	  // console.log(this.appService.newTranslate("this is an example"));
@@ -54,15 +55,60 @@ export class GalleryComponent implements OnInit {
     return this.appService.returnText(key, value);
   }
 
-	CategoryTranslate(category: string) : string {
-
-		if (category != undefined){
-			var cat_title = "Gallery_filter_" + category.toLowerCase();
-			return this.returnText("GALLERY", cat_title);
+getLanguageIndex(item : Array<string>):number{
+	for(let i = 0; i < item.length; i++){
+		if (item[i] == this.appService.currentLanguage){
+			return i;
 		}
-
-		return "";
 	}
+	return 0;
+}
+  getPortfolioTitle(name : string) : string {
+	  var index = 0;
+	  for(let i = 0; i < this.firebaseService.portfolio_list.length; i++){
+		var item = this.firebaseService.portfolio_list as Array<CategoryData>;
+
+		// console.log(item);
+		let item2 = item[i].Languages;
+		index = this.getLanguageIndex(item2);
+		if (item[i].Portfolio_Data_Title == name) return item[i].Titles[index];
+	  }
+	  return "";
+  }
+
+  getPortfolioAltText(name : string) : string {
+	  var index = 0;
+	  for(let i = 0; i < this.firebaseService.portfolio_list.length; i++){
+		var item = this.firebaseService.portfolio_list as Array<CategoryData>;
+
+		let item2 = item[i].Languages;
+		index = this.getLanguageIndex(item2);
+		if (item[i].Portfolio_Data_Title == name) return item[i].AltTexts[index];
+	  }
+	  return "";
+  }
+
+  getCategoryName(name : string) : string {
+	  var index = 0;
+	  for(let i = 0; i < this.firebaseService.categories.length; i++){
+		var item = this.firebaseService.categories as Array<Category>;
+		let item2 = item[i].Portfolio_Cat_Languages;
+		index = this.getLanguageIndex(item2);
+		if (item[i].Portfolio_Cat_Sort == name) return item[i].Portfolio_Cat_Names[index];
+	  }
+	  return "";
+
+  }
+
+	// CategoryTranslate(category: string) : string {
+	//
+	// 	if (category != undefined){
+	// 		var cat_title = "Gallery_filter_" + category.toLowerCase();
+	// 		return this.returnText("GALLERY", cat_title);
+	// 	}
+	//
+	// 	return "";
+	// }
 
   ChangeFilter(filterChange : string){
 	  // Store category filter
@@ -80,54 +126,16 @@ export class GalleryComponent implements OnInit {
 
   }
 
-  	// handleFileInput(files: FileList) {
-    //   //this.fileToUpload =
-	//   alert(files.item(0));
-  	// }
-
 openFile(event) {
    var input = event.target;
 
    var reader = new FileReader();
    reader.onload = () =>{
 	 var dataURL = reader.result;
-	 // console.log(dataURL);
-	 // var output = (<HTMLImageElement>document.getElementById('output'));
-	 // output.src = dataURL as string;
+
 	 this.firebaseService.uploadFile(input.files[0].name, dataURL as string);
    };
    reader.readAsDataURL(input.files[0]);
  };
-
-  upload(){
-	  let entry1 = (<HTMLInputElement>document.getElementById("file"));
-	  let entry = "c:\\windows\\image.jpg";
-	  //var filename = entry.replace(/^.*[\\\/]/, '')
-	  // alert(entry1);
-	  // entry1.onchange = () => {
-  		const selectedFile = entry1.files[0];
-  		// console.log(selectedFile.name);
-		// console.log(selectedFile.webkitRelativePath);
-		// }
-	  return;
-
-	  if (entry.includes('\\')){
-	  	const pathStrSplit = entry.split('\\')
-	  	const fileName = pathStrSplit.pop()
-	  	const directoryName = pathStrSplit.join('\\');
-		alert("Win Path " + directoryName + " File Name " + fileName);
-		return;
-  		}
-
-		if (entry.includes('/')){
-		  const pathStrSplit = entry.split('/')
-		  const fileName = pathStrSplit.pop()
-		  const directoryName = pathStrSplit.join('/');
-		  alert("*nix Path " + directoryName + " File Name " + fileName);
-		  return;
-		}
-
-	  return;
-  }
 
 }

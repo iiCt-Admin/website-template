@@ -49,8 +49,8 @@ returnText(key : string, value : string){
 	  this.appService.currentTranslation = await this.appService.fetchJSON(lang);
 	  // this.translate.use(lang);
 	  this.appService.SetLanguage(lang);
-	  await this.firebaseService.GetCategoryList();
-	  await this.firebaseService.GetCategoryData();
+	  // await this.firebaseService.GetCategoryList();
+	  // await this.firebaseService.GetCategoryData();
 
 	  // Used to refresh gallery page when language changes, otherwise it will
 	  // not display the list in the current language, unless they change category

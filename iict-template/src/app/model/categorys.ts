@@ -9,6 +9,10 @@ export class Category{
 }
 
 export class CategoryData{
+	Titles : Array<string>;
+	Languages : Array<string>;
+	Description : Array<string>;
+	AltTexts : Array<string>;
 	Portfolio_Data_Title : string;
 	Portfolio_Data_Category : string;
 	Portfolio_Data_imagePath : string;
