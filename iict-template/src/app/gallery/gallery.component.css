@@ -1,15 +1,22 @@
-.btn-primary {
+#portfolio .btn-primary {
   background-color: #fe5828;
   color: #fff;
 }
 
-.btn-secondary {
+#portfolio .btn-secondary {
   background-color: whitesmoke;
   color: #fe5828;
 }
 
 #portfolio .bottom-space {
   margin-bottom: -10rem;
+}
+
+#portfolio .form-control {
+  margin-bottom: 35px;
+  border-color: #fe5828;
+  opacity: 90%;
+  border-style: none;
 }
 
 #portfolio .portflio-button {
@@ -24,6 +31,7 @@
   transition: 0.5s;
   line-height: 1;
   margin-left: 5px;
+  margin-top: 15px;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 1px solid #999;

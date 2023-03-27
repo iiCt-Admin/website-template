@@ -20,9 +20,14 @@
 }
 
 .contact .info {
-  margin-left: 8rem;
+  margin-left: 2rem;
   background: #fff;
   padding: 5px;
+}
+
+.contact .no_border {
+  border-style: none;
+  margin-right: 2rem;
 }
 
     /* modifies the icon looks & properties @ left side */

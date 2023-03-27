@@ -7,13 +7,15 @@
       <p>{{ returnText("GALLERY", "Gallery_subtitle") }}</p>
     </div>
 
-    <div class="d-flex justify-content-end">  <!-- Filter Section -->
-      <ul class="portfolio-filters" id="portfolio-filters" data-aos="fade-up">
-        <button class="btn btn-primary portflio-button" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
-        <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
-        <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
-        <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
-      </ul>
+    <div class="d-flex form-control justify-content-end">  <!-- Filter Section -->
+      <div class="">
+        <ul class="portfolio-filters " id="portfolio-filters" data-aos="fade-up">
+          <button class="btn btn-primary portflio-button" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
+          <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
+          <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
+          <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
+        </ul>
+      </div>
     </div>
 
     <div class="row portfolio-container center-text " data-aos="fade-up">  <!-- Portfolio Items (looped) -->
