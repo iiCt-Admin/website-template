@@ -1,6 +1,6 @@
 
 <section id="portfolio" class="portfolio">
-  <div class="container bottom-space">
+  <div class="container ">
 
     <div class="section-title center-text" data-aos="zoom-out">  <!-- Portfolio Header -->
       <h2>{{ returnText("GALLERY","Gallery_title") }}</h2>
@@ -18,8 +18,8 @@
       </div>
     </div>
 
-    <div class="row portfolio-container center-text " data-aos="fade-up">  <!-- Portfolio Items (looped) -->
-      <div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item " data-aos="fade-up">
+    <div class="row portfolio-container " data-aos="fade-up">  <!-- Portfolio Items (looped) -->
+      <div *ngFor="let port of filter" class="col-lg-4  portfolio-item " data-aos="fade-up">
         <div class="portfolio-img"><img src="{{port.image }}" class="img-fluid" alt="{{ port.alt }}"></div>
         <div class="portfolio-info">
           <h4>{{ port.title }}</h4>
