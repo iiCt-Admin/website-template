@@ -19,7 +19,7 @@ export class GalleryComponent implements OnInit {
 	filter = Array<CategoryData>();
 	currentCategory = "All";
 
-	isAdmin = true;
+	isAdmin = false;
 
 
   portfolio = [{image:"assets/img/iiCt_Round_Light.png",alt:"alt App 1", title: "no title App 1", category : "App", detailsLink : "none" },
@@ -62,7 +62,7 @@ export class GalleryComponent implements OnInit {
   }
 
   remove(port : CategoryData){
-	  
+
   }
 
   returnText(key : string, value : string){
