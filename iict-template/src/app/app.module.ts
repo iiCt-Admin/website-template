@@ -5,6 +5,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { FaqComponent } from './faq/faq.component';
 import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details.component';
 import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { LegalComponent } from './legal/legal.component';
@@ -33,13 +34,14 @@ import { ContactService } from './services/contact.service';
 import { FirebaseService } from './services/firebase.service';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
+
 import * as AOS from 'aos';
 import 'boxicons';
-import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details.component';
+import { register } from 'swiper/element/bundle';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -69,6 +71,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   ],
   imports: [
     BrowserModule,
+	// SwiperModule,
     ReactiveFormsModule,
 	HttpClientModule,
     TranslateModule.forRoot({
@@ -78,13 +81,16 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         deps: [HttpClient]
       }
   }),
+	// register(),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase, 'mytestapp'),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
-    NgbModule
+    NgbModule,
+
   ],
   providers: [ AppService, FirebaseService, ContactService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

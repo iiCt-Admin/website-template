@@ -12,9 +12,9 @@ import Swal from 'sweetalert2';
 import 'boxicons';
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css']
+	selector: 'app-gallery',
+	templateUrl: './gallery.component.html',
+	styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
 	filter = Array<CategoryData>();
@@ -41,6 +41,7 @@ export class GalleryComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
 	  AOS.init();
+	  // register();
 	  this.filter = this.firebaseService.portfolio_list;
 	  await this.firebaseService.GetCategoryList();
 	  await this.firebaseService.GetCategoryData();
