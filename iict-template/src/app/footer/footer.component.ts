@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from '../services/contact.service';
@@ -11,9 +10,9 @@ import { ContactService } from '../services/contact.service';
 })
 export class FooterComponent implements OnInit {
   FormData: FormGroup;
-  
 
-  constructor(public appService : AppService, public translate : TranslateService,  private builder: FormBuilder,
+
+  constructor(public appService : AppService,  private builder: FormBuilder,
     private contact: ContactService) { }
 
   ngOnInit(): void {

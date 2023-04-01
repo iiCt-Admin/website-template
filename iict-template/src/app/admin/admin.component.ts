@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-admin',
@@ -10,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(public translate : TranslateService, private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) { }
 	order : string = '';
 	params = new Object();
 
