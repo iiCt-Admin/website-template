@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app.service'
 import { AuthService } from '../services/authentication.service';
 import * as AOS from 'aos';
@@ -13,8 +12,7 @@ import 'boxicons';
 })
 export class HeroComponent implements OnInit {
 
-  constructor(public translate : TranslateService,
-    public appService : AppService,
+  constructor(public appService : AppService,
     public authService : AuthService,
     private router : Router) { }
 

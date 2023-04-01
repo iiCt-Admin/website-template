@@ -13,7 +13,7 @@
     </label> -->
 
 	   <div ngbDropdown class="d-inline-block">
-	 	<button type="button" class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>{{ this.returnLanguageString(this.translate.currentLang) }}</button>
+	 	<button type="button" class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>{{ this.returnLanguageString(this.appService.currentLanguage) }}</button>
 	 	<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 			<div *ngFor="let lang of this.languages">
 		  <button (click)="this.selectLanguage(lang.language)" ngbDropdownItem>

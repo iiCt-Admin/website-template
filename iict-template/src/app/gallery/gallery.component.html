@@ -1,34 +1,83 @@
 
 <section id="portfolio" class="portfolio">
-  <div class="container ">
+  <div class="container">
+	   <!-- bottom-space"> -->
 
     <div class="section-title center-text" data-aos="zoom-out">  <!-- Portfolio Header -->
       <h2>{{ returnText("GALLERY","Gallery_title") }}</h2>
       <p>{{ returnText("GALLERY", "Gallery_subtitle") }}</p>
     </div>
+	  <!-- <input type="file" name="file" id="file"> -->
+		  <!-- <button (click)="upload()" name="submit">Upload File</button> -->
+		  <!-- <input type='file' accept='image/*' (change)='openFile($event)'><br>
+		  <img id="output"/> -->
 
-    <div class="d-flex form-control justify-content-end">  <!-- Filter Section -->
-      <div class="">
-        <ul class="portfolio-filters " id="portfolio-filters" data-aos="fade-up">
-          <button class="btn btn-primary portflio-button" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
-          <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
-          <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
-          <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
-        </ul>
-      </div>
-    </div>
+		  <!-- Filter categories and display only if active -->
+          <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
+			  <div *ngFor="let cat of firebaseService.categories">
+				  <div *ngIf="cat.Portfolio_Cat_Active == true">
+					 <div *ngIf="cat.Portfolio_Cat_Sort == currentCategory;else elseBlock">
 
-    <div class="row portfolio-container " data-aos="fade-up">  <!-- Portfolio Items (looped) -->
-      <div *ngFor="let port of filter" class="col-lg-4  portfolio-item " data-aos="fade-up">
-        <div class="portfolio-img"><img src="{{port.image }}" class="img-fluid" alt="{{ port.alt }}"></div>
+				  	<button class="btn btn-primary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ getCategoryName(cat.Portfolio_Cat_Sort) }}</button>
+					<!-- CategoryTranslate(cat.Portfolio_Cat_Sort) -->
+				  </div>
+				  <ng-template #elseBlock>
+					  <button class="btn btn-secondary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ getCategoryName(cat.Portfolio_Cat_Sort) }}</button>
+					</ng-template>
+				  </div>
+			</div>
+          </ul>
+
+          <div class="row portfolio-container center-text" data-aos="fade-up">
+			  <div class="portfolio-item" *ngIf="isAdmin == true">
+			    <button class="portflio-button" (click)="add()">+</button>
+			  </div>
+  				<div *ngFor="let port of filter" class="col-lg-4 portfolio-item" data-aos="fade-up">
+  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_Title) }}"></div>
+  				  <div class="portfolio-info">
+					  <div *ngIf="isAdmin == true">
+  						<button class="portflio-button" (click)="edit(port)">Edit</button>
+						<button class="portflio-button" (click)="remove(port)">Remove</button>
+  					</div>
+  					<h4>{{ getPortfolioTitle(port.Portfolio_Data_Title) }}</h4>
+  					<p data-i18n="portfolio_app" >{{ getCategoryName(port.Portfolio_Data_Category) }}</p>
+
+						<!-- href="/assets/img/Features/consult_4_1024x681.jpeg" -->
+					<a  (click)="preview(port)" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port.Portfolio_Data_Title) }}"><i class="bx bx-plus"></i></a>
+					<!-- [routerLink]="['/admin']" [queryParams]="{ 'child': '3' }" -->
+  					<a [routerLink]="['/portfolio-details']" [queryParams]="{ 'child': getPortfolioTitle(port.Portfolio_Data_Title) }" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
+  				  </div>
+  				</div>
+
+          </div>
+
+          <!-- <div class="d-flex justify-content-end">  <-- Filter Section --
+            <ul class="portfolio-filters" id="portfolio-filters" data-aos="fade-up">
+              <button class="btn btn-primary portflio-button" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
+              <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
+              <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
+              <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
+            </ul>
+          </div> -->
+
+    <!-- <div class="row portfolio-container center-text " data-aos="fade-up">  <!-- Portfolio Items (looped) --
+      <div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item " data-aos="fade-up">
+        <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath}}" class="img-fluid" alt="{{ port.Portfolio_Data_AltText }}"></div>
         <div class="portfolio-info">
-          <h4>{{ port.title }}</h4>
-          <p data-i18n="portfolio_app" >{{ CategoryTranslate(port.category) }}</p>
-          <a href="{{port.image }}" data-gallery="portfolioGallery" class="preview-link" title="{{ port.title }}"><i class="bx bx-plus"></i></a>
+          <h4>{{ port.Portfolio_Data_Title }}</h4>
+          <p data-i18n="portfolio_app" >{{ CategoryTranslate(port.Portfolio_Cat_Sort) }}</p>
+          <a href="{{port.Portfolio_Data_imagePath }}" data-gallery="portfolioGallery" class="preview-link" title="{{ port.Portfolio_Data_Title }}"><i class="bx bx-plus"></i></a>
           <a href="portfolio-details.html" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
         </div>
       </div>
-    </div>
+    </div> -->
+
+	<div *ngIf="isAdmin == true;else notAdmin">
+		<p>your an admin</p>
+	</div>
+	<ng-template #notAdmin>
+			<p>your NOT an admin</p>
+	</ng-template>
 
   </div>
 </section><!-- End Portfolio Section -->
