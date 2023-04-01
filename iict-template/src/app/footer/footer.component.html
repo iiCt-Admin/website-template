@@ -1,7 +1,7 @@
 <!-- ======= Footer code from Flattern Index ======= -->
 <footer id="footer">
   <div class="footer-top">
-    <div class="row ">
+    <div class="row">
       <div class="col-lg-2 col-md-6 footer-contact indent-left75"> <!-- Footer Info  Column 1-->
         <h3 class=""> {{ returnText('COMPANY', 'Company_name_long') }} </h3>
         <p> {{ returnText('COMPANY', 'Company_address_1') }} </p>
@@ -24,19 +24,19 @@
         <h4>{{ returnText('FOOTER', 'Footer_label_links') }}</h4>
         <ul>
           <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_home') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_about') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_services') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_terms') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">{{ returnText('FOOTER', 'Footer_nav_privacy') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a [routerLink]="['/about']" href="#features">{{ returnText('FOOTER', 'Footer_nav_about') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a [routerLink]="['/products']" href="#">{{ returnText('FOOTER', 'Footer_nav_services') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a [routerLink]="['/legal']" href="#">{{ returnText('FOOTER', 'Footer_nav_terms') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a [routerLink]="['/legal']" href="#">{{ returnText('FOOTER', 'Footer_nav_privacy') }}</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-6 footer-links"> <!-- Footer Services Column 3 -->
         <h4>{{ returnText('FOOTER', 'Footer_services_title') }}</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ returnText('FOOTER', 'Footer_nav_consult') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ returnText('FOOTER', 'Footer_nav_packages') }}</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a  href="#">{{ returnText('FOOTER', 'Footer_nav_develop') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a  [routerLink]="['/products']" href="#">{{ returnText('FOOTER', 'Footer_nav_consult') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a  [routerLink]="['/products']" href="#">{{ returnText('FOOTER', 'Footer_nav_packages') }}</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a  [routerLink]="['/products']" href="#">{{ returnText('FOOTER', 'Footer_nav_develop') }}</a></li>
         </ul>
       </div>
 

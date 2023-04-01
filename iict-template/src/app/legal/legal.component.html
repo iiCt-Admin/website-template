@@ -1,4 +1,29 @@
+<section id="legal" class="legal">
+  <div class="container">
+    <div class="section-title center-text" data-aos="zoom-out">  <!-- Contact title section -->
+      <h2 >{{ returnText('LEGAL', 'Legal_title') }}</h2>
+      <p >{{ returnText('LEGAL', 'Legal_subtitle') }}</p>
+    </div>
 
-<div class="container-fluid">
-	<p>legal works!</p>
-</div>
+    <ng-template #content let-modal>
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog" >
+          <div class="modal-content" >
+            <div class="modal-header" >
+              <H5 class="modal-title" >legal works! </H5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Legal body.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </ng-template>
+  </div>
+</section>
