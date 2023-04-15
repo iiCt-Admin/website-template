@@ -3,9 +3,13 @@
     <div class="section-title center-text" data-aos="zoom-out">  <!-- Contact title section -->
       <h2 >{{ returnText('LEGAL', 'Legal_title') }}</h2>
       <p >{{ returnText('LEGAL', 'Legal_subtitle') }}</p>
+      <div>
+        <H1></H1>
+        <button type="button" class="btn btn-primary" (click)="open()">Legal Details</button>
+      </div>
     </div>
 
-    <ng-template #content let-modal>
+    <ng-template #popupContent let-modal>
       <div class="modal" tabindex="-1">
         <div class="modal-dialog" >
           <div class="modal-content" >
