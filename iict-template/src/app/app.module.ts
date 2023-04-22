@@ -38,6 +38,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import 'boxicons';
+import { ProfileComponent } from './profile/profile.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -63,7 +64,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     SidenavComponent,
     SigninComponent,
     SignupComponent,
-    TeamsComponent
+    TeamsComponent,
+    ProfileComponent
 
   ],
   imports: [
