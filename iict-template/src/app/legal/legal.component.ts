@@ -20,7 +20,6 @@ returnText(key : string, value : string){
 }
 
 open(content) {
-	console.log(content);
 this.modalService.open(content,
     {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
 	this.closeResult = `Closed with: ${result}`;
@@ -30,8 +29,6 @@ this.modalService.open(content,
 	}
   );
 }
-
-
 
 private getDismissReason(reason: any): string {
 	if (reason === ModalDismissReasons.ESC) {
