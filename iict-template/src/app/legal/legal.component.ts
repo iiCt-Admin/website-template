@@ -19,15 +19,15 @@ returnText(key : string, value : string){
   return this.appService.returnText(key, value);
 }
 
-open() {
-  const content = this.popupContent.elementRef.nativeElement.innerHTML;
+open(content) {
+	console.log(content);
 this.modalService.open(content,
-  //   {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-	// // this.closeResult = `Closed with: ${result}`;
-	// // }, (reason) => {
-	// // this.closeResult =
-	// // 	`Dismissed ${this.getDismissReason(reason)}`;
-	// }
+    {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+	this.closeResult = `Closed with: ${result}`;
+	}, (reason) => {
+	this.closeResult =
+		`Dismissed ${this.getDismissReason(reason)}`;
+	}
   );
 }
 
