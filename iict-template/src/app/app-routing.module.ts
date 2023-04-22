@@ -12,6 +12,7 @@ import { LegalComponent } from './legal/legal.component';
 import { NewsComponent } from './news/news.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ProductsComponent } from './products/products.component';
+import { ProfileComponent } from './profile/profile.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { TeamsComponent } from './teams/teams.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
 	{ path: 'news', component: NewsComponent},
   { path: 'pricing', component: PricingComponent},
   { path: 'products', component: ProductsComponent},
+  { path: 'profile', component: ProfileComponent},
   { path: 'signin',component:SigninComponent},
   { path: 'signup', component: SignupComponent },
   { path: 'teams', component: TeamsComponent }
