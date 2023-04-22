@@ -281,5 +281,10 @@
     "Help_click_send": "Click to send",
     "Help_subject": "What is this about?",
     "Help_message": "Provide a brief description or comments."
-	}
+	},
+
+  "LEGAL" : {
+    "Legal_title": "Legal",
+    "Legal_subtitle": "Legal Information"
+  }
 }
