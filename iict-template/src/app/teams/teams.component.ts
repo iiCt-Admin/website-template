@@ -29,7 +29,7 @@ export class TeamsComponent implements OnInit {
 	  this.route.queryParams
       .subscribe(params => {
 		  this.params = params["child"];
-        console.log(params["child"]);
+        // console.log(params["child"]);
       }
     );
   }
