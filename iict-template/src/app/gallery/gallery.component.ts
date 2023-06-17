@@ -23,16 +23,16 @@ export class GalleryComponent implements OnInit {
 	isAdmin = false;
 
 
-  portfolio = [{image:"assets/img/iiCt_Round_Light.png",alt:"alt App 1", title: "no title App 1", category : "App", detailsLink : "none" },
-				{image:"assets/img/iiCt_contact.png",alt:"alt Web 1", title: "no title Web 1", category : "Web", detailsLink : "none"},
-				{image:"assets/img/iiCt_Round_Plain.png",alt:"alt Media 1", title: "no title Media 1", category : "Media", detailsLink : "none"},
-				{image:"assets/img/iiCt_chat.png",alt:"alt App 2", title: "no title App 2", category : "App", detailsLink : "none" },
-				{image:"assets/img/iiCt_email.png",alt:"alt Web 2", title: "no title Web 2", category : "Web", detailsLink : "none"},
-				{image:"assets/img/iiCt_menu.png",alt:"alt Media 2", title: "no title Media 2", category : "Media", detailsLink : "none"},
-        {image:"assets/img/iiCt_support.png",alt:"alt App 3", title: "no title App 3", category : "App", detailsLink : "none" },
-				{image:"assets/img/lang_en.png",alt:"alt Web 3", title: "no title Web 3", category : "Web", detailsLink : "none"},
-				{image:"assets/img/lang_fr.png",alt:"alt Media 3", title: "no title Media 3", category : "Media", detailsLink : "none"},
-			];
+  // portfolio = [{image:"assets/img/iiCt_Round_Light.png",alt:"alt App 1", title: "no title App 1", category : "App", detailsLink : "none" },
+	// 			{image:"assets/img/iiCt_contact.png",alt:"alt Web 1", title: "no title Web 1", category : "Web", detailsLink : "none"},
+	// 			{image:"assets/img/iiCt_Round_Plain.png",alt:"alt Media 1", title: "no title Media 1", category : "Media", detailsLink : "none"},
+	// 			{image:"assets/img/iiCt_chat.png",alt:"alt App 2", title: "no title App 2", category : "App", detailsLink : "none" },
+	// 			{image:"assets/img/iiCt_email.png",alt:"alt Web 2", title: "no title Web 2", category : "Web", detailsLink : "none"},
+	// 			{image:"assets/img/iiCt_menu.png",alt:"alt Media 2", title: "no title Media 2", category : "Media", detailsLink : "none"},
+  //       {image:"assets/img/iiCt_support.png",alt:"alt App 3", title: "no title App 3", category : "App", detailsLink : "none" },
+	// 			{image:"assets/img/lang_en.png",alt:"alt Web 3", title: "no title Web 3", category : "Web", detailsLink : "none"},
+	// 			{image:"assets/img/lang_fr.png",alt:"alt Media 3", title: "no title Media 3", category : "Media", detailsLink : "none"},
+	// 		];
 
   constructor(public appService : AppService, public firebaseService : FirebaseService){
   }
@@ -49,10 +49,7 @@ export class GalleryComponent implements OnInit {
 	  this.appService.refreshGallery.on(true,async ()=>{
 		  await this.ChangeFilter(this.currentCategory);
 	  })
-	  // this.getCategoryName("All");
-
-	  // this.firebaseService.retrieveFile("output", "/images/web.png");
-	  // console.log(this.appService.newTranslate("this is an example"));
+    console.log(this.getCategoryName("All"))
   }
 
   edit(port : CategoryData){
@@ -68,8 +65,8 @@ export class GalleryComponent implements OnInit {
   }
 
   preview(port : CategoryData){
-	  var index = this.getLanguageIndex(port.Languages);
-	  Swal.fire("Preview of " + port.Descriptions[index]);
+	  var index = this.getLanguageIndex(port.Portfolio_Data_languages);
+	  Swal.fire("Preview of " + port.Portfolio_Data_descriptions[index]);
   }
 
   returnText(key : string, value : string){
@@ -84,27 +81,54 @@ getLanguageIndex(item : Array<string>):number{
 	}
 	return 0;
 }
-  getPortfolioTitle(name : string) : string {
-	  var index = 0;
-	  for(let i = 0; i < this.firebaseService.portfolio_list.length; i++){
-		var item = this.firebaseService.portfolio_list as Array<CategoryData>;
+  // getPortfolioTitle(name : string[]) : string {
+	//   var index = 0;
+	//   for(let i = 0; i < this.firebaseService.portfolio_list.length; i++){
+	// 	var item = this.firebaseService.portfolio_list as Array<CategoryData>;
 
-		// console.log(item);
-		let item2 = item[i].Languages;
-		index = this.getLanguageIndex(item2);
-		if (item[i].Portfolio_Data_Title == name) return item[i].Titles[index];
-	  }
-	  return "";
+	// 	// console.log(item);
+	// 	let item2 = item[i].Portfolio_Data_languages;
+	// 	index = this.getLanguageIndex(item2);
+
+	// 	if (item[i].Portfolio_Data_titles.includes) return item[i].Portfolio_Data_titles[index];
+	//   }
+	//   return "";
+  // }
+
+  // getPortfolioTitle(name: string): string {
+  // let index = 0;
+  // for (let i = 0; i < this.firebaseService.portfolio_list.length; i++) {
+  //   const item = this.firebaseService.portfolio_list[i] as CategoryData;
+  //   const item2 = item.Portfolio_Data_languages;
+  //   index = this.getLanguageIndex(item2);
+
+  //   if (item.Portfolio_Data_titles.includes(name)) {
+  //     return item.Portfolio_Data_titles[index];
+  //   }
+  // }
+
+  getPortfolioTitle(name: string[]): string {
+  let index = 0;
+  for (let i = 0; i < this.firebaseService.portfolio_list.length; i++) {
+    const item = this.firebaseService.portfolio_list[i] as CategoryData;
+    const item2 = item.Portfolio_Data_languages;
+    index = this.getLanguageIndex(item2);
+
+    if (item.Portfolio_Data_titles.some(title => name.includes(title))) {
+      return item.Portfolio_Data_titles[index];
+    }
   }
+  return '';
+}
 
-  getPortfolioAltText(name : string) : string {
+  getPortfolioAltText(name : string[]) : string {
 	  var index = 0;
 	  for(let i = 0; i < this.firebaseService.portfolio_list.length; i++){
 		var item = this.firebaseService.portfolio_list as Array<CategoryData>;
 
-		let item2 = item[i].Languages;
+		let item2 = item[i].Portfolio_Data_languages;
 		index = this.getLanguageIndex(item2);
-		if (item[i].Portfolio_Data_Title == name) return item[i].AltTexts[index];
+		if (item[i].Portfolio_Data_titles.some(title => name.includes(title))) return item[i].Portfolio_Data_descriptions[index];
 	  }
 	  return "";
   }

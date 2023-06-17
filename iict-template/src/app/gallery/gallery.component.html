@@ -13,16 +13,16 @@
 		  <img id="output"/> -->
 
 		  <!-- Filter categories and display only if active -->
-          <ul id="portfolio-flters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
+          <ul id="portfolio-filters" class="d-flex justify-content-end pagination pagination-lg" data-aos="fade-up">
 			  <div *ngFor="let cat of firebaseService.categories">
 				  <div *ngIf="cat.Portfolio_Cat_Active == true">
 					 <div *ngIf="cat.Portfolio_Cat_Sort == currentCategory;else elseBlock">
 
-				  	<button class="btn btn-primary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ getCategoryName(cat.Portfolio_Cat_Sort) }}</button>
+				  	<button class="btn btn-primary portfolio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ getCategoryName(cat.Portfolio_Cat_Sort) }}</button>
 					<!-- CategoryTranslate(cat.Portfolio_Cat_Sort) -->
 				  </div>
 				  <ng-template #elseBlock>
-					  <button class="btn btn-secondary portflio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ getCategoryName(cat.Portfolio_Cat_Sort) }}</button>
+					  <button class="btn btn-secondary portfolio-button" (click)="ChangeFilter(cat.Portfolio_Cat_Sort)">{{ getCategoryName(cat.Portfolio_Cat_Sort) }}</button>
 					</ng-template>
 				  </div>
 			</div>
@@ -33,32 +33,32 @@
 			    <button class="portflio-button" (click)="add()">+</button>
 			  </div>
   				<div *ngFor="let port of filter" class="col-lg-4 portfolio-item" data-aos="fade-up">
-  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_Title) }}"></div>
+  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_titles) }}"></div>
   				  <div class="portfolio-info">
 					  <div *ngIf="isAdmin == true">
   						<button class="portflio-button" (click)="edit(port)">Edit</button>
 						<button class="portflio-button" (click)="remove(port)">Remove</button>
   					</div>
-  					<h4>{{ getPortfolioTitle(port.Portfolio_Data_Title) }}</h4>
+  					<h4>{{ getPortfolioTitle(port.Portfolio_Data_titles) }}</h4>
   					<p data-i18n="portfolio_app" >{{ getCategoryName(port.Portfolio_Data_Category) }}</p>
 
 						<!-- href="/assets/img/Features/consult_4_1024x681.jpeg" -->
-					<a  (click)="preview(port)" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port.Portfolio_Data_Title) }}"><i class="bx bx-plus"></i></a>
+					<a  (click)="preview(port)" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port.Portfolio_Data_titles) }}"><i class="bx bx-plus"></i></a>
 					<!-- [routerLink]="['/admin']" [queryParams]="{ 'child': '3' }" -->
-  					<a [routerLink]="['/portfolio-details']" [queryParams]="{ 'child': getPortfolioTitle(port.Portfolio_Data_Title) }" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
+  					<a [routerLink]="['/portfolio-details']" [queryParams]="{ 'child': getPortfolioTitle(port.Portfolio_Data_titles) }" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
   				  </div>
   				</div>
 
           </div>
 
-          <!-- <div class="d-flex justify-content-end">  <-- Filter Section --
+          <div class="d-flex justify-content-end">  <!-- Filter Section -->
             <ul class="portfolio-filters" id="portfolio-filters" data-aos="fade-up">
               <button class="btn btn-primary portflio-button" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
               <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
               <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
               <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
             </ul>
-          </div> -->
+          </div>
 
     <!-- <div class="row portfolio-container center-text " data-aos="fade-up">  <!-- Portfolio Items (looped) --
       <div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item " data-aos="fade-up">
