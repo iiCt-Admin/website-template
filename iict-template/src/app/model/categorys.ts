@@ -14,6 +14,7 @@ export class CategoryData{
   Portfolio_Data_Category : string;
   Portfolio_Data_Client : string;
   Portfolio_Data_URL : string;
+  Portfolio_Data_altText : Array<string>;
   Portfolio_Data_date : Timestamp;
   Portfolio_Data_descriptions : Array<string>;
   Portfolio_Data_detailsLink : string;

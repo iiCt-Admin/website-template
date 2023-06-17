@@ -7,32 +7,6 @@ import { catchError, retry } from 'rxjs/operators';
 
 const { EventEmitter } = require("events");
 
-// for possible use of on-the-fly translations
-
-// import * as deepl from 'deepl';
-
-// const deepl_apikey = "b050ff2c-49e5-7856-fab5-d84b9e4aa7ae:fx";
-
-// const translate = require('@iamtraction/google-translate');
-// const translator = new deepl.Translator(deepl_apikey);
-// const translate = require("deepl");
-
-// interface Translations {
-// 	// detected_source_language:string; // for deepl
-// 	text : string; // for deepl and google
-
-// 	from : object; // the rest is for use with google
-// // 	from.language	Object	-
-// // from.language.didYouMean	Boolean	Whether or not the API suggest a correction in the source language.
-// // from.language.iso	String	The ISO 639-1 code of the language that the API has recognized in the text.
-// // from.text	Object	-
-// // from.text.autoCorrected	Boolean	Whether or not the API has auto corrected the original text.
-// // from.text.value	String	The auto corrected text or the text with suggested corrections. Only returned if from.text.autoCorrected or from.text.didYouMean is true.
-// // from.text.didYouMean	Boolean	Wherether or not the API has suggested corrections to the text
-// // raw	String
-// }
-
-
 @Injectable({
   providedIn: 'root'
 })

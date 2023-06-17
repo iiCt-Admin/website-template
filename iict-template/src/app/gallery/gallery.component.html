@@ -33,7 +33,7 @@
 			    <button class="portflio-button" (click)="add()">+</button>
 			  </div>
   				<div *ngFor="let port of filter" class="col-lg-4 portfolio-item" data-aos="fade-up">
-  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_titles) }}"></div>
+  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_altText) }}"></div>
   				  <div class="portfolio-info">
 					  <div *ngIf="isAdmin == true">
   						<button class="portflio-button" (click)="edit(port)">Edit</button>

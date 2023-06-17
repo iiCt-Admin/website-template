@@ -58,11 +58,10 @@ export class FirebaseService {
 
 	async GetCategoryList(){
 		this.categories = [];
-		const q = query(collection(db, "PORTFOLIO_CATEGORY"),where("Portfolio_Cat_Language", "==", "en"),  orderBy("Portfolio_Cat_Order"));
-
-
+		const q = query(collection(db, "PORTFOLIO_CATEGORY"),where("Portfolio_Cat_languages", "==", "en"),  orderBy("Portfolio_Cat_Order"));
 		const querySnapshot = await getDocs(q);
 			querySnapshot.forEach((doc) => {
+        console.log(doc.data())
   				// doc.data() is never undefined for query doc snapshots
 				this.categories.push(doc.data() as unknown as Category);
   				// console.log(doc.id, " => ", doc.data());
@@ -73,7 +72,7 @@ export class FirebaseService {
 
 		this.portfolio_list = [];
 		// where("Portfolio_Data_Category","==","app")
-		const q = query(collection(db, "PORTFOLIO_DATA"), where("Portfolio_Data_Language", "==", "en"));
+		const q = query(collection(db, "PORTFOLIO_DATA"), where("Portfolio_Data_languages", "==", "en"));
 
 		const querySnapshot = await getDocs(q);
 			querySnapshot.forEach((doc) => {
