@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { AppService } from '../services/app.service';
 import { FirebaseService } from '../services/firebase.service';
-
-// import { TranslateService } from '@ngx-translate/core';
-
-import { Category, CategoryData } from '../model/categorys';
-
+import { Category, CategoryData } from '../model/categories';
 import * as AOS from 'aos';
 import Swal from 'sweetalert2';
 import 'boxicons';
@@ -53,7 +48,7 @@ export class GalleryComponent implements OnInit {
   }
 
   preview(port : CategoryData){
-	  var index = this.getLanguageIndex(port.Portfolio_Data_languages);
+	  var index = this.getLanguageIndex(port.Portfolio_Data_Languages);
 	  Swal.fire("Preview of " + port.Portfolio_Data_Category[index]);
   }
 
@@ -86,7 +81,7 @@ getLanguageIndex(item : Array<string>):number{
   let index = 0;
   for (let i = 0; i < this.firebaseService.portfolio_list.length; i++) {
     const item = this.firebaseService.portfolio_list[i] as CategoryData;
-    const item2 = item.Portfolio_Data_languages;
+    const item2 = item.Portfolio_Data_Languages;
     index = this.getLanguageIndex(item2);
 
     if (item.Portfolio_Data_titles.some(title => name.includes(title))) {
@@ -101,7 +96,7 @@ getLanguageIndex(item : Array<string>):number{
 	  for(let i = 0; i < this.firebaseService.portfolio_list.length; i++){
 		var item = this.firebaseService.portfolio_list as Array<CategoryData>;
 
-		let item2 = item[i].Portfolio_Data_languages;
+		let item2 = item[i].Portfolio_Data_Languages;
 		index = this.getLanguageIndex(item2);
 		if (item[i].Portfolio_Data_titles.some(title => name.includes(title))) return item[i].Portfolio_Data_altText[index];
 	  }

@@ -1,12 +1,9 @@
 import { Injectable } from '@angular/core';
-
 import { AppService } from './app.service';
-
 import { initializeApp } from "firebase/app";
-import firebase from 'firebase/compat/app';
+// import firebase from 'firebase/compat/app';
 
 import { collection, query, where, orderBy, doc, getDoc, getDocs, getFirestore } from "firebase/firestore";
-
 import { getStorage, ref, uploadBytes, uploadString, getDownloadURL  } from "firebase/storage";
 
 // import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/compat/firestore';
@@ -16,7 +13,7 @@ import { Observable } from 'rxjs';
 
 import Swal from 'sweetalert2';
 
-import { Category, CategoryData } from '../model/categorys'
+import { Category, CategoryData } from '../model/categories'
 import { Language } from '../model/language';
 
 import { environment } from '../../environments/environment';
@@ -29,13 +26,9 @@ const storage = getStorage(app);
   providedIn: 'root'
 })
 export class FirebaseService {
-
 	categories = new Array<Category>();
-
 	languages = new Array<Language>();
-
 	portfolio_list = new Array<CategoryData>();
-
 	constructor(public appService : AppService) {
 	}
 
@@ -58,13 +51,13 @@ export class FirebaseService {
 
 	async GetCategoryList(){
 		this.categories = [];
-		const q = query(collection(db, "PORTFOLIO_CATEGORY"),where("Portfolio_Cat_languages", "==", "en"),  orderBy("Portfolio_Cat_Order"));
+		const q = query(collection(db, "PORTFOLIO_CATEGORY"),where("Portfolio_Cat_Languages", "==", "en"),  orderBy("Portfolio_Cat_Order"));
 		const querySnapshot = await getDocs(q);
 			querySnapshot.forEach((doc) => {
         console.log(doc.data())
   				// doc.data() is never undefined for query doc snapshots
 				this.categories.push(doc.data() as unknown as Category);
-  				// console.log(doc.id, " => ", doc.data());
+  				console.log(doc.id, " => ", doc.data());
 			});
 	}
 
@@ -72,8 +65,7 @@ export class FirebaseService {
 
 		this.portfolio_list = [];
 		// where("Portfolio_Data_Category","==","app")
-		const q = query(collection(db, "PORTFOLIO_DATA"), where("Portfolio_Data_languages", "==", "en"));
-
+		const q = query(collection(db, "PORTFOLIO_DATA"), where("Portfolio_Data_Languages", "==", "en"));
 		const querySnapshot = await getDocs(q);
 			querySnapshot.forEach((doc) => {
   				// doc.data() is never undefined for query doc snapshots
