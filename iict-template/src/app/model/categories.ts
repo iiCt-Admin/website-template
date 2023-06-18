@@ -13,13 +13,13 @@ export class CategoryData{
   Portfolio_Data_Active : boolean;
   Portfolio_Data_Category : string;
   Portfolio_Data_Client : string;
+  Portfolio_Data_Languages : Array<string>;
   Portfolio_Data_URL : string;
   Portfolio_Data_altText : Array<string>;
   Portfolio_Data_date : Timestamp;
   Portfolio_Data_descriptions : Array<string>;
   Portfolio_Data_detailsLink : string;
   Portfolio_Data_imagePath : string;
-  Portfolio_Data_languages : Array<string>;
   Portfolio_Data_paragraph : Array<string>;
   Portfolio_Data_team : string;
 	Portfolio_Data_titles : Array<string>;

@@ -51,16 +51,16 @@
 
           </div>
 
-          <div class="d-flex justify-content-end">  <!-- Filter Section -->
+          <!-- <div class="d-flex justify-content-end">  <-- Filter Section
             <ul class="portfolio-filters" id="portfolio-filters" data-aos="fade-up">
               <button class="btn btn-primary portflio-button" (click)="ChangeFilter('All')">{{ returnText("GALLERY", "Gallery_filter_all") }}</button>
               <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('App')">{{ returnText("GALLERY", "Gallery_filter_app") }}</button>
               <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Media')">{{ returnText("GALLERY", "Gallery_filter_media") }}</button>
               <button class="btn btn-secondary portflio-button" (click)="ChangeFilter('Web')">{{ returnText("GALLERY", "Gallery_filter_web") }}</button>
             </ul>
-          </div>
+          </div> -->
 
-    <!-- <div class="row portfolio-container center-text " data-aos="fade-up">  <!-- Portfolio Items (looped) --
+    <!-- <div class="row portfolio-container center-text " data-aos="fade-up">  <-- Portfolio Items (looped) --
       <div *ngFor="let port of filter" class="col-lg-4 col-md-6 portfolio-item " data-aos="fade-up">
         <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath}}" class="img-fluid" alt="{{ port.Portfolio_Data_AltText }}"></div>
         <div class="portfolio-info">
@@ -72,11 +72,11 @@
       </div>
     </div> -->
 
-	<div *ngIf="isAdmin == true;else notAdmin">
-		<p>your an admin</p>
+	<div *ngIf="isAdmin == true; else notAdmin">
+		<p>you are an admin</p>
 	</div>
 	<ng-template #notAdmin>
-			<p>your NOT an admin</p>
+			<p>you are NOT an admin</p>
 	</ng-template>
 
   </div>
