@@ -99,6 +99,10 @@ export class AppService {
 	  this.currentLanguage = lang;
   }
 
+  GetLanguageIndex() : number {
+	  return 0;
+  }
+
 	currentTranslation = new Object();
 
 /*

@@ -16,7 +16,7 @@ import { Observable } from 'rxjs';
 
 import Swal from 'sweetalert2';
 
-import { Category, CategoryData } from '../model/categorys'
+import { Category, CategoryData, ImageList } from '../model/categorys'
 import { Language } from '../model/language';
 
 import { environment } from '../../environments/environment';
@@ -35,6 +35,8 @@ export class FirebaseService {
 	languages = new Array<Language>();
 
 	portfolio_list = new Array<CategoryData>();
+
+	pictureList = new Array<ImageList>();
 
 	constructor(public appService : AppService) {
 	}
@@ -82,6 +84,19 @@ export class FirebaseService {
   				// console.log(doc.id, " => ", doc.data());
 			});
 
+	}
+
+	async GetImageList(){
+		this.pictureList = [];
+		const q = query(collection(db, "PICTURE_LIST"), orderBy("Picture_List_order"));
+
+
+		const querySnapshot = await getDocs(q);
+			querySnapshot.forEach((doc) => {
+  				// doc.data() is never undefined for query doc snapshots
+				this.pictureList.push(doc.data() as unknown as ImageList);
+  				// console.log(doc.id, " => ", doc.data());
+			});
 	}
 
 retrieveFile(elementID : string, filename : string){

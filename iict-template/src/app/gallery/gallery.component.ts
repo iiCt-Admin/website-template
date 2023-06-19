@@ -45,10 +45,13 @@ export class GalleryComponent implements OnInit {
 	  this.filter = this.firebaseService.portfolio_list;
 	  await this.firebaseService.GetCategoryList();
 	  await this.firebaseService.GetCategoryData();
+
 	  await this.ChangeFilter(this.currentCategory);
 	  this.appService.refreshGallery.on(true,async ()=>{
 		  await this.ChangeFilter(this.currentCategory);
 	  })
+
+	  await this.firebaseService.GetImageList();
 	  // this.getCategoryName("All");
 
 	  // this.firebaseService.retrieveFile("output", "/images/web.png");
@@ -82,9 +85,9 @@ getLanguageIndex(item : Array<string>):number{
 			return i;
 		}
 	}
-	return 0;
+	return -1;
 }
-  getPortfolioTitle(name : string) : string {
+  getPortfolioTitle(port : CategoryData) : string {
 	  var index = 0;
 	  for(let i = 0; i < this.firebaseService.portfolio_list.length; i++){
 		var item = this.firebaseService.portfolio_list as Array<CategoryData>;
@@ -92,7 +95,8 @@ getLanguageIndex(item : Array<string>):number{
 		// console.log(item);
 		let item2 = item[i].Languages;
 		index = this.getLanguageIndex(item2);
-		if (item[i].Portfolio_Data_Title == name) return item[i].Titles[index];
+		// if (item[i].Portfolio_Data_Title == port.)
+		if (index != -1) return item[i].Titles[index];
 	  }
 	  return "";
   }
@@ -119,6 +123,18 @@ getLanguageIndex(item : Array<string>):number{
 	  }
 	  return "";
 
+  }
+
+  getPortfolioImage(port : CategoryData) : string {
+	  var name = port.Portfolio_Data_Title;
+	  var index = 0;
+	  for(let i = 0; i < this.firebaseService.portfolio_list.length; i++){
+		// var item = this.firebaseService.po as Array<CategoryData>;
+		// let item2 = item[i].Portfolio_Cat_Languages;
+		// index = this.getLanguageIndex(item2);
+		// if (item[i].Portfolio_Data_Title == name) return item[i].Portfolio_Cat_Names[index];
+	  }
+	  return "";
   }
 
 	// CategoryTranslate(category: string) : string {

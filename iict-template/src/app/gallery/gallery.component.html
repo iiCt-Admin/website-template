@@ -33,19 +33,19 @@
 			    <button class="portflio-button" (click)="add()">+</button>
 			  </div>
   				<div *ngFor="let port of filter" class="col-lg-4 portfolio-item" data-aos="fade-up">
-  				  <div class="portfolio-img"><img src="{{port.Portfolio_Data_imagePath }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_Title) }}"></div>
+  				  <div class="portfolio-img"><img src="{{ getPortfolioImage(port) }}" class="img-fluid img-sizing" alt="{{ getPortfolioAltText(port.Portfolio_Data_Title) }}"></div>
   				  <div class="portfolio-info">
 					  <div *ngIf="isAdmin == true">
   						<button class="portflio-button" (click)="edit(port)">Edit</button>
 						<button class="portflio-button" (click)="remove(port)">Remove</button>
   					</div>
-  					<h4>{{ getPortfolioTitle(port.Portfolio_Data_Title) }}</h4>
+  					<h4>{{ getPortfolioTitle(port) }}</h4>
   					<p data-i18n="portfolio_app" >{{ getCategoryName(port.Portfolio_Data_Category) }}</p>
 
 						<!-- href="/assets/img/Features/consult_4_1024x681.jpeg" -->
-					<a  (click)="preview(port)" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port.Portfolio_Data_Title) }}"><i class="bx bx-plus"></i></a>
+					<a  (click)="preview(port)" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ getPortfolioTitle(port) }}"><i class="bx bx-plus"></i></a>
 					<!-- [routerLink]="['/admin']" [queryParams]="{ 'child': '3' }" -->
-  					<a [routerLink]="['/portfolio-details']" [queryParams]="{ 'child': getPortfolioTitle(port.Portfolio_Data_Title) }" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
+  					<a [routerLink]="['/portfolio-details']" [queryParams]="{ 'child': getPortfolioTitle(port) }" class="details-link" title="{{ returnText('GALLERY', 'Gallery_details') }}"><i class="bx bx-link"></i></a>
   				  </div>
   				</div>
 
